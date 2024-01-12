@@ -1,1 +1,119 @@
-{"sections":{"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","settings":{"heading":"Browse our latest products","heading_size":"h0"}},"button":{"type":"buttons","settings":{"button_label_1":"Shop all","button_link_1":"shopify:\/\/collections\/all","button_style_secondary_1":true,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","button"],"settings":{"image":"shopify:\/\/shop_images\/chameleon-1.png","image_overlay_opacity":10,"image_height":"large","desktop_content_position":"bottom-center","show_text_box":false,"desktop_content_alignment":"center","color_scheme":"inverse","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"2126530f-4979-49ff-8245-e78222ab24f3":{"type":"rich-text","blocks":{"template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-heading-1":{"type":"heading","settings":{"heading":"Talk about your brand","heading_size":"h1"}},"template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-text-1":{"type":"text","settings":{"text":"<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"}},"template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-button-1":{"type":"button","settings":{"button_label":"Button label","button_link":"","button_style_secondary":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-heading-1","template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-text-1","template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-button-1"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":52}},"featured_collection":{"type":"featured-collection","settings":{"title":"Featured products","heading_size":"h2","description":"","show_description":false,"description_style":"body","collection":"all","products_to_show":8,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"solid","enable_desktop_slider":false,"color_scheme":"background-1","image_ratio":"adapt","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"enable_quick_add":false,"columns_mobile":"2","swipe_on_mobile":false,"padding_top":44,"padding_bottom":36}}},"order":["image_banner","2126530f-4979-49ff-8245-e78222ab24f3","featured_collection"]}
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DALL_E_2024-01-12_12.00.21_-_A_wide_9_16_format_image_of_a_white_cloth_with_a_tropical_landscape_being_drawn_ensuring_the_hand_depicted_has_only_five_fingers._The_scene_includes.png",
+        "image_overlay_opacity": 10,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "inverse",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "2126530f-4979-49ff-8245-e78222ab24f3": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-heading-1": {
+          "type": "heading",
+          "settings": {
+            "heading": "Hand drawn designs from the animal kingdom",
+            "heading_size": "h1"
+          }
+        },
+        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
+          }
+        },
+        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-button-1": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-heading-1",
+        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-text-1",
+        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-button-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "2126530f-4979-49ff-8245-e78222ab24f3",
+    "featured_collection"
+  ]
+}
