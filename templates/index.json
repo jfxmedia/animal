@@ -59,9 +59,9 @@
         "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-button-1": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
+            "button_label": "Explore",
             "button_link": "",
-            "button_style_secondary": false,
+            "button_style_secondary": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
