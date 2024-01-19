@@ -161,10 +161,10 @@
       },
       "inverse": {
         "settings": {
-          "background": "#242833",
+          "background": "#28abe2",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#66cbeb",
+          "button": "#ff7a58",
           "button_label": "#f5f5f5",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
