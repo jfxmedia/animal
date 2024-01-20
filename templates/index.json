@@ -88,6 +88,7 @@
       "settings": {
         "title": "FEATURED PRODUCTS",
         "heading_size": "h1",
+        "heading_centering": "center",
         "description": "",
         "show_description": false,
         "description_style": "body",
