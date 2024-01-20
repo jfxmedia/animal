@@ -7,7 +7,8 @@
           "type": "heading",
           "settings": {
             "heading": "EMBRACE NATURE WITH EVERY THEREAD",
-            "heading_size": "h0"
+            "heading_size": "h0",
+            "heading_justify": "justify-left"
           }
         },
         "button": {
