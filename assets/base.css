@@ -288,10 +288,18 @@ h5,
   font-size: calc(var(--font-heading-scale) * 5rem);
 }
 
+.h2xl {
+  font-size: calc(var(--font-heading-scale) * 6.5rem);
+}
+
 @media only screen and (min-width: 750px) {
   .hxl {
     font-size: calc(var(--font-heading-scale) * 6.2rem);
   }
+  
+.h2xl {
+  font-size: calc(var(--font-heading-scale) * 7rem);
+}
 }
 
 .h0 {
