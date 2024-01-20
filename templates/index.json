@@ -88,8 +88,8 @@
       "settings": {
         "title": "FEATURED PRODUCTS",
         "heading_size": "h1",
-        "heading_centering": "right",
-        "description": "<p>The most popular designs.<\/p>",
+        "heading_centering": "center",
+        "description": "<p>The most popular designs on tap.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
