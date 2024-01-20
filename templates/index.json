@@ -7,8 +7,7 @@
           "type": "heading",
           "settings": {
             "heading": "EMBRACE NATURE WITH EVERY THEREAD",
-            "heading_size": "h0",
-            "heading_justify": "justify-left"
+            "heading_size": "h0"
           }
         },
         "button": {
@@ -31,7 +30,7 @@
         "image": "shopify:\/\/shop_images\/DALL_E_2024-01-12_12.00.21_-_A_wide_9_16_format_image_of_a_white_cloth_with_a_tropical_landscape_being_drawn_ensuring_the_hand_depicted_has_only_five_fingers._The_scene_includes.png",
         "image_overlay_opacity": 20,
         "image_height": "medium",
-        "desktop_content_position": "bottom-center",
+        "desktop_content_position": "bottom-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
         "color_scheme": "inverse",
