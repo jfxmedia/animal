@@ -128,7 +128,6 @@
   .banner__content.banner__content--bottom-left {
     align-items: flex-end;
     justify-content: flex-start;
-    justify-content: left;
   }
 
   .banner__content.banner__content--bottom-center {
