@@ -468,6 +468,18 @@ table:not([class]) th {
   text-align: right;
 }
 
+.justify-left {
+  text-align: left;
+}
+
+.justify-center {
+  text-align: center;
+}
+
+.justify-right {
+  text-align: right;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
