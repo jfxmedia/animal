@@ -121,7 +121,7 @@
         {%- case block.type -%}
           {%- when 'heading' -%}
             <h2
-              class="banner__heading inline-richtext {{ block.settings.heading_justify }} {{ block.settings.heading_size }}"
+              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
               {{ block.shopify_attributes }}
             >
               {{ block.settings.heading }}
@@ -392,26 +392,6 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
-        },
-        {
-          "type": "select",
-          "id": "heading_justify",
-          "options": [
-            {
-              "value": "justify-left",
-              "label": "Left"
-            },
-            {
-              "value": "justify-center",
-              "label": "Center"
-            },
-            {
-              "value": "justify-right",
-              "label": "Right"
-            }
-          ],
-          "default": "justify-center",
-          "label": "Default center"
         }
       ]
     },
