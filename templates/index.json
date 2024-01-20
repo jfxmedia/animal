@@ -32,7 +32,7 @@
         "image_height": "medium",
         "desktop_content_position": "bottom-center",
         "show_text_box": false,
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "color_scheme": "inverse",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
