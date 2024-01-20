@@ -89,7 +89,7 @@
         "title": "FEATURED PRODUCTS",
         "heading_size": "h1",
         "heading_centering": "center",
-        "description": "",
+        "description": "<p>The most popular designs from Animal Instinctive<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "all",
