@@ -11,5 +11,22 @@
 
   {%- if group.sitemap != blank -%}
     {{ group.sitemap }}
+    Sitemap: [sitemap-url]
   {%- endif -%}
 {% endfor %}
+
+User-agent: *
+Disallow: /admin
+Disallow: /cart
+Disallow: /orders
+Disallow: /checkouts/
+Disallow: /checkout
+Disallow: /68101341396/checkouts
+Disallow: /68101341396/orders
+Disallow: /carts
+Disallow: /account
+Disallow: /*preview_theme_id*
+Disallow: /*preview_script_id*
+Disallow: /services/login_with_shop
+
+Sitemap: https://animalinstinctive.com/sitemap.xml
