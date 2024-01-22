@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "VIBRANT. UNIQUE. WEAR FOR EVERYONE.",
+            "heading": "<strong>VIBRANT. UNIQUE. WEAR FOR EVERYONE.<\/strong>",
             "heading_size": "h2xl"
           }
         },
@@ -27,8 +27,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Palms_sky_color.jpg",
-        "image_overlay_opacity": 20,
+        "image": "shopify:\/\/shop_images\/Palms_sky_color_14752d50-9004-4592-af42-c0705e180170.jpg",
+        "image_overlay_opacity": 10,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
