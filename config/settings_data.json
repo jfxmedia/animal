@@ -3,9 +3,9 @@
     "logo": "shopify:\/\/shop_images\/wolf-_black.png",
     "logo_width": 70,
     "favicon": "shopify:\/\/shop_images\/wolf-_color_face_on_black.png",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "armata_n4",
     "heading_scale": 100,
-    "type_body_font": "assistant_n4",
+    "type_body_font": "arimo_n4",
     "body_scale": 100,
     "page_width": 1200,
     "spacing_sections": 0,
@@ -136,15 +136,23 @@
     "content_for_index": [
 
     ],
+    "blocks": {
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
           "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
-          "button": "#121212",
-          "button_label": "#ff7a58",
-          "secondary_button_label": "#121212",
+          "button": "#28abe2",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#000000",
           "shadow": "#121212"
         }
       },
