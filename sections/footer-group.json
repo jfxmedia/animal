@@ -9,11 +9,11 @@
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe for Deals and Product Releases!",
         "enable_follow_on_shop": false,
-        "show_social": true,
+        "show_social": false,
         "enable_country_selector": true,
         "enable_language_selector": true,
         "payment_enable": false,
-        "show_policy": false,
+        "show_policy": true,
         "margin_top": 0,
         "padding_top": 36,
         "padding_bottom": 36
