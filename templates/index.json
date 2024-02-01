@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<strong><p style=\"color:black\"> Unique Hand-drawn Designs on Casual and Athleisure Wear.<\/p><\/strong>",
+            "heading": "<strong><p style=\"color:white\"> Unique Hand-drawn Designs on Casual and Athleisure Wear.<\/p><\/strong>",
             "heading_size": "hxl"
           }
         },
@@ -27,7 +27,7 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ai_hero_4.jpg",
+        "image": "shopify:\/\/shop_images\/leapord_bg.jpg",
         "image_overlay_opacity": 20,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
