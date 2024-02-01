@@ -6,8 +6,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<strong>Unleash Your Wild Side with Nature-Inspired Tees!<\/strong>",
-            "heading_size": "hxl"
+            "heading": "<strong>Unique Hand-drawn Designs on Casual and Athleisure Wear.<\/strong>",
+            "heading_size": "h0"
           }
         },
         "button": {
@@ -27,12 +27,12 @@
         "button"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Palms_sky_borderless.jpg",
-        "image_overlay_opacity": 10,
+        "image": "shopify:\/\/shop_images\/AI_hero_girl_guy.jpg",
+        "image_overlay_opacity": 20,
         "image_height": "medium",
-        "desktop_content_position": "middle-left",
+        "desktop_content_position": "middle-center",
         "show_text_box": false,
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "center",
         "color_scheme": "inverse",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
