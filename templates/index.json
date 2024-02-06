@@ -94,6 +94,7 @@
         "show_description": false,
         "description_style": "subtitle",
         "collection": "all",
+        "products_sort_order": "date",
         "products_to_show": 12,
         "columns_desktop": 3,
         "full_width": false,
