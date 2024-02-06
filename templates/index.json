@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<strong><p style=\"color:white\"> Embrace the wild in style!<\/p><\/strong>",
+            "heading": "<p style=\"color:white\"> Embrace the wild in style!<\/p>",
             "heading_size": "hxl"
           }
         },
