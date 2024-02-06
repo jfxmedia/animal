@@ -87,7 +87,7 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "<strong>FEATURED PRODUCTS<\/strong>",
+        "title": "<strong>Featured T-shirts<\/strong>",
         "heading_size": "h1",
         "heading_centering": "center",
         "description": "<p>Our best-selling designs on tap.<\/p>",
