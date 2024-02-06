@@ -1,8 +1,8 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/wolf-_black.png",
-    "logo_width": 70,
-    "favicon": "shopify:\/\/shop_images\/wolf-_color_face_on_black.png",
+    "logo": "shopify:\/\/shop_images\/animalinstinctive_text_logo.png",
+    "logo_width": 110,
+    "favicon": "shopify:\/\/shop_images\/animalinstinctive_text_logo.png",
     "type_header_font": "daytona_n4",
     "heading_scale": 100,
     "type_body_font": "arimo_n4",
@@ -142,6 +142,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "4015264832934714879": {
+        "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
@@ -158,9 +164,9 @@
       },
       "background-2": {
         "settings": {
-          "background": "#dde3e4",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#121212",
+          "text": "#000000",
           "button": "#121212",
           "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
@@ -191,7 +197,7 @@
       },
       "accent-2": {
         "settings": {
-          "background": "#144866",
+          "background": "#4fbffd",
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#ffffff",
