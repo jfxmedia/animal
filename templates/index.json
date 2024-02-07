@@ -9,22 +9,10 @@
             "heading": "<p style=\"color:white\"> Embrace the wild in style!<\/p>",
             "heading_size": "h2xl"
           }
-        },
-        "button": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "SHOP ALL",
-            "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
         }
       },
       "block_order": [
-        "heading",
-        "button"
+        "heading"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/back-view-of-a-white-female-model-posing-in-black-t-shirt-with-california-dreaming-tropical-palm-silhouette-design.jpg",
