@@ -6,8 +6,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p style=\"color:white\"> Embrace the wild in style!<\/p>",
-            "heading_size": "h2xl"
+            "heading": "<p style=\"color:white\">Embrace the wild in style!<\/p>",
+            "heading_size": "hxl"
           }
         }
       },
@@ -15,7 +15,6 @@
         "heading"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/back-view-of-a-white-female-model-posing-in-black-t-shirt-with-california-dreaming-tropical-palm-silhouette-design.jpg",
         "image_2": "shopify:\/\/shop_images\/male-model-wearing-black-t-shirt-nature_s-narcotic-animal-instinctive-viper-snake.jpg",
         "image_overlay_opacity": 10,
         "image_height": "medium",
