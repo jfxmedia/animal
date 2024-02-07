@@ -148,6 +148,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "8970570646067211390": {
+        "type": "shopify:\/\/apps\/chatway-live-chat-support\/blocks\/chatway\/b98feb50-a1d2-42c7-be3b-c24d75144246",
+        "disabled": false,
+        "settings": {
+        }
       }
     },
     "color_schemes": {
