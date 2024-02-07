@@ -75,13 +75,13 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "<strong>Featured T-shirts<\/strong>",
+        "title": "<strong>HOT PRODUCTS<\/strong>",
         "heading_size": "h1",
         "heading_centering": "center",
         "description": "<p>Our best-selling designs on tap.<\/p>",
         "show_description": false,
         "description_style": "subtitle",
-        "collection": "t-shirts",
+        "collection": "hot-products",
         "products_to_show": 12,
         "columns_desktop": 3,
         "full_width": false,
