@@ -13,7 +13,7 @@
         "text_eiQDfq": {
           "type": "text",
           "settings": {
-            "text": "FREE SHIPPING when you purchase $45 of anything in the store.",
+            "text": "<p style=\"color: white;\">FREE SHIPPING when you purchase $45 of anything in the store.<\/p>",
             "text_style": "subtitle--large"
           }
         }
