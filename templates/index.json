@@ -13,7 +13,7 @@
         "text_eiQDfq": {
           "type": "text",
           "settings": {
-            "text": "<p style=\"color: white;line-height:1.3em\">FREE SHIPPING when you purchase $45 of anything in the store.<\/p>",
+            "text": "<p style=\"color: white;line-height:1.3em\">FREE SHIPPING when your cart totals $45.<\/p>",
             "text_style": "subtitle"
           }
         }
