@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p style=\"color:white\">Wild. Retro. Exclusive.<\/p>",
+            "heading": "<div style=\"color:red;\">Wild.<\/div><div style=\"color:gold;\">Retro.<\/div><div style=\"color:lightgreen;\">Exclusive.<\/div>",
             "heading_size": "hxl"
           }
         },
