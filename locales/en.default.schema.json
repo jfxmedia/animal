@@ -1264,6 +1264,9 @@
               "options__3": {
                 "label": "Uppercase"
               },
+              "options__4": {
+                "label": "Subtitle Large"
+              },
               "label": "Text style"
             }
           }

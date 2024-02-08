@@ -6,18 +6,26 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<p style=\"color:white\"> Embrace the wild in style!<\/p>",
-            "heading_size": "h2xl"
+            "heading": "<p style=\"color:white\">Wild. Retro. Exclusive.<\/p>",
+            "heading_size": "hxl"
+          }
+        },
+        "text_eiQDfq": {
+          "type": "text",
+          "settings": {
+            "text": "FREE SHIPPING when you purchase $45 of anything in the store.",
+            "text_style": "subtitle"
           }
         }
       },
       "block_order": [
-        "heading"
+        "heading",
+        "text_eiQDfq"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/back-view-of-a-white-female-model-posing-in-black-t-shirt-with-california-dreaming-tropical-palm-silhouette-design.jpg",
-        "image_2": "shopify:\/\/shop_images\/male-model-wearing-black-t-shirt-nature_s-narcotic-animal-instinctive-viper-snake.jpg",
-        "image_overlay_opacity": 10,
+        "image": "shopify:\/\/shop_images\/back-of-man-wearing-sky-ninja-dragonfly-shirt-standing-in-nature.jpg",
+        "image_2": "shopify:\/\/shop_images\/pretty_asian_girl_wearing_white_tshirt_with_animal_instinctive_palms_design.jpg",
+        "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -75,13 +83,13 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "<strong>Featured T-shirts<\/strong>",
+        "title": "<strong>HOT PRODUCTS<\/strong>",
         "heading_size": "h1",
         "heading_centering": "center",
-        "description": "<p>Our best-selling designs on tap.<\/p>",
+        "description": "<p>Our best-selling designs in-stock on tap.<\/p>",
         "show_description": false,
         "description_style": "subtitle",
-        "collection": "t-shirts",
+        "collection": "hot-products",
         "products_to_show": 12,
         "columns_desktop": 3,
         "full_width": false,

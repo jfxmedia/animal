@@ -120,14 +120,11 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2
-              class="banner__heading inline-richtext {{ block.settings.heading_size }}"
-              {{ block.shopify_attributes }}
-            >
+            <h1 class="banner__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
               {{ block.settings.heading }}
-            </h2>
+            </h1>
           {%- when 'text' -%}
-            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }}>
+            <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }} >
               <p>{{ block.settings.text }}</p>
             </div>
           {%- when 'buttons' -%}
@@ -429,6 +426,10 @@
             {
               "value": "caption-with-letter-spacing",
               "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+            },
+            {
+              "value": "subtitle--large",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__4.label"
             }
           ],
           "default": "body",
