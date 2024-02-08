@@ -14,7 +14,7 @@
           "type": "text",
           "settings": {
             "text": "FREE SHIPPING when you purchase $45 of anything in the store.",
-            "text_style": "subtitle"
+            "text_style": "subtitle--large"
           }
         }
       },
@@ -30,7 +30,7 @@
         "desktop_content_position": "middle-center",
         "show_text_box": false,
         "desktop_content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "inverse",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
