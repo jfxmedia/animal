@@ -39,7 +39,7 @@
     "card_text_alignment": "center",
     "card_color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
     "card_border_thickness": 1,
-    "card_border_opacity": 25,
+    "card_border_opacity": 0,
     "card_corner_radius": 10,
     "card_shadow_opacity": 0,
     "card_shadow_horizontal_offset": -2,
