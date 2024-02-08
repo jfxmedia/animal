@@ -43,12 +43,13 @@
         "heading_Q79nAQ": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% OFF",
-            "heading_size": "h1"
+            "heading": "Enter your email & get 20% OFF",
+            "heading_size": "h2"
           }
         },
         "paragraph_Lh669c": {
           "type": "paragraph",
+          "disabled": true,
           "settings": {
             "text": "<p>Enter your email for 20% OFF for new customer only.<\/p>"
           }
