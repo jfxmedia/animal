@@ -9,10 +9,18 @@
             "heading": "<p style=\"color:white\">Wild. Retro. Exclusive.<\/p>",
             "heading_size": "hxl"
           }
+        },
+        "text_eiQDfq": {
+          "type": "text",
+          "settings": {
+            "text": "FREE SHIPPING when you purchase $45 of anything in the store.",
+            "text_style": "subtitle"
+          }
         }
       },
       "block_order": [
-        "heading"
+        "heading",
+        "text_eiQDfq"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/back-of-man-wearing-sky-ninja-dragonfly-shirt-standing-in-nature.jpg",
