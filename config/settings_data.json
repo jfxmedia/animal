@@ -118,7 +118,7 @@
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
-    "cart_drawer_collection": "",
+    "cart_drawer_collection": "hot-products",
     "cart_color_scheme": "background-1",
     "sections": {
       "main-password-header": {
