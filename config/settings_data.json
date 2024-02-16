@@ -97,7 +97,7 @@
     "badge_position": "bottom left",
     "badge_corner_radius": 4,
     "sale_badge_color_scheme": "scheme-fc56c11f-ef3e-48c7-802b-87a1162c8cf3",
-    "sold_out_badge_color_scheme": "inverse",
+    "sold_out_badge_color_scheme": "scheme-fc56c11f-ef3e-48c7-802b-87a1162c8cf3",
     "brand_headline": "Animal Instinctive Apparel",
     "brand_description": "<p>Unique Designer Tees and Tanks Inspired by the Wild Kingdom<\/p>",
     "brand_image": "shopify:\/\/shop_images\/animalinstinctive_text_logo_gradientpink.png",
