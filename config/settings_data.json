@@ -95,7 +95,7 @@
     "drawer_shadow_vertical_offset": 4,
     "drawer_shadow_blur": 5,
     "badge_position": "top left",
-    "badge_corner_radius": 40,
+    "badge_corner_radius": 6,
     "sale_badge_color_scheme": "scheme-fc56c11f-ef3e-48c7-802b-87a1162c8cf3",
     "sold_out_badge_color_scheme": "inverse",
     "brand_headline": "Animal Instinctive Apparel",
