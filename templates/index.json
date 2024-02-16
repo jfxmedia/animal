@@ -78,7 +78,7 @@
         "title": "<strong>HOT PRODUCTS<\/strong>",
         "heading_size": "h1",
         "heading_centering": "center",
-        "description": "<p>Our collections host exclusive, hand-drawn designs from talented artists, you'll find nowhere else. <\/p>",
+        "description": "<p>Our collections host exclusive hand-drawn designs from talented artists, you'll find nowhere else. <\/p>",
         "show_description": false,
         "description_style": "subtitle",
         "collection": "hot-products",
