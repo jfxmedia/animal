@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<div style=\"color:#55E0F7;text-shadow:-1px 1px 1px purple\">Shop our Exclusive Line of Designer Graphic Tees &amp; Tanks.<\/div>",
+            "heading": "<div style=\"color:#55E0F7;line-height:1em;text-shadow:-1px 1px 1px purple\">Shop our Exclusive Line of Designer Graphic Tees &amp; Tanks.<\/div>",
             "heading_size": "h0"
           }
         },
