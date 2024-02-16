@@ -68,51 +68,8 @@
       "settings": {
         "color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
         "full_width": true,
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
-    "2126530f-4979-49ff-8245-e78222ab24f3": {
-      "type": "rich-text",
-      "blocks": {
-        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-heading-1": {
-          "type": "heading",
-          "settings": {
-            "heading": "One-of-a-kind hand drawn designs from the natural world",
-            "heading_size": "h1"
-          }
-        },
-        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>"
-          }
-        },
-        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-button-1": {
-          "type": "button",
-          "settings": {
-            "button_label": "Explore",
-            "button_link": "",
-            "button_style_secondary": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-heading-1",
-        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-text-1",
-        "template--17185664860372__2126530f-4979-49ff-8245-e78222ab24f3-button-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
         "padding_top": 40,
-        "padding_bottom": 52
+        "padding_bottom": 36
       }
     },
     "featured_collection": {
@@ -148,7 +105,6 @@
   "order": [
     "image_banner",
     "newsletter_8inLRL",
-    "2126530f-4979-49ff-8245-e78222ab24f3",
     "featured_collection"
   ]
 }
