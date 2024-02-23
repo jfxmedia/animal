@@ -131,6 +131,27 @@
   cursor: -webkit-grabbing;
 }
 
+.socks-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 10px;
+}
+.socks-section .socks-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+.socks-section .socks-header .socks-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.socks-section .socks-header .socks-description {
+  font-size: 16px;
+}
+.socks-section .glide {
+  width: 100%;
+}
+
 .glide {
   position: relative;
   max-width: 1200px;
@@ -141,12 +162,13 @@
 }
 .glide .glide__slide {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
 }
 .glide .glide__slide img {
   max-width: 100%;
   height: auto;
+  border-radius: 8px;
 }
 .glide .glide__slide p {
   margin-top: 10px;
@@ -160,40 +182,44 @@
   transform: translateY(-50%);
 }
 .glide .glide__arrows .glide__arrow {
-  background: #ffffff;
+  background-color: #ffffff;
+  opacity: 0.8;
+  color: #000000;
+  border-radius: 50%;
   border: none;
-  padding: 10px 15px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
 }
 .glide .glide__arrows .glide__arrow:hover {
-  background: #000;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
 }
-.glide .glide__bullets {
+.glide .glide__arrows .glide__arrow.glide__arrow--left, .glide .glide__arrows .glide__arrow.glide__arrow--right {
   position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+  top: 50%;
+  transform: translate(0, -140%);
 }
-.glide .glide__bullets .glide__bullet {
-  background: #e0e0e0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  margin: 0 5px;
-  cursor: pointer;
+.glide .glide__arrows .glide__arrow.glide__arrow--left {
+  left: calc(-1 * 40px / 2);
 }
-.glide .glide__bullets .glide__bullet.glide__bullet--active {
-  background: #000000;
+.glide .glide__arrows .glide__arrow.glide__arrow--right {
+  right: calc(-1 * 40px / 2);
+}
+.glide .glide__arrows .glide__arrow i {
+  font-size: 18px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .glide__slide {
     padding: 10px;
   }
-  .glide__arrows .glide__arrow {
-    padding: 5px 10px;
+  .glide .glide__arrows .glide__arrow {
+    display: none;
   }
 }
 

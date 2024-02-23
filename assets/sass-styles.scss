@@ -1,91 +1,126 @@
-// Required Core Stylesheet
-@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
+// Define Variables for Socks exclusively
+$color-black: #000000;
+$color-white: #ffffff;
+$color-grey: #e0e0e0;
+$color-hover: #cccccc;
+$font-size-title: 24px;
+$font-size-description: 16px;
+$font-size-arrow-icon: 18px;
+$arrow-size: 40px;
+$slide-padding: 10px;
 
-// Optional Theme Stylesheet
+// Import Glide.js Stylesheets
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
+.socks-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  margin: 10px;
+
+  .socks-header {
+    text-align: left;
+    margin-bottom: 20px;
+
+    .socks-title {
+      font-size: $font-size-title;
+      margin-bottom: 10px;
+    }
+
+    .socks-description {
+      font-size: $font-size-description;
+    }
+  }
+
+  .glide {
+    width: 100%;
+  }
+}
+
 .glide {
-    position: relative;
-    max-width: 1200px; 
-    margin: 0 auto;
-  
-    // Style for the overall track container
-    .glide__track {
-      overflow: hidden;
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .glide__track {
+    overflow: hidden;
+  }
+
+  .glide__slide {
+    text-align: center;
+    padding: $slide-padding;
+    box-sizing: border-box;
+
+    // Border radius of 8px per Figma
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
     }
-  
-    // Style for each individual slide
-    .glide__slide {
-      text-align: center;
-      padding: 20px; 
-      box-sizing: border-box;
-  
-      // Nested elements like images and captions
-      img {
-        max-width: 100%; // Ensures the image is responsive
-        height: auto; // Maintain aspect ratio
-      }
-  
-      p {
-        margin-top: 10px; // Spacing between image and text
-      }
+
+    p {
+      margin-top: $slide-padding;
     }
-  
-    // Style for navigation arrows
-    .glide__arrows {
-      position: absolute;
-      top: 50%;
-      width: 100%;
+  }
+
+  // Navigation arrows
+  .glide__arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+
+    .glide__arrow {
+      background-color: $color-white;
+      opacity: 0.8;
+      color: $color-black;
+      border-radius: 50%;
+      border: none;
+      width: $arrow-size;
+      height: $arrow-size;
       display: flex;
-      justify-content: space-between;
-      transform: translateY(-50%);
-  
-      .glide__arrow {
-        background: #ffffff; 
-        border: none;
-        padding: 10px 15px; 
-        cursor: pointer;
-  
-        &:hover {
-          background: #000; 
-          color: white;
-        }
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
+        background-color: $color-black;
+        color: $color-white;
       }
-    }
-  
-    // Style for bullets or navigation dots
-    .glide__bullets {
-      position: absolute;
-      bottom: 10px; 
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-  
-      .glide__bullet {
-        background: #e0e0e0; 
-        width: 10px; 
-        height: 10px; 
-        border-radius: 50%;
-        margin: 0 5px;
-        cursor: pointer;
-  
-        &.glide__bullet--active {
-          background: #000000; 
-        }
+
+      &.glide__arrow--left, &.glide__arrow--right {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -140%);
+      }
+
+      &.glide__arrow--left {
+        left: calc(-1 * #{$arrow-size} / 2);
+      }
+
+      &.glide__arrow--right {
+        right: calc(-1 * #{$arrow-size} / 2);
+      }
+
+      i {
+        font-size: $font-size-arrow-icon;
       }
     }
   }
-  
-// Mobile
-  @media (max-width: 768px) {
+
+}
+
+// Responsive adjustments for mobile
+@media (max-width: 480px) {
     .glide__slide {
-      padding: 10px;
+      padding: $slide-padding;
     }
   
-    .glide__arrows {
-      .glide__arrow {
-        padding: 5px 10px;
+    .glide .glide__arrows .glide__arrow {
+        display: none;
       }
-    }
   }
-  

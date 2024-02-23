@@ -1,5 +1,14 @@
 <link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
 
+<div class="socks-section">
+  <div class="socks-header">
+    <h2 class="socks-title">
+      {{ section.settings.socks_title }}
+    </h2>
+    <p class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px;">
+    {{ section.settings.socks_overview }}
+    </p>
+      </div>
 <!-- Slider Container -->
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
@@ -23,17 +32,17 @@
     </ul>
   </div>
 
-  <!-- Additional Glide.js Components -->
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Prev</button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
-  </div>
+<!-- Arrows! -->
+<div class="glide__arrows" data-glide-el="controls">
+  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+</div>
+</div>
 </div>
 
-
-
-
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/glide.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -41,11 +50,11 @@
       type: 'carousel',
       perView: 4,
       breakpoints: {
-        800: {
-          perView: 2
+        768: {
+          perView: 2.5
         },
         480: {
-          perView: 1
+          perView: 1.5
         }
       }
     }).mount();
@@ -58,11 +67,17 @@
   {
     "name": "Socks",
     "settings": [
-     {
-      "type": "text",
-      "id": "section_title",
-      "label": "Section Title",
-      "default": "Featured Collections and Products"
+      {
+      "type": "richtext",
+      "id": "socks_title",
+      "label": "Socks Title",
+      "default": "<h2>This is a section title...</h2>"
+    },
+    {
+      "type": "richtext",
+      "id": "socks_overview",
+      "label": "Socks Overview",
+      "default": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>"
     },
     {
       "type": "select",
@@ -77,6 +92,16 @@
         { "value": "h6", "label": "H6" }
       ],
       "default": "h2"
+    },
+    {
+      "type": "range",
+      "id": "overview_text_size",
+      "label": "Overview Text Size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 16,
+      "unit": "px"
     }
     ],
     "blocks": [
