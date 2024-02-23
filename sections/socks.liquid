@@ -36,13 +36,11 @@
   </div>
 </div>
 
-<<<<<<< HEAD
-=======
-<script src="{{ 'glide.min.js' | asset_url }}"></script>
-<link rel="stylesheet" href="{{ 'glide.core.min.css' | asset_url }}">
-<link rel="stylesheet" href="{{ 'glide.theme.min.css' | asset_url }}">
+    <!--socks -->
+    <script src="{{ 'glide.min.js' | asset_url }}"></script>
+    <link rel="stylesheet" href="{{ 'glide.core.min.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'glide.theme.min.css' | asset_url }}">
 
->>>>>>> 8ca34b33a127c597684b249c2a96c8147f8f0b0c
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     var glide = new Glide('.glide', {
@@ -54,3 +52,52 @@
     glide.mount();
   });
 </script>
+
+
+{% schema %}
+
+{
+  "name": "Custom Glide Slider",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Featured Collections and Products"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select a Collection"
+        }
+      ],
+      "limit": 2
+    },
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select a Product"
+        }
+      ],
+      "limit": 2
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default Glide Slider",
+      "category": "Custom"
+    }
+  ]
+}
+
+{% endschema %}
