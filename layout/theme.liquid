@@ -8,11 +8,6 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
-    <!--socks -->
-    <script src="{{ 'glide.min.js' | asset_url }}"></script>
-    <link rel="stylesheet" href="{{ 'glide.core.min.css' | asset_url }}">
-    <link rel="stylesheet" href="{{ 'glide.theme.min.css' | asset_url }}">
-
 
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
@@ -296,7 +291,7 @@
     })(window,document,'script','dataLayer','GTM-NVZR9989');</script>
     <!-- End Google Tag Manager -->
 
-      <meta name="facebook-domain-verification" content="yubegs90qilc5zw7sav00ntmtqpdlp" />      
+      <meta name="facebook-domain-verification" content="yubegs90qilc5zw7sav00ntmtqpdlp" />
   </head>
 
   <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">

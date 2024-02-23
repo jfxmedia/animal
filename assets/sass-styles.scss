@@ -1,0 +1,90 @@
+// Required Core Stylesheet
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
+
+// Optional Theme Stylesheet
+@import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
+
+.glide {
+    position: relative;
+    max-width: 1200px; // Adjust as needed
+    margin: 0 auto;
+  
+    // Style for the overall track container
+    .glide__track {
+      overflow: hidden;
+    }
+  
+    // Style for each individual slide
+    .glide__slide {
+      text-align: center;
+      padding: 20px; // Adjust as needed
+      box-sizing: border-box;
+  
+      // Nested elements like images and captions
+      img {
+        max-width: 100%; // Ensures the image is responsive
+        height: auto; // Maintain aspect ratio
+      }
+  
+      p {
+        margin-top: 10px; // Spacing between image and text
+      }
+    }
+  
+    // Style for navigation arrows
+    .glide__arrows {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+  
+      .glide__arrow {
+        background: #ffffff; // Arrow background color
+        border: none;
+        padding: 10px 15px; // Adjust as needed
+        cursor: pointer;
+  
+        &:hover {
+          background: #f0f0f0; // Hover state color
+        }
+      }
+    }
+  
+    // Style for bullets or navigation dots
+    .glide__bullets {
+      position: absolute;
+      bottom: 10px; // Adjust as needed
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+  
+      .glide__bullet {
+        background: #e0e0e0; // Bullet color
+        width: 10px; // Bullet size
+        height: 10px; // Bullet size
+        border-radius: 50%;
+        margin: 0 5px;
+        cursor: pointer;
+  
+        &.glide__bullet--active {
+          background: #000000; // Active bullet color
+        }
+      }
+    }
+  }
+  
+  // Mobile responsiveness
+  @media (max-width: 768px) {
+    .glide__slide {
+      padding: 10px;
+    }
+  
+    .glide__arrows {
+      .glide__arrow {
+        padding: 5px 10px;
+      }
+    }
+  }
+  
