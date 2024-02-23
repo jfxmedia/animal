@@ -13,7 +13,7 @@ $slide-padding: 5px;
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
-.socks-section {
+.socks-wrapper {
   max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
@@ -37,6 +37,11 @@ $slide-padding: 5px;
     width: 100%;
     max-width: 1400px;
   }
+}
+
+.socks-content {
+    display: flex;
+    justify-content: space-between;
 }
 
 .glide {
@@ -125,7 +130,7 @@ $slide-padding: 5px;
         display: none;
       }
 
-    .socks-section .socks-header {
+    .socks-wrapper .socks-header {
         flex-direction: column;
         align-items: flex-start;
 

@@ -1,18 +1,21 @@
 <link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
 
-<div class="socks-section">
-  <div class="socks-header">
-    <h2 class="socks-title">{{ section.settings.socks_title }}</h2>
-    <div class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px !important;">
-      {{ section.settings.socks_overview }}
+<div class="socks-wrapper">
+  <div class="socks-content">
+    <div class="socks-header">
+      <h2 class="socks-title">{{ section.settings.socks_title }}</h2>
+      <div class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px !important;">
+        {{ section.settings.socks_overview }}
+      </div>
     </div>
-    {% if section.settings.button_text != blank %}
-      <button><a href="{{ section.settings.button_url }}" class="socks-button" style="background-color: {{ section.settings.button_color }};">
-        {{ section.settings.button_text }}
-      </a>
-      </button>
-    {% endif %}
-    
+    <div class="socks-button">
+        {% if section.settings.button_text != blank %}
+        <button><a href="{{ section.settings.button_url }}" class="socks-button" style="background-color: {{ section.settings.button_color }};">
+          {{ section.settings.button_text }}
+        </a>
+        </button>
+        {% endif %}
+    </div>
   </div>
 <!-- Slider Container -->
 <div class="glide">
