@@ -1,1 +1,55 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "socks_6gxeWk": {
+      "type": "socks",
+      "blocks": {
+        "collection_dEqxbP": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-queen-collection"
+          }
+        },
+        "product_A9cPT7": {
+          "type": "product",
+          "settings": {
+            "product": "the-chef"
+          }
+        },
+        "collection_VXaM6b": {
+          "type": "collection",
+          "settings": {
+            "collection": "the-james-bond-collection"
+          }
+        },
+        "product_HLEjgz": {
+          "type": "product",
+          "settings": {
+            "product": "the-shaken"
+          }
+        }
+      },
+      "block_order": [
+        "collection_dEqxbP",
+        "product_A9cPT7",
+        "collection_VXaM6b",
+        "product_HLEjgz"
+      ],
+      "settings": {
+        "section_title": "Featured Collections and Products",
+        "heading_size": "h2"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "socks_6gxeWk"
+  ]
+}
