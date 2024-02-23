@@ -1,3 +1,7 @@
+<link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
+
+
+
 <!-- Slider Container -->
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
@@ -36,21 +40,58 @@
   </div>
 </div>
 
-<<<<<<< HEAD
-=======
-<script src="{{ 'glide.min.js' | asset_url }}"></script>
-<link rel="stylesheet" href="{{ 'glide.core.min.css' | asset_url }}">
-<link rel="stylesheet" href="{{ 'glide.theme.min.css' | asset_url }}">
 
->>>>>>> 8ca34b33a127c597684b249c2a96c8147f8f0b0c
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var glide = new Glide('.glide', {
-      type: 'carousel',
-      startAt: 0,
-      perView: 4
-    });
-
-    glide.mount();
-  });
+  new Glide('.glide').mount()
 </script>
+
+
+{% schema %}
+
+{
+  "name": "Socks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Featured Collections and Products"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "collection",
+      "name": "Collection",
+      "settings": [
+        {
+          "type": "collection",
+          "id": "collection",
+          "label": "Select a Collection"
+        }
+      ],
+      "limit": 2
+    },
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Select a Product"
+        }
+      ],
+      "limit": 2
+    }
+  ],
+  "presets": [
+    {
+      "name": "Socks",
+      "category": "Custom"
+    }
+  ]
+}
+
+{% endschema %}
