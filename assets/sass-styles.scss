@@ -6,7 +6,7 @@
 
 .glide {
     position: relative;
-    max-width: 1200px; // Adjust as needed
+    max-width: 1200px; 
     margin: 0 auto;
   
     // Style for the overall track container
@@ -17,7 +17,7 @@
     // Style for each individual slide
     .glide__slide {
       text-align: center;
-      padding: 20px; // Adjust as needed
+      padding: 20px; 
       box-sizing: border-box;
   
       // Nested elements like images and captions
@@ -41,13 +41,14 @@
       transform: translateY(-50%);
   
       .glide__arrow {
-        background: #ffffff; // Arrow background color
+        background: #ffffff; 
         border: none;
-        padding: 10px 15px; // Adjust as needed
+        padding: 10px 15px; 
         cursor: pointer;
   
         &:hover {
-          background: #f0f0f0; // Hover state color
+          background: #000; 
+          color: white;
         }
       }
     }
@@ -55,27 +56,27 @@
     // Style for bullets or navigation dots
     .glide__bullets {
       position: absolute;
-      bottom: 10px; // Adjust as needed
+      bottom: 10px; 
       left: 50%;
       transform: translateX(-50%);
       display: flex;
   
       .glide__bullet {
-        background: #e0e0e0; // Bullet color
-        width: 10px; // Bullet size
-        height: 10px; // Bullet size
+        background: #e0e0e0; 
+        width: 10px; 
+        height: 10px; 
         border-radius: 50%;
         margin: 0 5px;
         cursor: pointer;
   
         &.glide__bullet--active {
-          background: #000000; // Active bullet color
+          background: #000000; 
         }
       }
     }
   }
   
-  // Mobile responsiveness
+// Mobile
   @media (max-width: 768px) {
     .glide__slide {
       padding: 10px;

@@ -166,7 +166,8 @@
   cursor: pointer;
 }
 .glide .glide__arrows .glide__arrow:hover {
-  background: #f0f0f0;
+  background: #000;
+  color: white;
 }
 .glide .glide__bullets {
   position: absolute;
