@@ -4,37 +4,38 @@ $color-white: #ffffff;
 $color-grey: #e0e0e0;
 $color-hover: #cccccc;
 $font-size-title: 24px;
-$font-size-description: 16px;
+$font-size-overview: 16px;
 $font-size-arrow-icon: 18px;
 $arrow-size: 40px;
-$slide-padding: 10px;
+$slide-padding: 5px;
 
 // Import Glide.js Stylesheets
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
 .socks-section {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-  margin: 10px;
 
   .socks-header {
     text-align: left;
     margin-bottom: 20px;
+    max-width: 40%;
 
     .socks-title {
       font-size: $font-size-title;
       margin-bottom: 10px;
     }
 
-    .socks-description {
-      font-size: $font-size-description;
+    .socks-overview {
+      font-size: $font-size-overview;
     }
   }
 
   .glide {
     width: 100%;
+    max-width: 1400px;
   }
 }
 
@@ -123,4 +124,28 @@ $slide-padding: 10px;
     .glide .glide__arrows .glide__arrow {
         display: none;
       }
+
+    .socks-section .socks-header {
+        flex-direction: column;
+        align-items: flex-start;
+
+    .header-content,
+    .socks-button {
+        max-width: 100%;
+        width: auto; 
+    }
+
+    .glide {
+        width: 100%;
+    }
+
+    .socks-button {
+        margin-top: 20px; 
+        padding: 15px 20px; 
+        width: calc(100% - 40px); 
+        box-sizing: border-box; 
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    }
   }

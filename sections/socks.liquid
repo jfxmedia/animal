@@ -2,13 +2,18 @@
 
 <div class="socks-section">
   <div class="socks-header">
-    <h2 class="socks-title">
-      {{ section.settings.socks_title }}
-    </h2>
-    <p class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px;">
-    {{ section.settings.socks_overview }}
-    </p>
-      </div>
+    <h2 class="socks-title">{{ section.settings.socks_title }}</h2>
+    <div class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px !important;">
+      {{ section.settings.socks_overview }}
+    </div>
+    {% if section.settings.button_text != blank %}
+      <button><a href="{{ section.settings.button_url }}" class="socks-button" style="background-color: {{ section.settings.button_color }};">
+        {{ section.settings.button_text }}
+      </a>
+      </button>
+    {% endif %}
+    
+  </div>
 <!-- Slider Container -->
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
@@ -80,20 +85,6 @@
       "default": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>"
     },
     {
-      "type": "select",
-      "id": "heading_size",
-      "label": "Heading Size",
-      "options": [
-        { "value": "h1", "label": "H1" },
-        { "value": "h2", "label": "H2" },
-        { "value": "h3", "label": "H3" },
-        { "value": "h4", "label": "H4" },
-        { "value": "h5", "label": "H5" },
-        { "value": "h6", "label": "H6" }
-      ],
-      "default": "h2"
-    },
-    {
       "type": "range",
       "id": "overview_text_size",
       "label": "Overview Text Size",
@@ -102,6 +93,24 @@
       "step": 1,
       "default": 16,
       "unit": "px"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button URL",
+      "default": "http://example.com"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Explore all ranges"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button Color",
+      "default": "#000000"
     }
     ],
     "blocks": [
