@@ -132,24 +132,25 @@
 }
 
 .socks-section {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 20px;
-  margin: 10px;
 }
 .socks-section .socks-header {
   text-align: left;
   margin-bottom: 20px;
+  max-width: 40%;
 }
 .socks-section .socks-header .socks-title {
   font-size: 24px;
   margin-bottom: 10px;
 }
-.socks-section .socks-header .socks-description {
+.socks-section .socks-header .socks-overview {
   font-size: 16px;
 }
 .socks-section .glide {
   width: 100%;
+  max-width: 1400px;
 }
 
 .glide {
@@ -162,7 +163,7 @@
 }
 .glide .glide__slide {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
   box-sizing: border-box;
 }
 .glide .glide__slide img {
@@ -171,7 +172,7 @@
   border-radius: 8px;
 }
 .glide .glide__slide p {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 .glide .glide__arrows {
   position: absolute;
@@ -216,10 +217,30 @@
 
 @media (max-width: 480px) {
   .glide__slide {
-    padding: 10px;
+    padding: 5px;
   }
   .glide .glide__arrows .glide__arrow {
     display: none;
+  }
+  .socks-section .socks-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .socks-section .socks-header .header-content,
+  .socks-section .socks-header .socks-button {
+    max-width: 100%;
+    width: auto;
+  }
+  .socks-section .socks-header .glide {
+    width: 100%;
+  }
+  .socks-section .socks-header .socks-button {
+    margin-top: 20px;
+    padding: 15px 20px;
+    width: calc(100% - 40px);
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
