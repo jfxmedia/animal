@@ -8,6 +8,12 @@
     <meta name="theme-color" content="">
     <link rel="canonical" href="{{ canonical_url }}">
 
+    <!--socks -->
+    <script src="{{ 'glide.min.js' | asset_url }}"></script>
+    <link rel="stylesheet" href="{{ 'glide.core.min.css' | asset_url }}">
+    <link rel="stylesheet" href="{{ 'glide.theme.min.css' | asset_url }}">
+
+
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | image_url: width: 32, height: 32 }}">
     {%- endif -%}
