@@ -131,4 +131,69 @@
   cursor: -webkit-grabbing;
 }
 
+.glide {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.glide .glide__track {
+  overflow: hidden;
+}
+.glide .glide__slide {
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.glide .glide__slide img {
+  max-width: 100%;
+  height: auto;
+}
+.glide .glide__slide p {
+  margin-top: 10px;
+}
+.glide .glide__arrows {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+.glide .glide__arrows .glide__arrow {
+  background: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.glide .glide__arrows .glide__arrow:hover {
+  background: #f0f0f0;
+}
+.glide .glide__bullets {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.glide .glide__bullets .glide__bullet {
+  background: #e0e0e0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.glide .glide__bullets .glide__bullet.glide__bullet--active {
+  background: #000000;
+}
+
+@media (max-width: 768px) {
+  .glide__slide {
+    padding: 10px;
+  }
+  .glide__arrows .glide__arrow {
+    padding: 5px 10px;
+  }
+}
+
 /*# sourceMappingURL=sass-styles.css.map */

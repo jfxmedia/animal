@@ -1,29 +1,29 @@
 <link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
 
-
-
 <!-- Slider Container -->
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
-      <!-- Collections -->
-      {% assign collection_handles = 'collection-1-handle,collection-2-handle' | split: ',' %}
-      {% for handle in collection_handles %}
-        {% assign collection = collections[handle] %}
-        <li class="glide__slide">
-          <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
-          <p>{{ collection.title }}</p>
-        </li>
+      <!-- Dynamic Collections from Customizer -->
+      {% for block in section.blocks %}
+        {% if block.type == 'collection' and block.settings.collection != blank %}
+          {% assign collection = collections[block.settings.collection] %}
+          <li class="glide__slide">
+            <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
+            <p>{{ collection.title }}</p>
+          </li>
+        {% endif %}
       {% endfor %}
 
-      <!-- Products -->
-      {% assign product_handles = 'product-1-handle,product-2-handle' | split: ',' %}
-      {% for handle in product_handles %}
-        {% assign product = all_products[handle] %}
-        <li class="glide__slide">
-          <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
-          <p>{{ product.title }}</p>
-        </li>
+      <!-- Dynamic Products from Customizer -->
+      {% for block in section.blocks %}
+        {% if block.type == 'product' and block.settings.product != blank %}
+          {% assign product = all_products[block.settings.product] %}
+          <li class="glide__slide">
+            <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+            <p>{{ product.title }}</p>
+          </li>
+        {% endif %}
       {% endfor %}
     </ul>
   </div>
@@ -33,65 +33,71 @@
     <button class="glide__arrow glide__arrow--left" data-glide-dir="<">Prev</button>
     <button class="glide__arrow glide__arrow--right" data-glide-dir=">">Next</button>
   </div>
-  <div class="glide__bullets" data-glide-el="controls[nav]">
-    {% for i in (1..4) %}
-      <button class="glide__bullet" data-glide-dir="={{ forloop.index0 }}">{{ i }}</button>
-    {% endfor %}
-  </div>
 </div>
 
 
-<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/glide.min.js"></script>
 
 <script>
-  new Glide('.glide').mount()
+  document.addEventListener('DOMContentLoaded', function () {
+    new Glide('.glide', {
+      type: 'carousel',
+      perView: 4,
+      breakpoints: {
+        800: {
+          perView: 2
+        },
+        480: {
+          perView: 1
+        }
+      }
+    }).mount();
+  });
 </script>
 
 
+
 {% schema %}
-
-{
-  "name": "Socks",
-  "settings": [
-    {
-      "type": "text",
-      "id": "section_title",
-      "label": "Section Title",
-      "default": "Featured Collections and Products"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "collection",
-      "name": "Collection",
-      "settings": [
-        {
-          "type": "collection",
-          "id": "collection",
-          "label": "Select a Collection"
-        }
-      ],
-      "limit": 2
-    },
-    {
-      "type": "product",
-      "name": "Product",
-      "settings": [
-        {
-          "type": "product",
-          "id": "product",
-          "label": "Select a Product"
-        }
-      ],
-      "limit": 2
-    }
-  ],
-  "presets": [
-    {
-      "name": "Socks",
-      "category": "Custom"
-    }
-  ]
-}
-
-{% endschema %}
+  {
+    "name": "Socks",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": "Section Title",
+        "default": "Featured Collections and Products"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Select a Collection"
+          }
+        ]
+      },
+      {
+        "type": "product",
+        "name": "Product",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "Select a Product"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Socks",
+        "category": "Custom"
+      }
+    ]
+  }
+  {% endschema %}
+  
