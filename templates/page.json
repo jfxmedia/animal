@@ -43,8 +43,12 @@
         "product_HLEjgz"
       ],
       "settings": {
-        "section_title": "Featured Collections and Products",
-        "heading_size": "h1"
+        "socks_title": "<h2>This is a section title...<\/h2>",
+        "socks_overview": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..<\/p>",
+        "overview_text_size": 16,
+        "button_url": "",
+        "button_text": "Explore all ranges",
+        "button_bg": "#b54b4b"
       }
     }
   },
