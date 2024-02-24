@@ -1,7 +1,7 @@
 <style>
   :root {
-    --button-color: {{ section.settings.button_color | default: '#000000' }};
-    --button-hover-color: {{ section.settings.button_hover_color | default: '#695EE4' }};
+    --button-color: {{ section.settings.button_color }};
+    --button-hover-color: {{ section.settings.button_hover_color }};
   }
 </style>
 
@@ -128,12 +128,15 @@
     {
       "type": "color",
       "id": "button_color",
-      "label": "Button Color"
+      "label": "Button Color",
+      "default": "#000000"
+
     },
     {
       "type": "color",
       "id": "button_hover_color",
-      "label": "Button Hover Color"
+      "label": "Button Hover Color",
+      "default": "#695EE4"
     }
     ],
     "blocks": [
