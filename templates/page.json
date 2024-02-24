@@ -48,7 +48,8 @@
         "overview_text_size": 16,
         "button_url": "",
         "button_text": "Explore all ranges",
-        "button_bg": "#b54b4b"
+        "button_bg": "#b54b4b",
+        "button_hover_color": "#882999"
       }
     }
   },
