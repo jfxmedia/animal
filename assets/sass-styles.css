@@ -238,7 +238,7 @@
   display: block;
 }
 .socks-button:hover {
-  background-color: #695EE4;
+  background-color: var(--button-hover-color);
 }
 
 .socks-button-lower {
@@ -261,7 +261,7 @@
     display: block;
   }
   .socks-button:hover {
-    background-color: #695EE4;
+    background-color: var(--button-hover-color);
   }
   .socks-content {
     flex-direction: column;
@@ -294,7 +294,7 @@
     text-align: center;
   }
   .socks-button-lower:hover {
-    background-color: #695EE4;
+    background-color: var(--button-hover-color);
   }
   .glide__slide {
     padding: 5px;

@@ -1,7 +1,7 @@
 // Variables
 $color-black: #000000;
 $color-white: #ffffff;
-$color-hover: #695EE4; // Check if needed since it's declared but not used
+$color-hover: #695EE4;
 $font-size-title: 24px;
 $font-size-overview: 16px;
 $font-size-arrow-icon: 18px;
@@ -133,7 +133,7 @@ $slide-padding: 5px;
   display: block;
 
   &:hover {
-    background-color: $color-hover;
+    background-color: var(--button-hover-color);
   }
 }
 
@@ -159,7 +159,7 @@ $slide-padding: 5px;
         display: block;
       
         &:hover {
-            background-color: $color-hover;
+          background-color: var(--button-hover-color);
         }
       }
   
@@ -199,7 +199,7 @@ $slide-padding: 5px;
       text-align: center;
     
       &:hover {
-        background-color: $color-hover;
+        background-color: var(--button-hover-color);
       }
  
     }

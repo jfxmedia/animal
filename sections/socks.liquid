@@ -1,3 +1,9 @@
+<style>
+  :root {
+    --button-hover-color: {{ section.settings.button_hover_bg }};
+  }
+</style>
+
 <link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
 
 <div class="socks-wrapper">
@@ -121,6 +127,12 @@
       "type": "color",
       "id": "button_bg",
       "label": "Button Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button Hover Color",
       "default": "#000000"
     }
     ],
