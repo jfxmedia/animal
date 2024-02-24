@@ -138,19 +138,7 @@ $slide-padding: 5px;
 }
 
 .socks-button-lower {
-    align-self: flex-end;
-    margin-bottom: 20px;
-    color: $color-white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-    display:none;
-    text-align: center;
-
-    &:hover {
-        background-color: $color-hover;
-      }
+  display:none;
 }
 
 // Tablet
@@ -199,9 +187,19 @@ $slide-padding: 5px;
  
     }
     .socks-button-lower {
-        display: block;
-        width: 100%; 
-        margin-top: 20px; 
+      align-self: flex-end;
+      margin: 20px 0;
+      color: $color-white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+      display: block;
+      width: 100%;
+    
+      &:hover {
+        background-color: $color-hover;
+      }
  
     }
     .glide__slide {

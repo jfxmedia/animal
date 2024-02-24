@@ -242,18 +242,7 @@
 }
 
 .socks-button-lower {
-  align-self: flex-end;
-  margin-bottom: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
   display: none;
-  text-align: center;
-}
-.socks-button-lower:hover {
-  background-color: #695EE4;
 }
 
 @media (max-width: 768px) {
@@ -293,9 +282,18 @@
     margin-top: 20px;
   }
   .socks-button-lower {
+    align-self: flex-end;
+    margin: 20px 0;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
     display: block;
     width: 100%;
-    margin-top: 20px;
+  }
+  .socks-button-lower:hover {
+    background-color: #695EE4;
   }
   .glide__slide {
     padding: 5px;
