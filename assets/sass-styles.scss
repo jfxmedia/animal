@@ -1,151 +1,230 @@
-// Define Variables for Socks exclusively
+// Variables
 $color-black: #000000;
 $color-white: #ffffff;
-$color-grey: #e0e0e0;
-$color-hover: #cccccc;
+$color-hover: #695EE4; // Check if needed since it's declared but not used
 $font-size-title: 24px;
 $font-size-overview: 16px;
 $font-size-arrow-icon: 18px;
 $arrow-size: 40px;
 $slide-padding: 5px;
 
-// Import Glide.js Stylesheets
+// Imports
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
-.socks-section {
+// Wrapper Styles
+.socks-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
 
-  .socks-header {
-    text-align: left;
-    margin-bottom: 20px;
-    max-width: 40%;
+// Content Styles
+.socks-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
 
-    .socks-title {
-      font-size: $font-size-title;
-      margin-bottom: 10px;
-    }
+// Header Styles
+.socks-header {
+  text-align: left;
+  max-width: 50%;
+  flex-direction: column;
 
-    .socks-overview {
-      font-size: $font-size-overview;
-    }
+  .socks-title,
+  .socks-overview {
+    margin-bottom: 10px;
+    font-size: $font-size-title;
   }
-
-  .glide {
-    width: 100%;
-    max-width: 1400px;
+  
+  .socks-overview {
+    font-size: $font-size-overview;
   }
 }
 
+.card-title {
+    text-align: left;
+    display: block;
+    color: $color-black;
+}
+
+// Glide Slider Styles
 .glide {
+  width: 100%;
+  max-width: 1400px;
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
 
-  .glide__track {
-    overflow: hidden;
-  }
-
+  .glide__track,
   .glide__slide {
+    overflow: hidden;
     text-align: center;
-    padding: $slide-padding;
     box-sizing: border-box;
-
-    // Border radius of 8px per Figma
-    img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-
-    p {
-      margin-top: $slide-padding;
-    }
   }
 
-  // Navigation arrows
-  .glide__arrows {
+  .glide__slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .glide__slide p {
+    margin-top: $slide-padding;
+  }
+}
+
+// Arrow Styles
+.glide__arrows {
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-1300%);
+}
+
+.glide__arrow {
+  background-color: $color-white;
+  opacity: 0.8;
+  color: $color-black;
+  border-radius: 50%;
+  border: none;
+  width: $arrow-size;
+  height: $arrow-size;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+
+  &:hover {
+    background-color: $color-black;
+    color: $color-white;
+  }
+  
+  &.glide__arrow--left {
     position: absolute;
+    left: -20px;
     top: 50%;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    transform: translateY(-50%);
+    transform: translate(0, -140%);
+  }
 
-    .glide__arrow {
-      background-color: $color-white;
-      opacity: 0.8;
-      color: $color-black;
-      border-radius: 50%;
-      border: none;
-      width: $arrow-size;
-      height: $arrow-size;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
+  &.glide__arrow--right {
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translate(0, -140%);
+  }
+}
 
-      &:hover {
+// Button Styles
+.socks-button {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  background-color: $color-black;
+  color: $color-white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}
+
+.socks-button-lower {
+    align-self: flex-end;
+    margin-bottom: 20px;
+    background-color: $color-black;
+    color: $color-white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    display:none;
+    text-align: center;
+
+    &:hover {
+        background-color: $color-hover;
+      }
+}
+// To override background color use !important
+
+
+
+
+// Tablet
+@media (max-width: 768px) {
+    .socks-header {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .socks-button {
+        align-self: flex-start;
+        margin-bottom: 20px;
         background-color: $color-black;
         color: $color-white;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+        display: block;
+      
+        &:hover {
+            background-color: $color-hover;
+        }
       }
-
-      &.glide__arrow--left, &.glide__arrow--right {
-        position: absolute;
-        top: 50%;
-        transform: translate(0, -140%);
-      }
-
-      &.glide__arrow--left {
-        left: calc(-1 * #{$arrow-size} / 2);
-      }
-
-      &.glide__arrow--right {
-        right: calc(-1 * #{$arrow-size} / 2);
-      }
-
-      i {
-        font-size: $font-size-arrow-icon;
-      }
-    }
-  }
-
-}
-
-// Responsive adjustments for mobile
-@media (max-width: 480px) {
-    .glide__slide {
-      padding: $slide-padding;
+  
+    .socks-content {
+      flex-direction: column; 
+      align-items: center; 
     }
   
+
+  }
+
+// Mobile
+@media (max-width: 480px) {
+    .socks-wrapper {
+        position: relative;
+    }
+    .socks-content {
+        flex-direction: column;
+        align-items: stretch;
+      }
+    .socks-button {
+        display: none;
+        width: 100%; 
+        margin-top: 20px; 
+ 
+    }
+    .socks-button-lower {
+        display: block;
+        width: 100%; 
+        margin-top: 20px; 
+ 
+    }
+    .glide__slide {
+        padding: $slide-padding;
+    }
+
     .glide .glide__arrows .glide__arrow {
         display: none;
-      }
+    }
 
-    .socks-section .socks-header {
+    .socks-wrapper .socks-header {
         flex-direction: column;
         align-items: flex-start;
-
-    .header-content,
-    .socks-button {
-        max-width: 100%;
-        width: auto; 
     }
 
     .glide {
         width: 100%;
     }
-
-    .socks-button {
-        margin-top: 20px; 
-        padding: 15px 20px; 
-        width: calc(100% - 40px); 
-        box-sizing: border-box; 
-        margin-left: auto;
-        margin-right: auto; 
-    }
-    }
-  }
+}

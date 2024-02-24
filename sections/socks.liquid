@@ -1,18 +1,21 @@
 <link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
 
-<div class="socks-section">
-  <div class="socks-header">
-    <h2 class="socks-title">{{ section.settings.socks_title }}</h2>
-    <div class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px !important;">
-      {{ section.settings.socks_overview }}
+<div class="socks-wrapper">
+  <div class="socks-content">
+    <div class="socks-header">
+      <h2 class="socks-title">{{ section.settings.socks_title }}</h2>
+      <div class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px !important;">
+        {{ section.settings.socks_overview }}
+      </div>
     </div>
-    {% if section.settings.button_text != blank %}
-      <button><a href="{{ section.settings.button_url }}" class="socks-button" style="background-color: {{ section.settings.button_color }};">
-        {{ section.settings.button_text }}
+    <div class="socks-button">
+      {% if section.settings.button_text != blank %}
+      <a href="{{ section.settings.button_url }}">
+        {{ section.settings.button_text }}&nbsp;
+        <i class="fas fa-arrow-right"></i>
       </a>
-      </button>
-    {% endif %}
-    
+      {% endif %}
+    </div>
   </div>
 <!-- Slider Container -->
 <div class="glide">
@@ -24,13 +27,15 @@
             {% assign collection = collections[block.settings.collection] %}
             <li class="glide__slide">
               <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
-              <p>{{ collection.title }}</p>
-            </li>
+              <div class="card-title"><strong>{{ collection.title }}</strong></div>
+              <a href="{{ collection.url }}" class="card-title">View Collection</a>
+              </li>
           {% when 'product' %}
             {% assign product = all_products[block.settings.product] %}
             <li class="glide__slide">
               <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
-              <p>{{ product.title }}</p>
+              <div class="card-title"><strong>{{ product.title }}</strong></div>
+              <div class="card-title">{{ product.description }}</div>
             </li>
         {% endcase %}
       {% endfor %}
@@ -43,6 +48,16 @@
   <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
 </div>
 </div>
+
+<div class="socks-button-lower">
+  {% if section.settings.button_text != blank %}
+  <a href="{{ section.settings.button_url }}">
+    {{ section.settings.button_text }}&nbsp;
+    <i class="fas fa-arrow-right"></i>
+  </a>
+  {% endif %}
+</div>
+
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/glide.min.js"></script>
@@ -53,6 +68,7 @@
   document.addEventListener('DOMContentLoaded', function () {
     new Glide('.glide', {
       type: 'carousel',
+      gap: 20,
       perView: 4,
       breakpoints: {
         768: {
@@ -88,7 +104,7 @@
       "type": "range",
       "id": "overview_text_size",
       "label": "Overview Text Size",
-      "min": 12,
+      "min": 10,
       "max": 24,
       "step": 1,
       "default": 16,
@@ -97,8 +113,7 @@
     {
       "type": "url",
       "id": "button_url",
-      "label": "Button URL",
-      "default": "http://example.com"
+      "label": "Button URL"
     },
     {
       "type": "text",
