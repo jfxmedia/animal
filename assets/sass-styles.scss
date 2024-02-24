@@ -1,230 +1,156 @@
-// Variables
+// Define Variables for Socks exclusively
 $color-black: #000000;
 $color-white: #ffffff;
-$color-hover: #695EE4; // Check if needed since it's declared but not used
+$color-grey: #e0e0e0;
+$color-hover: #cccccc;
 $font-size-title: 24px;
 $font-size-overview: 16px;
 $font-size-arrow-icon: 18px;
 $arrow-size: 40px;
 $slide-padding: 5px;
 
-// Imports
+// Import Glide.js Stylesheets
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
-// Wrapper Styles
 .socks-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-}
+  padding: 20px;
 
-// Content Styles
-.socks-content {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 0;
-}
-
-// Header Styles
-.socks-header {
-  text-align: left;
-  max-width: 50%;
-  flex-direction: column;
-
-  .socks-title,
-  .socks-overview {
-    margin-bottom: 10px;
-    font-size: $font-size-title;
-  }
-  
-  .socks-overview {
-    font-size: $font-size-overview;
-  }
-}
-
-.card-title {
+  .socks-header {
     text-align: left;
-    display: block;
-    color: $color-black;
-}
-
-// Glide Slider Styles
-.glide {
-  width: 100%;
-  max-width: 1400px;
-  position: relative;
-  margin: 20px auto;
-
-  .glide__track,
-  .glide__slide {
-    overflow: hidden;
-    text-align: center;
-    box-sizing: border-box;
-  }
-
-  .glide__slide img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .glide__slide p {
-    margin-top: $slide-padding;
-  }
-}
-
-// Arrow Styles
-.glide__arrows {
-  position: absolute;
-  top: 45%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-1300%);
-}
-
-.glide__arrow {
-  background-color: $color-white;
-  opacity: 0.8;
-  color: $color-black;
-  border-radius: 50%;
-  border: none;
-  width: $arrow-size;
-  height: $arrow-size;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: background-color 0.3s, color 0.3s;
-
-  &:hover {
-    background-color: $color-black;
-    color: $color-white;
-  }
-  
-  &.glide__arrow--left {
-    position: absolute;
-    left: -20px;
-    top: 50%;
-    transform: translate(0, -140%);
-  }
-
-  &.glide__arrow--right {
-    position: absolute;
-    right: -20px;
-    top: 50%;
-    transform: translate(0, -140%);
-  }
-}
-
-// Button Styles
-.socks-button {
-  align-self: flex-end;
-  margin-bottom: 20px;
-  background-color: $color-black;
-  color: $color-white;
-  text-decoration: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  transition: background-color 0.3s, color 0.3s;
-  display: block;
-
-  &:hover {
-    background-color: $color-hover;
-  }
-}
-
-.socks-button-lower {
-    align-self: flex-end;
     margin-bottom: 20px;
-    background-color: $color-black;
-    color: $color-white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-    display:none;
-    text-align: center;
+    max-width: 40%;
 
-    &:hover {
-        background-color: $color-hover;
-      }
-}
-// To override background color use !important
-
-
-
-
-// Tablet
-@media (max-width: 768px) {
-    .socks-header {
-      max-width: 100%;
-      margin-bottom: 20px;
+    .socks-title {
+      font-size: $font-size-title;
+      margin-bottom: 10px;
     }
 
-    .socks-button {
-        align-self: flex-start;
-        margin-bottom: 20px;
+    .socks-overview {
+      font-size: $font-size-overview;
+    }
+  }
+
+  .glide {
+    width: 100%;
+    max-width: 1400px;
+  }
+}
+
+.socks-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.glide {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .glide__track {
+    overflow: hidden;
+  }
+
+  .glide__slide {
+    text-align: center;
+    padding: $slide-padding;
+    box-sizing: border-box;
+
+    // Border radius of 8px per Figma
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    p {
+      margin-top: $slide-padding;
+    }
+  }
+
+  // Navigation arrows
+  .glide__arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+
+    .glide__arrow {
+      background-color: $color-white;
+      opacity: 0.8;
+      color: $color-black;
+      border-radius: 50%;
+      border: none;
+      width: $arrow-size;
+      height: $arrow-size;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background-color 0.3s, color 0.3s;
+
+      &:hover {
         background-color: $color-black;
         color: $color-white;
-        text-decoration: none;
-        padding: 10px 20px;
-        border-radius: 4px;
-        transition: background-color 0.3s, color 0.3s;
-        display: block;
-      
-        &:hover {
-            background-color: $color-hover;
-        }
       }
-  
-    .socks-content {
-      flex-direction: column; 
-      align-items: center; 
-    }
-  
 
+      &.glide__arrow--left, &.glide__arrow--right {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -140%);
+      }
+
+      &.glide__arrow--left {
+        left: calc(-1 * #{$arrow-size} / 2);
+      }
+
+      &.glide__arrow--right {
+        right: calc(-1 * #{$arrow-size} / 2);
+      }
+
+      i {
+        font-size: $font-size-arrow-icon;
+      }
+    }
   }
 
-// Mobile
-@media (max-width: 480px) {
-    .socks-wrapper {
-        position: relative;
-    }
-    .socks-content {
-        flex-direction: column;
-        align-items: stretch;
-      }
-    .socks-button {
-        display: none;
-        width: 100%; 
-        margin-top: 20px; 
- 
-    }
-    .socks-button-lower {
-        display: block;
-        width: 100%; 
-        margin-top: 20px; 
- 
-    }
-    .glide__slide {
-        padding: $slide-padding;
-    }
+}
 
+// Responsive adjustments for mobile
+@media (max-width: 480px) {
+    .glide__slide {
+      padding: $slide-padding;
+    }
+  
     .glide .glide__arrows .glide__arrow {
         display: none;
-    }
+      }
 
     .socks-wrapper .socks-header {
         flex-direction: column;
         align-items: flex-start;
+
+    .header-content,
+    .socks-button {
+        max-width: 100%;
+        width: auto; 
     }
 
     .glide {
         width: 100%;
     }
-}
+
+    .socks-button {
+        margin-top: 20px; 
+        padding: 15px 20px; 
+        width: calc(100% - 40px); 
+        box-sizing: border-box; 
+        margin-left: auto;
+        margin-right: auto; 
+    }
+    }
+  }

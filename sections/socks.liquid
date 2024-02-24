@@ -9,12 +9,12 @@
       </div>
     </div>
     <div class="socks-button">
-      {% if section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_url }}">
-        {{ section.settings.button_text }}&nbsp;
-        <i class="fas fa-arrow-right"></i>
-      </a>
-      {% endif %}
+        {% if section.settings.button_text != blank %}
+        <button><a href="{{ section.settings.button_url }}" class="socks-button" style="background-color: {{ section.settings.button_color }};">
+          {{ section.settings.button_text }}
+        </a>
+        </button>
+        {% endif %}
     </div>
   </div>
 <!-- Slider Container -->
@@ -27,15 +27,13 @@
             {% assign collection = collections[block.settings.collection] %}
             <li class="glide__slide">
               <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
-              <div class="card-title"><strong>{{ collection.title }}</strong></div>
-              <a href="{{ collection.url }}" class="card-title">View Collection</a>
-              </li>
+              <p>{{ collection.title }}</p>
+            </li>
           {% when 'product' %}
             {% assign product = all_products[block.settings.product] %}
             <li class="glide__slide">
               <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
-              <div class="card-title"><strong>{{ product.title }}</strong></div>
-              <div class="card-title">{{ product.description }}</div>
+              <p>{{ product.title }}</p>
             </li>
         {% endcase %}
       {% endfor %}
@@ -48,16 +46,6 @@
   <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
 </div>
 </div>
-
-<div class="socks-button-lower">
-  {% if section.settings.button_text != blank %}
-  <a href="{{ section.settings.button_url }}">
-    {{ section.settings.button_text }}&nbsp;
-    <i class="fas fa-arrow-right"></i>
-  </a>
-  {% endif %}
-</div>
-
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/glide.min.js"></script>
@@ -68,7 +56,6 @@
   document.addEventListener('DOMContentLoaded', function () {
     new Glide('.glide', {
       type: 'carousel',
-      gap: 20,
       perView: 4,
       breakpoints: {
         768: {
