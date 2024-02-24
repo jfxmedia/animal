@@ -123,6 +123,7 @@ $slide-padding: 5px;
 
 // Button Styles
 .socks-button {
+  background-color: var(--button-color);
   align-self: flex-end;
   margin-bottom: 20px;
   color: $color-white;
@@ -149,6 +150,7 @@ $slide-padding: 5px;
     }
 
     .socks-button {
+        background-color: var(--button-color);
         align-self: flex-start;
         margin-bottom: 20px;
         color: $color-white;
@@ -187,6 +189,7 @@ $slide-padding: 5px;
  
     }
     .socks-button-lower {
+      background-color: var(--button-color);
       align-self: flex-end;
       margin: 20px 0;
       color: $color-white;

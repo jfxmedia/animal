@@ -1,8 +1,10 @@
 <style>
   :root {
-    --button-hover-color: {{ section.settings.button_hover_bg }};
+    --button-bg-color: {{ section.settings.button_color | default: '#000000' }};
+    --button-hover-color: {{ section.settings.button_hover_color | default: '#695EE4' }};
   }
 </style>
+
 
 <link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
 
@@ -15,7 +17,7 @@
       </div>
     </div>
     {% if section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_url }}" class="socks-button" style="background-color: {{section.settings.button_bg}};">
+      <a href="{{ section.settings.button_url }}" class="socks-button">
         {{ section.settings.button_text }}&nbsp;
         <i class="fas fa-arrow-right"></i>
       </a>
@@ -54,7 +56,7 @@
 </div>
 
 {% if section.settings.button_text != blank %}
-  <a href="{{ section.settings.button_url }}" class="socks-button-lower" style="background-color: {{section.settings.button_bg}};">
+  <a href="{{ section.settings.button_url }}" class="socks-button-lower">
     {{ section.settings.button_text }}&nbsp;
     <i class="fas fa-arrow-right"></i>
   </a>
@@ -125,15 +127,13 @@
     },
     {
       "type": "color",
-      "id": "button_bg",
-      "label": "Button Color",
-      "default": "#000000"
+      "id": "button_color",
+      "label": "Button Color"
     },
     {
       "type": "color",
       "id": "button_hover_color",
-      "label": "Button Hover Color",
-      "default": "#000000"
+      "label": "Button Hover Color"
     }
     ],
     "blocks": [

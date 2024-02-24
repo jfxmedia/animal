@@ -47,9 +47,7 @@
         "socks_overview": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..<\/p>",
         "overview_text_size": 16,
         "button_url": "",
-        "button_text": "Explore all ranges",
-        "button_bg": "#b54b4b",
-        "button_hover_color": "#882999"
+        "button_text": "Explore all ranges"
       }
     }
   },
