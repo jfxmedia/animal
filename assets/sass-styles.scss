@@ -196,6 +196,7 @@ $slide-padding: 5px;
       transition: background-color 0.3s, color 0.3s;
       display: block;
       width: 100%;
+      text-align: center;
     
       &:hover {
         background-color: $color-hover;
