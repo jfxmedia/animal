@@ -131,39 +131,51 @@
   cursor: -webkit-grabbing;
 }
 
-.socks-section {
+.socks-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
 }
-.socks-section .socks-header {
+
+.socks-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.socks-header {
   text-align: left;
-  margin-bottom: 20px;
-  max-width: 40%;
+  max-width: 50%;
+  flex-direction: column;
 }
-.socks-section .socks-header .socks-title {
-  font-size: 24px;
+.socks-header .socks-title,
+.socks-header .socks-overview {
   margin-bottom: 10px;
+  font-size: 24px;
 }
-.socks-section .socks-header .socks-overview {
+.socks-header .socks-overview {
   font-size: 16px;
 }
-.socks-section .glide {
-  width: 100%;
-  max-width: 1400px;
+
+.card-title {
+  text-align: left;
+  display: block;
+  color: #000000;
 }
 
 .glide {
+  width: 100%;
+  max-width: 1400px;
   position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
+  margin: 20px auto;
 }
-.glide .glide__track {
-  overflow: hidden;
-}
+.glide .glide__track,
 .glide .glide__slide {
+  overflow: hidden;
   text-align: center;
-  padding: 5px;
   box-sizing: border-box;
 }
 .glide .glide__slide img {
@@ -174,15 +186,17 @@
 .glide .glide__slide p {
   margin-top: 5px;
 }
-.glide .glide__arrows {
+
+.glide__arrows {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 100%;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-50%);
+  transform: translateY(-1300%);
 }
-.glide .glide__arrows .glide__arrow {
+
+.glide__arrow {
   background-color: #ffffff;
   opacity: 0.8;
   color: #000000;
@@ -196,51 +210,114 @@
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
-.glide .glide__arrows .glide__arrow:hover {
+.glide__arrow:hover {
   background-color: #000000;
   color: #ffffff;
 }
-.glide .glide__arrows .glide__arrow.glide__arrow--left, .glide .glide__arrows .glide__arrow.glide__arrow--right {
+.glide__arrow.glide__arrow--left {
   position: absolute;
+  left: -20px;
   top: 50%;
   transform: translate(0, -140%);
 }
-.glide .glide__arrows .glide__arrow.glide__arrow--left {
-  left: calc(-1 * 40px / 2);
-}
-.glide .glide__arrows .glide__arrow.glide__arrow--right {
-  right: calc(-1 * 40px / 2);
-}
-.glide .glide__arrows .glide__arrow i {
-  font-size: 18px;
+.glide__arrow.glide__arrow--right {
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translate(0, -140%);
 }
 
+.socks-button {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  display: block;
+}
+.socks-button:hover {
+  background-color: #695EE4;
+}
+
+.socks-button-lower {
+  align-self: flex-end;
+  margin-bottom: 20px;
+  background-color: #000000;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+  display: none;
+  text-align: center;
+}
+.socks-button-lower:hover {
+  background-color: #695EE4;
+}
+
+.socks-button-link {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: transparent !important;
+}
+
+@media (max-width: 768px) {
+  .socks-header {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .socks-button {
+    align-self: flex-start;
+    margin-bottom: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    display: block;
+  }
+  .socks-button:hover {
+    background-color: #695EE4;
+  }
+  .socks-content {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 480px) {
+  .socks-wrapper {
+    position: relative;
+  }
+  .socks-content {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .socks-button {
+    display: none;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .socks-button-lower {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+  }
   .glide__slide {
     padding: 5px;
   }
   .glide .glide__arrows .glide__arrow {
     display: none;
   }
-  .socks-section .socks-header {
+  .socks-wrapper .socks-header {
     flex-direction: column;
     align-items: flex-start;
   }
-  .socks-section .socks-header .header-content,
-  .socks-section .socks-header .socks-button {
-    max-width: 100%;
-    width: auto;
-  }
-  .socks-section .socks-header .glide {
+  .glide {
     width: 100%;
-  }
-  .socks-section .socks-header .socks-button {
-    margin-top: 20px;
-    padding: 15px 20px;
-    width: calc(100% - 40px);
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
