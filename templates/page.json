@@ -43,13 +43,13 @@
         "product_HLEjgz"
       ],
       "settings": {
-        "socks_title": "<h2>This is a section title...<\/h2>",
+        "socks_title": "<h2><strong>This is a section title...<\/strong><\/h2>",
         "socks_overview": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..<\/p>",
         "overview_text_size": 16,
         "button_url": "",
         "button_text": "Explore all ranges",
         "button_color": "#000000",
-        "button_hover_color": "#695EE4"
+        "button_hover_color": "#695ee4"
       }
     }
   },
