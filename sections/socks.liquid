@@ -8,14 +8,12 @@
         {{ section.settings.socks_overview }}
       </div>
     </div>
-    <div class="socks-button">
-      {% if section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_url }}">
+    {% if section.settings.button_text != blank %}
+      <a href="{{ section.settings.button_url }}" class="socks-button">
         {{ section.settings.button_text }}&nbsp;
         <i class="fas fa-arrow-right"></i>
       </a>
-      {% endif %}
-    </div>
+    {% endif %}
   </div>
 <!-- Slider Container -->
 <div class="glide">
@@ -49,14 +47,12 @@
 </div>
 </div>
 
-<div class="socks-button-lower">
-  {% if section.settings.button_text != blank %}
-  <a href="{{ section.settings.button_url }}">
+{% if section.settings.button_text != blank %}
+  <a href="{{ section.settings.button_url }}" class="socks-button">
     {{ section.settings.button_text }}&nbsp;
     <i class="fas fa-arrow-right"></i>
   </a>
-  {% endif %}
-</div>
+{% endif %}
 
 </div>
 
