@@ -9,7 +9,7 @@
       </div>
     </div>
     {% if section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_url }}" class="socks-button">
+      <a href="{{ section.settings.button_url }}" class="socks-button" style="background-color: {{section.settings.button_bg}};">
         {{ section.settings.button_text }}&nbsp;
         <i class="fas fa-arrow-right"></i>
       </a>
@@ -48,7 +48,7 @@
 </div>
 
 {% if section.settings.button_text != blank %}
-  <a href="{{ section.settings.button_url }}" class="socks-button">
+  <a href="{{ section.settings.button_url }}" class="socks-button" style="background-color: {{section.settings.button_bg}};">
     {{ section.settings.button_text }}&nbsp;
     <i class="fas fa-arrow-right"></i>
   </a>
@@ -119,7 +119,7 @@
     },
     {
       "type": "color",
-      "id": "button_color",
+      "id": "button_bg",
       "label": "Button Color",
       "default": "#000000"
     }

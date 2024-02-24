@@ -230,7 +230,6 @@
 .socks-button {
   align-self: flex-end;
   margin-bottom: 20px;
-  background-color: #000000;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
@@ -245,7 +244,6 @@
 .socks-button-lower {
   align-self: flex-end;
   margin-bottom: 20px;
-  background-color: #000000;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
@@ -258,12 +256,6 @@
   background-color: #695EE4;
 }
 
-.socks-button-link {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: transparent !important;
-}
-
 @media (max-width: 768px) {
   .socks-header {
     max-width: 100%;
@@ -272,7 +264,6 @@
   .socks-button {
     align-self: flex-start;
     margin-bottom: 20px;
-    background-color: #000000;
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
