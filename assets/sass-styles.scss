@@ -1,7 +1,7 @@
 // Variables
 $color-black: #000000;
 $color-white: #ffffff;
-$color-hover: #695EE4; // Check if needed since it's declared but not used
+$color-hover: #695EE4;
 $font-size-title: 24px;
 $font-size-overview: 16px;
 $font-size-arrow-icon: 18px;
@@ -47,9 +47,22 @@ $slide-padding: 5px;
 }
 
 .card-title {
-    text-align: left;
-    display: block;
-    color: $color-black;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: $color-black;
+
+  strong {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.card-link {
+  color: $color-black;
 }
 
 // Glide Slider Styles
@@ -62,25 +75,81 @@ $slide-padding: 5px;
   .glide__track,
   .glide__slide {
     overflow: hidden;
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
+    position: relative;
   }
 
   .glide__slide img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    transition: opacity 0.3s ease;
   }
 
   .glide__slide p {
     margin-top: $slide-padding;
   }
+  .glide__slide:hover img {
+  opacity: 0.5;
+  }
 }
+
+.glide__slide {
+  .image-container {
+    position: relative;
+    width: 100%; // Ensure it spans the full width of its parent
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px; // Example styling
+    }
+  }
+
+  .slide-button {
+    position: absolute;
+    left: 50%; // Center it horizontally
+    transform: translateX(-50%); // Adjust for centering
+    background-color: var(--button-color);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 90%; // Adjust width as needed
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: var(--button-hover-color);
+    }
+  }
+  .color-selectors {
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .color-selector {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  
+  }
+}
+
+
+
+
+
 
 // Arrow Styles
 .glide__arrows {
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -107,25 +176,23 @@ $slide-padding: 5px;
   }
   
   &.glide__arrow--left {
-    position: absolute;
     left: -20px;
     top: 50%;
-    transform: translate(0, -140%);
   }
 
   &.glide__arrow--right {
-    position: absolute;
     right: -20px;
     top: 50%;
-    transform: translate(0, -140%);
   }
 }
 
+
+
 // Button Styles
 .socks-button {
+  background-color: var(--button-color);
   align-self: flex-end;
   margin-bottom: 20px;
-  background-color: $color-black;
   color: $color-white;
   text-decoration: none;
   padding: 10px 20px;
@@ -134,34 +201,32 @@ $slide-padding: 5px;
   display: block;
 
   &:hover {
-    background-color: $color-hover;
+    background-color: var(--button-hover-color);
+  }
+}
+
+.slide-button {
+  background-color: var(--button-color);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 100%;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  top: 326px;
+  left: 0;
+  text-align: center;
+
+  &:hover {
+    background-color: var(--button-hover-color);
   }
 }
 
 .socks-button-lower {
-    align-self: flex-end;
-    margin-bottom: 20px;
-    background-color: $color-black;
-    color: $color-white;
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    transition: background-color 0.3s, color 0.3s;
-    display:none;
-    text-align: center;
-
-    &:hover {
-        background-color: $color-hover;
-      }
+  display:none;
 }
-// To override background color use !important
-.socks-button-link {
-    color: $color-white;
-    text-decoration: none;
-    background-color: transparent!important;
-}
-
-
 
 // Tablet
 @media (max-width: 768px) {
@@ -171,9 +236,9 @@ $slide-padding: 5px;
     }
 
     .socks-button {
+        background-color: var(--button-color);
         align-self: flex-start;
         margin-bottom: 20px;
-        background-color: $color-black;
         color: $color-white;
         text-decoration: none;
         padding: 10px 20px;
@@ -182,7 +247,7 @@ $slide-padding: 5px;
         display: block;
       
         &:hover {
-            background-color: $color-hover;
+          background-color: var(--button-hover-color);
         }
       }
   
@@ -210,13 +275,22 @@ $slide-padding: 5px;
  
     }
     .socks-button-lower {
-        display: block;
-        width: 100%; 
-        margin-top: 20px; 
+      background-color: var(--button-color);
+      align-self: flex-end;
+      margin: 20px 0;
+      color: $color-white;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s, color 0.3s;
+      display: block;
+      width: 100%;
+      text-align: center;
+    
+      &:hover {
+        background-color: var(--button-hover-color);
+      }
  
-    }
-    .glide__slide {
-        padding: $slide-padding;
     }
 
     .glide .glide__arrows .glide__arrow {

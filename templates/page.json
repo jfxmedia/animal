@@ -14,25 +14,33 @@
         "collection_dEqxbP": {
           "type": "collection",
           "settings": {
-            "collection": "the-queen-collection"
+            "collection": "the-queen-collection",
+            "collection_button_url": "shopify:\/\/collections\/the-queen-collection",
+            "collection_button_text": "Explore Collection"
           }
         },
         "product_A9cPT7": {
           "type": "product",
           "settings": {
-            "product": "the-chef"
+            "product": "the-chef",
+            "product_button_url": "shopify:\/\/products\/the-chef",
+            "product_button_text": "View Product"
           }
         },
         "collection_VXaM6b": {
           "type": "collection",
           "settings": {
-            "collection": "the-james-bond-collection"
+            "collection": "the-james-bond-collection",
+            "collection_button_url": "shopify:\/\/collections\/the-james-bond-collection",
+            "collection_button_text": "Explore Collection"
           }
         },
         "product_HLEjgz": {
           "type": "product",
           "settings": {
-            "product": "the-shaken"
+            "product": "the-shaken",
+            "product_button_url": "shopify:\/\/products\/the-shaken",
+            "product_button_text": "View Product"
           }
         }
       },
@@ -43,8 +51,13 @@
         "product_HLEjgz"
       ],
       "settings": {
-        "section_title": "Featured Collections and Products",
-        "heading_size": "h1"
+        "socks_title": "<h2><strong>This is a section title...<\/strong><\/h2>",
+        "socks_overview": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..<\/p>",
+        "overview_text_size": 16,
+        "button_url": "",
+        "button_text": "Explore all ranges",
+        "button_color": "#000000",
+        "button_hover_color": "#695ee4"
       }
     }
   },

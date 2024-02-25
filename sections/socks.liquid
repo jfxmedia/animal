@@ -1,3 +1,11 @@
+<style>
+  :root {
+    --button-color: {{ section.settings.button_color }};
+    --button-hover-color: {{ section.settings.button_hover_color }};
+  }
+</style>
+
+
 <link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
 
 <div class="socks-wrapper">
@@ -8,15 +16,14 @@
         {{ section.settings.socks_overview }}
       </div>
     </div>
-    <div class="socks-button">
-      {% if section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_url }}">
+    {% if section.settings.button_text != blank %}
+      <a href="{{ section.settings.button_url }}" class="socks-button">
         {{ section.settings.button_text }}&nbsp;
         <i class="fas fa-arrow-right"></i>
       </a>
-      {% endif %}
-    </div>
+    {% endif %}
   </div>
+
 <!-- Slider Container -->
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
@@ -24,44 +31,103 @@
       {% for block in section.blocks %}
         {% case block.type %}
           {% when 'collection' %}
+            <!-- Collection Slide -->
             {% assign collection = collections[block.settings.collection] %}
             <li class="glide__slide">
               <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
-              <div class="card-title"><strong>{{ collection.title }}</strong></div>
-              <a href="{{ collection.url }}" class="card-title">View Collection</a>
-              </li>
+                  {% comment %} {% if block.settings.collection_button_text %}
+                    <a href="{{ collection.url }}" class="slide-button">
+                      {{ block.settings.collection_button_text }}&nbsp;
+                      <i class="fas fa-arrow-right"></i>
+                    </a>
+                  {% endif %} {% endcomment %}
+              <div class="card-title">
+                <strong>{{ collection.title }}<span>({{ collection.products_count }})</span></strong>
+              </div>
+              <a href="{{ collection.url }}" class="card-link">View Collection</a>
+            </li>
           {% when 'product' %}
+            <!-- Product Slide -->
             {% assign product = all_products[block.settings.product] %}
             <li class="glide__slide">
-              <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
-              <div class="card-title"><strong>{{ product.title }}</strong></div>
-              <div class="card-title">{{ product.description }}</div>
+              <div class="image-container">
+                <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+                {% comment %} {% if block.settings.product_button_text %}
+                  <a href="{{ product.url }}" class="slide-button">
+                    {{ block.settings.product_button_text }}&nbsp;
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                {% endif %} {% endcomment %}
+                <div class="color-selectors">
+                  {% for variant in product.variants %}
+                    {% if variant.metafields.custom.variant_color %}
+                      <div class="color-selector" data-variant-id="{{ variant.id }}" data-variant-image="{{ variant.image | img_url: 'master' }}" style="background-color: {{ variant.metafields.custom.variant_color }}"></div>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              </div>
+              <div class="card-title">
+                <strong>{{ product.title }}<span>({{ product.price | money_with_currency }})</span></strong>
+              </div>
+              <div class="card-description">{{ product.description }}</div>
             </li>
         {% endcase %}
       {% endfor %}
     </ul>
   </div>
-
-<!-- Arrows! -->
-<div class="glide__arrows" data-glide-el="controls">
-  <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
-  <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+  <!-- Glide Arrows -->
+  <div class="glide__arrows" data-glide-el="controls">
+    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+  </div>
 </div>
-</div>
 
-<div class="socks-button-lower">
+
   {% if section.settings.button_text != blank %}
-  <a href="{{ section.settings.button_url }}">
-    {{ section.settings.button_text }}&nbsp;
-    <i class="fas fa-arrow-right"></i>
-  </a>
+    <a href="{{ section.settings.button_url }}" class="socks-button-lower">
+      {{ section.settings.button_text }}&nbsp;
+      <i class="fas fa-arrow-right"></i>
+    </a>
   {% endif %}
-</div>
 
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/glide.min.js"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Listen for clicks on color selectors and adjust their position
+    document.querySelectorAll('.glide__slide').forEach(function(slide) {
+        const imageContainer = slide.querySelector('.image-container');
+        const selectors = slide.querySelectorAll('.color-selector');
+
+        selectors.forEach(function(selector, index) {
+            // Ensure the selectors are positioned relative to the image container
+            selector.style.position = 'absolute';
+            selector.style.bottom = '5px'; // Adjust as needed
+            selector.style.left = `${5 + index * 25}px`; // Adjust starting position and spacing as needed
+        });
+
+        // Set up click event for changing the image based on the selector
+        selectors.forEach(selector => {
+            selector.addEventListener('click', function() {
+                const variantImageUrl = this.getAttribute('data-variant-image');
+                const productImage = imageContainer.querySelector('img');
+
+                if (productImage && variantImageUrl) {
+                    productImage.src = variantImageUrl;
+                }
+            });
+        });
+    });
+});
+
+</script>
+
+
+
+
 
 
 <script>
@@ -126,6 +192,13 @@
       "id": "button_color",
       "label": "Button Color",
       "default": "#000000"
+
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button Hover Color",
+      "default": "#695EE4"
     }
     ],
     "blocks": [
@@ -137,6 +210,12 @@
             "type": "collection",
             "id": "collection",
             "label": "Select a Collection"
+          },
+          {
+            "type": "text",
+            "id": "collection_button_text",
+            "label": "Button Text",
+            "default": "Explore Collection"
           }
         ]
       },
@@ -148,6 +227,12 @@
             "type": "product",
             "id": "product",
             "label": "Select a Product"
+          },
+          {
+            "type": "text",
+            "id": "product_button_text",
+            "label": "Button Text",
+            "default": "View Product"
           }
         ]
       }

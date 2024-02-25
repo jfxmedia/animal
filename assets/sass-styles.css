@@ -161,8 +161,20 @@
 }
 
 .card-title {
+  display: flex;
   text-align: left;
-  display: block;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #000000;
+}
+.card-title strong {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-link {
   color: #000000;
 }
 
@@ -175,21 +187,66 @@
 .glide .glide__track,
 .glide .glide__slide {
   overflow: hidden;
-  text-align: center;
+  text-align: left;
   box-sizing: border-box;
+  position: relative;
 }
 .glide .glide__slide img {
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: opacity 0.3s ease;
 }
 .glide .glide__slide p {
   margin-top: 5px;
 }
+.glide .glide__slide:hover img {
+  opacity: 0.5;
+}
+
+.glide__slide .image-container {
+  position: relative;
+  width: 100%;
+}
+.glide__slide .image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+.glide__slide .slide-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--button-color);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  width: 90%;
+  text-align: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+.glide__slide .slide-button:hover {
+  background-color: var(--button-hover-color);
+}
+.glide__slide .color-selectors {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+}
+.glide__slide .color-selector {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
 .glide__arrows {
   position: absolute;
-  top: 45%;
+  top: 50%;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -215,22 +272,18 @@
   color: #ffffff;
 }
 .glide__arrow.glide__arrow--left {
-  position: absolute;
   left: -20px;
   top: 50%;
-  transform: translate(0, -140%);
 }
 .glide__arrow.glide__arrow--right {
-  position: absolute;
   right: -20px;
   top: 50%;
-  transform: translate(0, -140%);
 }
 
 .socks-button {
+  background-color: var(--button-color);
   align-self: flex-end;
   margin-bottom: 20px;
-  background-color: #000000;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
@@ -239,29 +292,29 @@
   display: block;
 }
 .socks-button:hover {
-  background-color: #695EE4;
+  background-color: var(--button-hover-color);
 }
 
-.socks-button-lower {
-  align-self: flex-end;
-  margin-bottom: 20px;
-  background-color: #000000;
+.slide-button {
+  background-color: var(--button-color);
   color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 4px;
+  width: 100%;
+  display: block;
   transition: background-color 0.3s, color 0.3s;
-  display: none;
+  position: absolute;
+  top: 326px;
+  left: 0;
   text-align: center;
 }
-.socks-button-lower:hover {
-  background-color: #695EE4;
+.slide-button:hover {
+  background-color: var(--button-hover-color);
 }
 
-.socks-button-link {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: transparent !important;
+.socks-button-lower {
+  display: none;
 }
 
 @media (max-width: 768px) {
@@ -270,9 +323,9 @@
     margin-bottom: 20px;
   }
   .socks-button {
+    background-color: var(--button-color);
     align-self: flex-start;
     margin-bottom: 20px;
-    background-color: #000000;
     color: #ffffff;
     text-decoration: none;
     padding: 10px 20px;
@@ -281,7 +334,7 @@
     display: block;
   }
   .socks-button:hover {
-    background-color: #695EE4;
+    background-color: var(--button-hover-color);
   }
   .socks-content {
     flex-direction: column;
@@ -302,12 +355,20 @@
     margin-top: 20px;
   }
   .socks-button-lower {
+    background-color: var(--button-color);
+    align-self: flex-end;
+    margin: 20px 0;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
     display: block;
     width: 100%;
-    margin-top: 20px;
+    text-align: center;
   }
-  .glide__slide {
-    padding: 5px;
+  .socks-button-lower:hover {
+    background-color: var(--button-hover-color);
   }
   .glide .glide__arrows .glide__arrow {
     display: none;
