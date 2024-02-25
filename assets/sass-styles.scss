@@ -96,13 +96,33 @@ $slide-padding: 5px;
 }
 
 .glide__slide {
-  position: relative;
-  text-align: left;
-
   .image-container {
     position: relative;
+    width: 100%; // Ensure it spans the full width of its parent
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px; // Example styling
+    }
   }
 
+  .slide-button {
+    position: absolute;
+    left: 50%; // Center it horizontally
+    transform: translateX(-50%); // Adjust for centering
+    background-color: var(--button-color);
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    width: 90%; // Adjust width as needed
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: var(--button-hover-color);
+    }
+  }
   .color-selectors {
     position: absolute;
     bottom: 15px;
@@ -110,16 +130,19 @@ $slide-padding: 5px;
     display: flex;
     gap: 5px;
   }
-
+  
   .color-selector {
     display: block;
     width: 20px;
     height: 20px;
     border-radius: 4px;
     cursor: pointer;
-
+  
   }
 }
+
+
+
 
 
 
@@ -183,13 +206,18 @@ $slide-padding: 5px;
 }
 
 .slide-button {
-  background-color:black;
-  margin-bottom: 20px;
-  color: $color-white;
+  background-color: var(--button-color);
+  color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 4px;
+  width: 100%;
+  display: block;
   transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  top: 326px;
+  left: 0;
+  text-align: center;
 
   &:hover {
     background-color: var(--button-hover-color);

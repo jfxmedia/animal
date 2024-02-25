@@ -24,7 +24,7 @@
     {% endif %}
   </div>
 
-  <!-- Slider Container -->
+<!-- Slider Container -->
 <div class="glide">
   <div class="glide__track" data-glide-el="track">
     <ul class="glide__slides">
@@ -35,12 +35,12 @@
             {% assign collection = collections[block.settings.collection] %}
             <li class="glide__slide">
               <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
-                  {% if block.settings.collection_button_text != blank %}
+                  {% comment %} {% if block.settings.collection_button_text %}
                     <a href="{{ collection.url }}" class="slide-button">
                       {{ block.settings.collection_button_text }}&nbsp;
                       <i class="fas fa-arrow-right"></i>
                     </a>
-                  {% endif %}
+                  {% endif %} {% endcomment %}
               <div class="card-title">
                 <strong>{{ collection.title }}<span>({{ collection.products_count }})</span></strong>
               </div>
@@ -50,8 +50,14 @@
             <!-- Product Slide -->
             {% assign product = all_products[block.settings.product] %}
             <li class="glide__slide">
-              <div class="image-container" style="position: relative;">
+              <div class="image-container">
                 <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+                {% comment %} {% if block.settings.product_button_text %}
+                  <a href="{{ product.url }}" class="slide-button">
+                    {{ block.settings.product_button_text }}&nbsp;
+                    <i class="fas fa-arrow-right"></i>
+                  </a>
+                {% endif %} {% endcomment %}
                 <div class="color-selectors">
                   {% for variant in product.variants %}
                     {% if variant.metafields.custom.variant_color %}
@@ -59,12 +65,6 @@
                     {% endif %}
                   {% endfor %}
                 </div>
-                  {% if block.settings.product_button_text %}
-                    <a href="{{ product.url }}" class="slide-button">
-                      {{ block.settings.product_button_text }}&nbsp;
-                      <i class="fas fa-arrow-right"></i>
-                    </a>
-                  {% endif %}
               </div>
               <div class="card-title">
                 <strong>{{ product.title }}<span>({{ product.price | money_with_currency }})</span></strong>
