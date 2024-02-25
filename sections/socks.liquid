@@ -12,7 +12,22 @@
 <div class="socks-wrapper">
   <div class="socks-content">
     <div class="socks-header">
-      <h2 class="socks-title" style="font-size: {{ section.settings.title_text_size }}px !important;">{{ section.settings.socks_title }}</h2>
+      {% capture opening_tag %}{{ section.settings.title_tag }}{% endcapture %}
+      {% capture closing_tag %}/{{ section.settings.title_tag }}{% endcapture %}
+        {% case section.settings.title_tag %}
+          {% when 'h1' %}
+            <{{opening_tag}} class="socks-title" style="font-size: {{ section.settings.title_text_size }}px !important;">{{ section.settings.socks_title }}</{{closing_tag}}>
+          {% when 'h2' %}
+            <{{opening_tag}} class="socks-title" style="font-size: {{ section.settings.title_text_size }}px !important;">{{ section.settings.socks_title }}</{{closing_tag}}>
+          {% when 'h3' %}
+            <{{opening_tag}} class="socks-title" style="font-size: {{ section.settings.title_text_size }}px !important;">{{ section.settings.socks_title }}</{{closing_tag}}>
+          {% when 'h4' %}
+            <{{opening_tag}} class="socks-title" style="font-size: {{ section.settings.title_text_size }}px !important;">{{ section.settings.socks_title }}</{{closing_tag}}>
+          {% when 'h5' %}
+            <{{opening_tag}} class="socks-title" style="font-size: {{ section.settings.title_text_size }}px !important;">{{ section.settings.socks_title }}</{{closing_tag}}>
+          {% when 'h6' %}
+            <{{opening_tag}} class="socks-title" style="font-size: {{ section.settings.title_text_size }}px !important;">{{ section.settings.socks_title }}</{{closing_tag}}>
+        {% endcase %}
       <div class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px !important;">
         {{ section.settings.socks_overview }}
       </div>
@@ -230,11 +245,37 @@ document.addEventListener('DOMContentLoaded', function() {
     "name": "Socks",
     "settings": [
       {
-      "type": "text",
-      "id": "socks_title",
-      "label": "Title",
-      "default": "This is a section title..."
-    },
+        "type": "select",
+        "id": "title_tag",
+        "label": "Title Tag",
+        "options": [
+          {
+            "value": "h1",
+            "label": "H1"
+          },
+          {
+            "value": "h2",
+            "label": "H2"
+          },
+          {
+            "value": "h3",
+            "label": "H3"
+          },
+          {
+            "value": "h4",
+            "label": "H4"
+          },
+          {
+            "value": "h5",
+            "label": "H5"
+          },
+          {
+            "value": "h6",
+            "label": "H6"
+          }
+        ],
+        "default": "h2"
+      },
     {
       "type": "range",
       "id": "title_text_size",
