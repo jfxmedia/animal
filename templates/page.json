@@ -14,25 +14,33 @@
         "collection_dEqxbP": {
           "type": "collection",
           "settings": {
-            "collection": "the-queen-collection"
+            "collection": "the-queen-collection",
+            "collection_button_url": "shopify:\/\/collections\/the-queen-collection",
+            "collection_button_text": "Explore Collection"
           }
         },
         "product_A9cPT7": {
           "type": "product",
           "settings": {
-            "product": "the-chef"
+            "product": "the-chef",
+            "product_button_url": "shopify:\/\/products\/the-chef",
+            "product_button_text": "View Product"
           }
         },
         "collection_VXaM6b": {
           "type": "collection",
           "settings": {
-            "collection": "the-james-bond-collection"
+            "collection": "the-james-bond-collection",
+            "collection_button_url": "",
+            "collection_button_text": "Explore Collection"
           }
         },
         "product_HLEjgz": {
           "type": "product",
           "settings": {
-            "product": "the-shaken"
+            "product": "the-shaken",
+            "product_button_url": "",
+            "product_button_text": "View Product"
           }
         }
       },
