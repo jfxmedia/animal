@@ -278,15 +278,13 @@
 }
 
 .slide-button {
-  background-color: var(--button-color);
-  align-self: flex-end;
+  background-color: black;
   margin-bottom: 20px;
   color: #ffffff;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 4px;
   transition: background-color 0.3s, color 0.3s;
-  display: block;
 }
 .slide-button:hover {
   background-color: var(--button-hover-color);

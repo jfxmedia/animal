@@ -35,9 +35,9 @@
             {% assign collection = collections[block.settings.collection] %}
             <li class="glide__slide">
               <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
-                  {% if section.settings.collection_button_text != blank %}
-                    <a href="{{ section.settings.collection_button_url }}" class="slide-button">
-                      {{ section.settings.collection_button_text }}&nbsp;
+                  {% if block.settings.collection_button_text != blank %}
+                    <a href="{{ collection.url }}" class="slide-button">
+                      {{ block.settings.collection_button_text }}&nbsp;
                       <i class="fas fa-arrow-right"></i>
                     </a>
                   {% endif %}
@@ -59,9 +59,9 @@
                     {% endif %}
                   {% endfor %}
                 </div>
-                  {% if section.settings.product_button_text != blank %}
-                    <a href="{{ section.settings.product_button_url }}" class="slide-button">
-                      {{ section.settings.product_button_text }}&nbsp;
+                  {% if block.settings.product_button_text %}
+                    <a href="{{ product.url }}" class="slide-button">
+                      {{ block.settings.product_button_text }}&nbsp;
                       <i class="fas fa-arrow-right"></i>
                     </a>
                   {% endif %}
@@ -212,11 +212,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "label": "Select a Collection"
           },
           {
-            "type": "url",
-            "id": "collection_button_url",
-            "label": "Button URL"
-          },
-          {
             "type": "text",
             "id": "collection_button_text",
             "label": "Button Text",
@@ -232,11 +227,6 @@ document.addEventListener('DOMContentLoaded', function() {
             "type": "product",
             "id": "product",
             "label": "Select a Product"
-          },
-          {
-            "type": "url",
-            "id": "product_button_url",
-            "label": "Button URL"
           },
           {
             "type": "text",
