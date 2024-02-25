@@ -7,11 +7,12 @@
 
 
 <link rel="stylesheet" href="{{ 'sass-styles.css' | asset_url }}">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 
 <div class="socks-wrapper">
   <div class="socks-content">
     <div class="socks-header">
-      <h2 class="socks-title">{{ section.settings.socks_title }}</h2>
+      <h2 class="socks-title" style="font-size: {{ section.settings.title_text_size }}px !important;">{{ section.settings.socks_title }}</h2>
       <div class="socks-overview" style="font-size: {{ section.settings.overview_text_size }}px !important;">
         {{ section.settings.socks_overview }}
       </div>
@@ -24,63 +25,79 @@
     {% endif %}
   </div>
 
-<!-- Slider Container -->
-<div class="glide">
-  <div class="glide__track" data-glide-el="track">
-    <ul class="glide__slides">
-      {% for block in section.blocks %}
-        {% case block.type %}
-          {% when 'collection' %}
-            <!-- Collection Slide -->
-            {% assign collection = collections[block.settings.collection] %}
-            <li class="glide__slide">
-              <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
-                  {% comment %} {% if block.settings.collection_button_text %}
-                    <a href="{{ collection.url }}" class="slide-button">
-                      {{ block.settings.collection_button_text }}&nbsp;
+  <!-- Slider Container -->
+  <div class="glide">
+    <div class="glide__track" data-glide-el="track">
+      <ul class="glide__slides">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'collection' %}
+              <!-- Collection Slide -->
+              {% assign collection = collections[block.settings.collection] %}
+              <li class="glide__slide">
+                <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
+                    {% comment %} {% if block.settings.collection_button_text %}
+                      <a href="{{ collection.url }}" class="slide-button">
+                        {{ block.settings.collection_button_text }}&nbsp;
+                        <i class="fas fa-arrow-right"></i>
+                      </a>
+                    {% endif %} {% endcomment %}
+                <div class="card-title">
+                  <strong>{{ collection.title }}<span>({{ collection.products_count }})</span></strong>
+                </div>
+                <a href="{{ collection.url }}" class="card-link">View collection</a>
+              </li>
+            {% when 'product' %}
+              <!-- Product Slide -->
+              {% assign product = all_products[block.settings.product] %}
+              <li class="glide__slide">
+                <div class="image-container">
+                  <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+                  {% comment %} {% if block.settings.product_button_text %}
+                    <a href="{{ product.url }}" class="slide-button">
+                      {{ block.settings.product_button_text }}&nbsp;
                       <i class="fas fa-arrow-right"></i>
                     </a>
                   {% endif %} {% endcomment %}
-              <div class="card-title">
-                <strong>{{ collection.title }}<span>({{ collection.products_count }})</span></strong>
-              </div>
-              <a href="{{ collection.url }}" class="card-link">View Collection</a>
-            </li>
-          {% when 'product' %}
-            <!-- Product Slide -->
-            {% assign product = all_products[block.settings.product] %}
-            <li class="glide__slide">
-              <div class="image-container">
-                <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
-                {% comment %} {% if block.settings.product_button_text %}
-                  <a href="{{ product.url }}" class="slide-button">
-                    {{ block.settings.product_button_text }}&nbsp;
-                    <i class="fas fa-arrow-right"></i>
-                  </a>
-                {% endif %} {% endcomment %}
-                <div class="color-selectors">
+
+                {% comment %}Stock status badges{% endcomment %}
                   {% for variant in product.variants %}
-                    {% if variant.metafields.custom.variant_color %}
-                      <div class="color-selector" data-variant-id="{{ variant.id }}" data-variant-image="{{ variant.image | img_url: 'master' }}" style="background-color: {{ variant.metafields.custom.variant_color }}"></div>
-                    {% endif %}
+                    <div class="inventory-status" style="display: none;" data-variant-id="{{ variant.id }}"
+                        data-inventory-status="{% if variant.inventory_quantity < 4 %}<div class='low-stock-badge'>Low Stock</div>{% elsif variant.inventory_quantity > 3 %}<div class='bestseller-badge'>Bestseller</div>{% endif %}">
+                      {% if variant.inventory_quantity == 0 %}
+                      {% elsif variant.inventory_quantity < 3 %}
+                        <div class="low-stock-badge">Low Stock</div>
+                      {% elsif variant.inventory_quantity > 3 %}
+                        <div class="bestseller-badge">Bestseller</div>
+                      {% endif %}
+                    </div>
                   {% endfor %}
+                {% comment %}Color variant selectors{% endcomment %}
+                  <div class="color-selectors">
+                    {% for variant in product.variants %}
+                      {% if variant.metafields.custom.variant_color %}
+                        <div class="color-selector" data-variant-id="{{ variant.id }}" data-variant-image="{{ variant.image | img_url: 'master' }}" style="background-color: {{ variant.metafields.custom.variant_color }}"></div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
                 </div>
-              </div>
-              <div class="card-title">
-                <strong>{{ product.title }}<span>({{ product.price | money_with_currency }})</span></strong>
-              </div>
-              <div class="card-description">{{ product.description }}</div>
-            </li>
-        {% endcase %}
-      {% endfor %}
-    </ul>
+                <div class="card-title">
+                  <strong>{{ product.title }}<span>${{ product.price | money_without_currency }}</span></strong>
+                </div>
+                {% if product.metafields.custom.excerpt %}
+                <div class="card-description">{{ product.metafields.custom.excerpt }}</div>
+                {% endif %}
+              </li>
+          {% endcase %}
+        {% endfor %}
+      </ul>
+    </div>
+    <!-- Glide Arrows -->
+    <div class="glide__arrows" data-glide-el="controls">
+      <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
+      <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
+    </div>
   </div>
-  <!-- Glide Arrows -->
-  <div class="glide__arrows" data-glide-el="controls">
-    <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i class="fas fa-chevron-left"></i></button>
-    <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i class="fas fa-chevron-right"></i></button>
-  </div>
-</div>
 
 
   {% if section.settings.button_text != blank %}
@@ -93,60 +110,118 @@
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide@latest/dist/glide.min.js"></script>
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    // Listen for clicks on color selectors and adjust their position
-    document.querySelectorAll('.glide__slide').forEach(function(slide) {
-        const imageContainer = slide.querySelector('.image-container');
-        const selectors = slide.querySelectorAll('.color-selector');
+    let selectedVariants = {};
 
-        selectors.forEach(function(selector, index) {
-            // Ensure the selectors are positioned relative to the image container
-            selector.style.position = 'absolute';
-            selector.style.bottom = '5px'; // Adjust as needed
-            selector.style.left = `${5 + index * 25}px`; // Adjust starting position and spacing as needed
+    function displayInventoryStatus(slide, variantId) {
+        slide.querySelectorAll('.inventory-status').forEach(function(elem) {
+            elem.style.display = 'none';
         });
 
-        // Set up click event for changing the image based on the selector
-        selectors.forEach(selector => {
-            selector.addEventListener('click', function() {
-                const variantImageUrl = this.getAttribute('data-variant-image');
-                const productImage = imageContainer.querySelector('img');
-
-                if (productImage && variantImageUrl) {
-                    productImage.src = variantImageUrl;
-                }
-            });
-        });
-    });
-});
-
-</script>
-
-
-
-
-
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    new Glide('.glide', {
-      type: 'carousel',
-      gap: 20,
-      perView: 4,
-      breakpoints: {
-        768: {
-          perView: 2.5
-        },
-        480: {
-          perView: 1.5
+        const selectedStatus = slide.querySelector(`.inventory-status[data-variant-id="${variantId}"]`);
+        if (selectedStatus) {
+            selectedStatus.style.display = 'block';
         }
-      }
-    }).mount();
-  });
+    }
+
+    function selectVariant(slide, variantId, variantImageUrl) {
+        const productImage = slide.querySelector('img');
+        if (productImage && variantImageUrl) {
+            productImage.src = variantImageUrl;
+        }
+
+        displayInventoryStatus(slide, variantId);
+        const productId = slide.dataset.productId;
+        selectedVariants[productId] = variantId;
+
+        slide.querySelectorAll('.color-selector').forEach(sel => sel.classList.remove('selected'));
+        const currentSelector = slide.querySelector(`.color-selector[data-variant-id="${variantId}"]`);
+        if (currentSelector) {
+            currentSelector.classList.add('selected');
+        }
+    }
+
+    function reapplyVariantSelections() {
+        document.querySelectorAll('.glide__slide').forEach(function(slide) {
+            const productId = slide.dataset.productId;
+            const variantId = selectedVariants[productId];
+            if (variantId) {
+                const variantSelector = slide.querySelector(`.color-selector[data-variant-id="${variantId}"]`);
+                if (variantSelector) {
+                    const variantImageUrl = variantSelector.dataset.variantImage;
+                    selectVariant(slide, variantId, variantImageUrl);
+                }
+            }
+        });
+    }
+
+    function updateVariantSelectionAndStatus() {
+        document.querySelectorAll('.glide__slide').forEach(function(slide) {
+            const selectors = slide.querySelectorAll('.color-selector');
+
+            selectors.forEach(function(selector, index) {
+                selector.style.position = 'absolute';
+                selector.style.bottom = '5px';
+                selector.style.left = `${5 + index * 25}px`;
+            });
+
+            selectors.forEach(selector => {
+                selector.addEventListener('click', function() {
+                    const variantId = this.dataset.variantId;
+                    const variantImageUrl = this.dataset.variantImage;
+                    selectVariant(slide, variantId, variantImageUrl);
+                });
+            });
+
+            const firstVariantSelector = slide.querySelector('.color-selector:first-child');
+            if (firstVariantSelector) {
+                firstVariantSelector.click();
+            }
+        });
+    }
+
+    let glide = new Glide('.glide', {
+        type: 'carousel',
+        gap: 20,
+        perView: 4,
+        breakpoints: {
+            768: { perView: 2.5 },
+            480: { perView: 1.5 }
+        }
+    });
+
+    glide.on('mount.after', function() {
+        updateVariantSelectionAndStatus();
+        adjustArrowPositions();
+    });
+
+    glide.on('run.after', function() {
+        reapplyVariantSelections();
+        adjustArrowPositions();
+    });
+
+    glide.mount();
+
+    // Function to adjust arrow positions based on the image container's height
+    function adjustArrowPositions() {
+        const glideArrows = document.querySelectorAll('.glide__arrows');
+        glideArrows.forEach(arrowContainer => {
+            const slideImageHeight = arrowContainer.closest('.glide').querySelector('.image-container img').offsetHeight;
+            arrowContainer.style.top = `${slideImageHeight / 2}px`;
+        });
+    }
+
+    // Adjust arrow positions on window resize
+    window.addEventListener('resize', adjustArrowPositions);
+});
 </script>
+
+
+
+
+
 
 
 
@@ -157,13 +232,23 @@ document.addEventListener('DOMContentLoaded', function() {
       {
       "type": "richtext",
       "id": "socks_title",
-      "label": "Socks Title",
+      "label": "Title",
       "default": "<h2>This is a section title...</h2>"
+    },
+    {
+      "type": "range",
+      "id": "title_text_size",
+      "label": "Title Text Size",
+      "min": 10,
+      "max": 48,
+      "step": 1,
+      "default": 24,
+      "unit": "px"
     },
     {
       "type": "richtext",
       "id": "socks_overview",
-      "label": "Socks Overview",
+      "label": "Overview",
       "default": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>"
     },
     {

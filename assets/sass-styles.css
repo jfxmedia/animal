@@ -134,7 +134,7 @@
 .socks-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 80px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -143,7 +143,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
 .socks-header {
@@ -234,14 +233,47 @@
   bottom: 15px;
   left: 10px;
   display: flex;
-  gap: 5px;
 }
 .glide__slide .color-selector {
+  position: relative;
   display: block;
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
   border-radius: 4px;
   cursor: pointer;
+}
+.glide__slide .color-selector:after {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #ffffff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.glide__slide .color-selector.selected:after {
+  opacity: 1;
+}
+.glide__slide .inventory-status {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.glide__slide .inventory-status .low-stock-badge {
+  background-color: #BE4E4E;
+  color: #ffffff;
+  padding: 3px 8px;
+  border-radius: 4px;
+}
+.glide__slide .inventory-status .bestseller-badge {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 3px 8px;
+  border-radius: 4px;
 }
 
 .glide__arrows {
@@ -295,6 +327,7 @@
   background-color: var(--button-hover-color);
 }
 
+/*
 .slide-button {
   background-color: var(--button-color);
   color: #ffffff;
@@ -308,11 +341,12 @@
   top: 326px;
   left: 0;
   text-align: center;
-}
-.slide-button:hover {
-  background-color: var(--button-hover-color);
-}
 
+  &:hover {
+    background-color: var(--button-hover-color);
+  }
+}
+*/
 .socks-button-lower {
   display: none;
 }
@@ -320,7 +354,6 @@
 @media (max-width: 768px) {
   .socks-header {
     max-width: 100%;
-    margin-bottom: 20px;
   }
   .socks-button {
     background-color: var(--button-color);
@@ -344,6 +377,7 @@
 @media (max-width: 480px) {
   .socks-wrapper {
     position: relative;
+    padding: 40px 20px;
   }
   .socks-content {
     flex-direction: column;
