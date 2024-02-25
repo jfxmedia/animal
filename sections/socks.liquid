@@ -245,37 +245,43 @@ document.addEventListener('DOMContentLoaded', function() {
     "name": "Socks",
     "settings": [
       {
-        "type": "select",
-        "id": "title_tag",
-        "label": "Title Tag",
-        "options": [
-          {
-            "value": "h1",
-            "label": "H1"
-          },
-          {
-            "value": "h2",
-            "label": "H2"
-          },
-          {
-            "value": "h3",
-            "label": "H3"
-          },
-          {
-            "value": "h4",
-            "label": "H4"
-          },
-          {
-            "value": "h5",
-            "label": "H5"
-          },
-          {
-            "value": "h6",
-            "label": "H6"
-          }
-        ],
-        "default": "h2"
-      },
+      "type": "richtext",
+      "id": "socks_title",
+      "label": "Title",
+      "default": "<h2>This is a section title...</h2>"
+    },
+    {
+      "type": "select",
+      "id": "title_tag",
+      "label": "Title Tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        }
+      ],
+      "default": "h2"
+    },
     {
       "type": "range",
       "id": "title_text_size",
