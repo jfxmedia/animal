@@ -31,7 +31,7 @@
           "type": "collection",
           "settings": {
             "collection": "the-james-bond-collection",
-            "collection_button_url": "",
+            "collection_button_url": "shopify:\/\/collections\/the-james-bond-collection",
             "collection_button_text": "Explore Collection"
           }
         },
@@ -39,7 +39,7 @@
           "type": "product",
           "settings": {
             "product": "the-shaken",
-            "product_button_url": "",
+            "product_button_url": "shopify:\/\/products\/the-shaken",
             "product_button_text": "View Product"
           }
         }
