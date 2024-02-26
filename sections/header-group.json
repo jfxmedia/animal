@@ -8,13 +8,21 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Go Wild 📦 Get Free Shipping at $45",
+            "text": "FREE SHIPPING!",
+            "link": ""
+          }
+        },
+        "announcement_eB49Xh": {
+          "type": "announcement",
+          "settings": {
+            "text": "Sign up below for deals and releases!",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_eB49Xh"
       ],
       "settings": {
         "color_scheme": "accent-2",
