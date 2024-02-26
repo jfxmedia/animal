@@ -1,6 +1,6 @@
 <style>
   :root {
-    --body-font-size: {{ section.settings.body_font_size }};
+    --body-font-size: {{ section.settings.body_font_size | append: 'px' }};
     --button-color: {{ section.settings.button_color }};
     --button-hover-color: {{ section.settings.button_hover_color }};
   }
