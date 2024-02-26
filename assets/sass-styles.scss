@@ -13,6 +13,9 @@ $slide-padding: 5px;
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
+body {
+  font-size: var(--body-font-size);
+}
 
 // Wrapper Styles
 .socks-wrapper {

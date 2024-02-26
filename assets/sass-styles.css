@@ -131,6 +131,10 @@
   cursor: -webkit-grabbing;
 }
 
+body {
+  font-size: 1rem;
+}
+
 .socks-wrapper {
   max-width: 1400px;
   margin: 0 auto;
