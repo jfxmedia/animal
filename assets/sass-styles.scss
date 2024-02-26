@@ -1,10 +1,12 @@
 // Variables
-$color-black: #000000;
-$color-white: #ffffff;
-$color-hover: #695EE4;
-$font-size-title: 24px;
-$font-size-overview: 16px;
-$font-size-arrow-icon: 18px;
+$black: #000000;
+$white: #ffffff;
+$hover: #695EE4;
+$low-badge: #BE4E4E;
+$font-size-title: 2.3rem;
+$font-size-overview: 1rem;
+$font-size-body: 1.5rem;
+$font-size-arrow-icon: 1.125rem;
 $arrow-size: 40px;
 $slide-padding: 5px;
 
@@ -12,11 +14,15 @@ $slide-padding: 5px;
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
+body {
+  font-size: $font-size-body;
+}
+
 // Wrapper Styles
 .socks-wrapper {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 80px 40px;
   display: flex;
   flex-direction: column;
 }
@@ -26,7 +32,6 @@ $slide-padding: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
 }
 
 // Header Styles
@@ -52,7 +57,7 @@ $slide-padding: 5px;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  color: $color-black;
+  color: $black;
 
   strong {
     width: 100%;
@@ -62,7 +67,7 @@ $slide-padding: 5px;
 }
 
 .card-link {
-  color: $color-black;
+  color: $black;
 }
 
 // Glide Slider Styles
@@ -98,25 +103,26 @@ $slide-padding: 5px;
 .glide__slide {
   .image-container {
     position: relative;
-    width: 100%; // Ensure it spans the full width of its parent
+    width: 100%; 
     img {
       width: 100%;
       height: auto;
-      border-radius: 8px; // Example styling
+      border-radius: 8px; 
     }
   }
 
   .slide-button {
     position: absolute;
-    left: 50%; // Center it horizontally
-    transform: translateX(-50%); // Adjust for centering
+    left: 50%; 
+    transform: translateX(-50%); 
     background-color: var(--button-color);
-    color: #ffffff;
+    color: $white;
     text-decoration: none;
     padding: 10px 20px;
     border-radius: 4px;
-    width: 90%; // Adjust width as needed
+    width: 90%; 
     text-align: center;
+    background-color: var(--button-color);
     transition: background-color 0.3s, color 0.3s;
 
     &:hover {
@@ -128,23 +134,53 @@ $slide-padding: 5px;
     bottom: 15px;
     left: 10px;
     display: flex;
-    gap: 5px;
   }
   
   .color-selector {
+    position: relative;
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 4px;
     cursor: pointer;
-  
+
+    &:after {
+      font-family: "Font Awesome 5 Free"; 
+      content: "\f00c"; 
+      font-weight: 900; 
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 14px; 
+      color: $white; 
+      opacity: 0; 
+      transition: opacity 0.3s ease;
+    }
+
+    &.selected:after {
+      opacity: 1;
+    }
+  }
+  .inventory-status {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+
+    .low-stock-badge {
+      background-color: $low-badge;
+      color: $white;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+    .bestseller-badge {
+      background-color: $white;
+      color: $black;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
   }
 }
-
-
-
-
-
 
 // Arrow Styles
 .glide__arrows {
@@ -157,9 +193,9 @@ $slide-padding: 5px;
 }
 
 .glide__arrow {
-  background-color: $color-white;
+  background-color: $white;
   opacity: 0.8;
-  color: $color-black;
+  color: $black;
   border-radius: 50%;
   border: none;
   width: $arrow-size;
@@ -171,8 +207,8 @@ $slide-padding: 5px;
   transition: background-color 0.3s, color 0.3s;
 
   &:hover {
-    background-color: $color-black;
-    color: $color-white;
+    background-color: $black;
+    color: $white;
   }
   
   &.glide__arrow--left {
@@ -193,7 +229,7 @@ $slide-padding: 5px;
   background-color: var(--button-color);
   align-self: flex-end;
   margin-bottom: 20px;
-  color: $color-white;
+  color: $white;
   text-decoration: none;
   padding: 10px 20px;
   border-radius: 4px;
@@ -204,7 +240,7 @@ $slide-padding: 5px;
     background-color: var(--button-hover-color);
   }
 }
-
+/*
 .slide-button {
   background-color: var(--button-color);
   color: #ffffff;
@@ -223,6 +259,7 @@ $slide-padding: 5px;
     background-color: var(--button-hover-color);
   }
 }
+*/
 
 .socks-button-lower {
   display:none;
@@ -232,14 +269,13 @@ $slide-padding: 5px;
 @media (max-width: 768px) {
     .socks-header {
       max-width: 100%;
-      margin-bottom: 20px;
     }
 
     .socks-button {
         background-color: var(--button-color);
         align-self: flex-start;
         margin-bottom: 20px;
-        color: $color-white;
+        color: $white;
         text-decoration: none;
         padding: 10px 20px;
         border-radius: 4px;
@@ -263,6 +299,7 @@ $slide-padding: 5px;
 @media (max-width: 480px) {
     .socks-wrapper {
         position: relative;
+        padding: 40px 20px;
     }
     .socks-content {
         flex-direction: column;
@@ -278,7 +315,7 @@ $slide-padding: 5px;
       background-color: var(--button-color);
       align-self: flex-end;
       margin: 20px 0;
-      color: $color-white;
+      color: $white;
       text-decoration: none;
       padding: 10px 20px;
       border-radius: 4px;
