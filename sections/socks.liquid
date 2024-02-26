@@ -1,6 +1,5 @@
 <style>
   :root {
-    --body-font-size: {{ section.settings.body_font_size | append: 'px' }};
     --button-color: {{ section.settings.button_color }};
     --button-hover-color: {{ section.settings.button_hover_color }};
   }
@@ -333,16 +332,6 @@ document.addEventListener('DOMContentLoaded', function() {
       "id": "button_hover_color",
       "label": "Button Hover Color",
       "default": "#695EE4"
-    },
-    {
-      "type": "range",
-      "id": "body-font-size",
-      "label": "General Font Size",
-      "min": 10,
-      "max": 24,
-      "step": 1,
-      "default": 16,
-      "unit": "px"
     }
     ],
     "blocks": [

@@ -132,7 +132,7 @@
 }
 
 body {
-  font-size: var(--body-font-size);
+  font-size: 1.5rem;
 }
 
 .socks-wrapper {
@@ -249,7 +249,6 @@ body {
 }
 .glide__slide .color-selector:after {
   content: "\f00c";
-  font-family: "Font Awesome 5 Free";
   font-weight: 900;
   position: absolute;
   top: 50%;
