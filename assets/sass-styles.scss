@@ -103,7 +103,7 @@ body {
 .glide__slide {
   .image-container {
     position: relative;
-    width: 100%; // Ensure it spans the full width of its parent glide__slide
+    width: 100%; 
     img {
       width: 100%;
       height: auto;
@@ -113,7 +113,7 @@ body {
 
   .slide-button {
     position: absolute;
-    left: 50%; // Center it horizontally, i need to change this
+    left: 50%; 
     transform: translateX(-50%); 
     background-color: var(--button-color);
     color: $white;
@@ -145,6 +145,7 @@ body {
     cursor: pointer;
 
     &:after {
+      font-family: "Font Awesome 5 Free"; 
       content: "\f00c"; 
       font-weight: 900; 
       position: absolute;
@@ -180,11 +181,6 @@ body {
     }
   }
 }
-
-
-
-
-
 
 // Arrow Styles
 .glide__arrows {

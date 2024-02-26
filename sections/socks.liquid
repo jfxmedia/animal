@@ -117,7 +117,7 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
     let selectedVariants = {};
-
+    // Initialize empty object to store selected variants for each product
     function displayInventoryStatus(slide, variantId) {
         slide.querySelectorAll('.inventory-status').forEach(function(elem) {
             elem.style.display = 'none';
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function() {
             selectedStatus.style.display = 'block';
         }
     }
-
+    // Display the inventory status for the selected variant and hides all others
     function selectVariant(slide, variantId, variantImageUrl) {
         const productImage = slide.querySelector('img');
         if (productImage && variantImageUrl) {
@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
             currentSelector.classList.add('selected');
         }
     }
-
+    // Changes the product image and inventory status based on the selected variant and marks the variant as selected
     function reapplyVariantSelections() {
         document.querySelectorAll('.glide__slide').forEach(function(slide) {
             const productId = slide.dataset.productId;
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
+    // Reapplies variant selections when navigating the slider to ensure the correct variant remains selected
     function updateVariantSelectionAndStatus() {
         document.querySelectorAll('.glide__slide').forEach(function(slide) {
             const selectors = slide.querySelectorAll('.color-selector');
@@ -185,6 +185,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+// Adjust arrow positions based on the image-container height
+    function adjustArrowPositions() {
+    const glideArrows = document.querySelectorAll('.glide__arrows');
+    glideArrows.forEach(arrowContainer => {
+        const slideImageHeight = arrowContainer.closest('.glide').querySelector('.image-container img').offsetHeight;
+        arrowContainer.style.top = `${slideImageHeight / 2}px`;
+    });
+    }
+
+// Adjust arrow positions on window resize
+    window.addEventListener('resize', adjustArrowPositions);
+
     let glide = new Glide('.glide', {
         type: 'carousel',
         gap: 20,
@@ -194,30 +206,18 @@ document.addEventListener('DOMContentLoaded', function() {
             480: { perView: 1.2 }
         }
     });
-
+    // Executes variant selection update and arrow position adjustment after the Glide.js slider is mounted
     glide.on('mount.after', function() {
         updateVariantSelectionAndStatus();
         adjustArrowPositions();
     });
-
+    // Reapply variant selections and adjust arrow positions after each slider movement
     glide.on('run.after', function() {
         reapplyVariantSelections();
         adjustArrowPositions();
     });
 
     glide.mount();
-
-    // Function to adjust arrow positions based on the image-container height
-    function adjustArrowPositions() {
-        const glideArrows = document.querySelectorAll('.glide__arrows');
-        glideArrows.forEach(arrowContainer => {
-            const slideImageHeight = arrowContainer.closest('.glide').querySelector('.image-container img').offsetHeight;
-            arrowContainer.style.top = `${slideImageHeight / 2}px`;
-        });
-    }
-
-    // Adjust arrow positions on window resize
-    window.addEventListener('resize', adjustArrowPositions);
 });
 </script>
 

@@ -248,6 +248,7 @@ body {
   cursor: pointer;
 }
 .glide__slide .color-selector:after {
+  font-family: "Font Awesome 5 Free";
   content: "\f00c";
   font-weight: 900;
   position: absolute;
