@@ -157,10 +157,10 @@ body {
 .socks-header .socks-title,
 .socks-header .socks-overview {
   margin-bottom: 10px;
-  font-size: 24px;
+  font-size: 2.3rem;
 }
 .socks-header .socks-overview {
-  font-size: 16px;
+  font-size: 1rem;
 }
 
 .card-title {
