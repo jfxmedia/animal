@@ -13,6 +13,7 @@ $slide-padding: 5px;
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.core.scss";
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
+
 // Wrapper Styles
 .socks-wrapper {
   max-width: 1400px;
@@ -20,6 +21,10 @@ $slide-padding: 5px;
   padding: 80px 40px;
   display: flex;
   flex-direction: column;
+
+  * {
+    font-size: 1.0rem;
+  }
 }
 
 // Content Styles

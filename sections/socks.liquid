@@ -51,7 +51,7 @@
               <!-- Collection Slide -->
               {% assign collection = collections[block.settings.collection] %}
               <li class="glide__slide">
-                <img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}">
+                <a href="{{ collection.url }}"><img src="{{ collection.image | img_url: 'master' }}" alt="{{ collection.title }}"></a>
                     {% comment %} {% if block.settings.collection_button_text %}
                       <a href="{{ collection.url }}" class="slide-button">
                         {{ block.settings.collection_button_text }}&nbsp;
@@ -68,7 +68,7 @@
               {% assign product = all_products[block.settings.product] %}
               <li class="glide__slide">
                 <div class="image-container">
-                  <img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}">
+                  <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url: 'master' }}" alt="{{ product.title }}"></a>
                   {% comment %} {% if block.settings.product_button_text %}
                     <a href="{{ product.url }}" class="slide-button">
                       {{ block.settings.product_button_text }}&nbsp;
@@ -204,7 +204,7 @@ document.addEventListener('DOMContentLoaded', function() {
         perView: 4,
         breakpoints: {
             768: { perView: 2.5 },
-            480: { perView: 1.5 }
+            480: { perView: 1.2 }
         }
     });
 
