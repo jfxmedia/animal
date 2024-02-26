@@ -1,5 +1,6 @@
 <style>
   :root {
+    --button-color: {{ section.settings.button_color }};
     --button-hover-color: {{ section.settings.button_hover_color }};
   }
 </style>
@@ -33,7 +34,7 @@
     </div>
     {% comment %}Tablet - Desktop button{% endcomment %}
     {% if section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_url }}" style="background-color: {{ section.settings.button_color }}" class="socks-button">
+      <a href="{{ section.settings.button_url }}" class="socks-button">
         {{ section.settings.button_text }}&nbsp;
         <i class="fas fa-arrow-right"></i>
       </a>
