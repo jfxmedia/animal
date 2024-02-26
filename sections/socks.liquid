@@ -1,6 +1,5 @@
 <style>
   :root {
-    --button-color: {{ section.settings.button_color }};
     --button-hover-color: {{ section.settings.button_hover_color }};
   }
 </style>
@@ -32,8 +31,9 @@
         {{ section.settings.socks_overview }}
       </div>
     </div>
+    {% comment %}Tablet - Desktop button{% endcomment %}
     {% if section.settings.button_text != blank %}
-      <a href="{{ section.settings.button_url }}" class="socks-button">
+      <a href="{{ section.settings.button_url }}" style="background-color: {{ section.settings.button_color }}" class="socks-button">
         {{ section.settings.button_text }}&nbsp;
         <i class="fas fa-arrow-right"></i>
       </a>
@@ -114,7 +114,7 @@
     </div>
   </div>
 
-
+{% comment %}Lower button shows on mobile{% endcomment %}
   {% if section.settings.button_text != blank %}
     <a href="{{ section.settings.button_url }}" class="socks-button-lower">
       {{ section.settings.button_text }}&nbsp;
@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     glide.mount();
 
-    // Function to adjust arrow positions based on the image container's height
+    // Function to adjust arrow positions based on the image-container height
     function adjustArrowPositions() {
         const glideArrows = document.querySelectorAll('.glide__arrows');
         glideArrows.forEach(arrowContainer => {
@@ -320,11 +320,28 @@ document.addEventListener('DOMContentLoaded', function() {
       "default": "Explore all ranges"
     },
     {
-      "type": "color",
+      "type": "select",
       "id": "button_color",
       "label": "Button Color",
-      "default": "#000000"
-
+      "options": [
+        {
+          "value": "#D37171",
+          "label": "Red"
+        },
+        {
+          "value": "#6F96BB",
+          "label": "Blue"
+        },
+        {
+          "value": "#95B94A",
+          "label": "Green"
+        },
+        {
+          "value": "#695EE4",
+          "label": "Purple"
+        }
+      ],
+      "default": "#695EE4"
     },
     {
       "type": "color",
