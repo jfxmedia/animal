@@ -12,9 +12,10 @@
         },
         "text_eiQDfq": {
           "type": "text",
+          "disabled": true,
           "settings": {
-            "text": "<p style=\"color: white;line-height:1.3em\">FREE SHIPPING ON ALL PRODUCTS!<\/p>",
-            "text_style": "subtitle"
+            "text": "<p style=\"color: white;line-height:1.3em\">FREE SHIPPING!<\/p>",
+            "text_style": "subtitle--large"
           }
         },
         "buttons_U8xNWL": {
