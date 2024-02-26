@@ -5,6 +5,7 @@ $hover: #695EE4;
 $low-badge: #BE4E4E;
 $font-size-title: 2.3rem;
 $font-size-overview: 1rem;
+$font-size-body: 1.5rem;
 $font-size-arrow-icon: 1.125rem;
 $arrow-size: 40px;
 $slide-padding: 5px;
@@ -14,7 +15,7 @@ $slide-padding: 5px;
 @import "../node_modules/@glidejs/glide/src/assets/sass/glide.theme.scss";
 
 body {
-  font-size: 1.5rem;
+  font-size: $font-size-body;
 }
 
 // Wrapper Styles
