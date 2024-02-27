@@ -79,9 +79,10 @@
             {% if link.current %}
               aria-current="page"
             {% endif %}
-                              {%- if link.title == 'On Sale' or link.title == 'On Sale!' %}
-                    style="color: {{ section.settings.sale_link_color }}!important;"
-                  {% endif %}
+              {% comment %} LIVE EDIT {% endcomment %}
+              {%- if link.title | downcase contains 'sale' %}
+                style="color: {{ section.settings.sale_link_color }}"
+              {% endif %}
           >
             <span
               {%- if link.current %}
