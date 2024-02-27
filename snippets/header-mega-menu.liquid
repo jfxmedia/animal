@@ -80,7 +80,7 @@
               aria-current="page"
             {% endif %}
             {% comment %} LIVE EDIT {% endcomment %}
-            {%- if link.title contains 'sale' %}
+            {%- if link.title contains 'sale' | downcase %}
               style="color: {{ section.settings.sale_link_color }}"
             {% endif %}
           >
