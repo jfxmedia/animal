@@ -39,10 +39,10 @@
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
-        "link_text_color": "#121212",
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
+        "sale_link_color": "#c42121",
         "color_scheme": "background-2",
         "menu_color_scheme": "background-2",
         "enable_country_selector": true,
