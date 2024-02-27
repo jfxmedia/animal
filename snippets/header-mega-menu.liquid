@@ -21,6 +21,9 @@
                   {%- if link.child_active %}
                     class="header__active-menu-item"
                   {% endif %}
+                  {%- if link.title == 'On Sale' or link.title == 'On Sale!' %}
+                    style="color: {{ section.settings.sale_link_color }};"
+                  {% endif %}
                 >
                   {{- link.title | escape -}}
                 </span>
