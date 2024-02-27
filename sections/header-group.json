@@ -39,6 +39,8 @@
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
+        "link_text_color": "#dd1d1d",
+        "link_text_bold": true,
         "menu_type_desktop": "dropdown",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
