@@ -22,7 +22,7 @@
                     class="header__active-menu-item"
                   {% endif %}
                   {%- if link.title == 'On Sale' or link.title == 'On Sale!' %}
-                    style="color: {{ section.settings.sale_link_color }};"
+                    style="color: {{ section.settings.sale_link_color }}!important;"
                   {% endif %}
                 >
                   {{- link.title | escape -}}
