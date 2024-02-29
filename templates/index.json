@@ -111,7 +111,7 @@
         "show_description": false,
         "description_style": "subtitle",
         "collection": "hot-products",
-        "products_to_show": 12,
+        "products_to_show": 9,
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
@@ -129,12 +129,66 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_LKz9Ex": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_rRifHP": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Aa3EnP": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_JNWrTy": {
+          "type": "column",
+          "settings": {
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rRifHP",
+        "column_Aa3EnP",
+        "column_JNWrTy"
+      ],
+      "settings": {
+        "title": "Multicolumn",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Button label",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "image_banner",
     "17090545980d46ab3e",
     "newsletter_8inLRL",
-    "featured_collection"
+    "featured_collection",
+    "multicolumn_LKz9Ex"
   ]
 }
