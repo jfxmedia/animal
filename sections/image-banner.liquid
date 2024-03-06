@@ -120,9 +120,9 @@
       {%- for block in section.blocks -%}
         {%- case block.type -%}
           {%- when 'heading' -%}
-            <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>
+            <h2 class="banner__heading inline-richtext {{ block.settings.heading_size }} banner__heading--custom-font" {{ block.shopify_attributes }} style="font-family: {{ section.settings.heading_font_family | default: 'inherit' }};">
               {{ block.settings.heading }}
-            </h2>
+            </h2>            
           {%- when 'text' -%}
             <div class="banner__text rte {{ block.settings.text_style }}" {{ block.shopify_attributes }} >
               <p>{{ block.settings.text }}</p>
@@ -397,6 +397,31 @@
           ],
           "default": "h1",
           "label": "t:sections.all.heading_size.label"
+        },
+        {
+          "type": "select",
+          "id": "heading_font_family",
+          "label": "Heading Font Family",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "Pacifico",
+              "label": "Pacifico"
+            },
+            {
+              "value": "'Playfair Display', serif",
+              "label": "Playfair Display"
+            },
+            {
+              "value": "'Josefin Sans', sans-serif",
+              "label": "Josefin Sans"
+            }
+          ],
+          "default": "default",
+          "info": "Select a font family for the banner heading."
         }
       ]
     },
