@@ -42,7 +42,7 @@
         "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
-        "sale_link_color": "#c42121",
+        "sale_link_color": "#f6836f",
         "color_scheme": "background-2",
         "menu_color_scheme": "background-2",
         "enable_country_selector": true,
