@@ -270,9 +270,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   font-weight: var(--font-body-weight);
 }
 
-.banner__heading--custom-font {
-  font-family: inherit; /* This will be overridden inline, but it's good practice to have a fallback */
-}
+
 
 h1,
 h2,
