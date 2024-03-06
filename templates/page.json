@@ -15,7 +15,6 @@
           "type": "collection",
           "settings": {
             "collection": "the-queen-collection",
-            "collection_button_url": "shopify:\/\/collections\/the-queen-collection",
             "collection_button_text": "Explore Collection"
           }
         },
@@ -23,7 +22,6 @@
           "type": "product",
           "settings": {
             "product": "the-chef",
-            "product_button_url": "shopify:\/\/products\/the-chef",
             "product_button_text": "View Product"
           }
         },
@@ -31,7 +29,6 @@
           "type": "collection",
           "settings": {
             "collection": "the-james-bond-collection",
-            "collection_button_url": "shopify:\/\/collections\/the-james-bond-collection",
             "collection_button_text": "Explore Collection"
           }
         },
@@ -39,7 +36,6 @@
           "type": "product",
           "settings": {
             "product": "the-shaken",
-            "product_button_url": "shopify:\/\/products\/the-shaken",
             "product_button_text": "View Product"
           }
         }

@@ -8,19 +8,27 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Go Wild 📦 Get Free Shipping at $45",
+            "text": "Shipping is Free in the US",
+            "link": ""
+          }
+        },
+        "announcement_eB49Xh": {
+          "type": "announcement",
+          "settings": {
+            "text": "Sign up below for deals and releases!",
             "link": ""
           }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_eB49Xh"
       ],
       "settings": {
         "color_scheme": "accent-2",
         "show_line_separator": true,
         "show_social": false,
-        "auto_rotate": false,
+        "auto_rotate": true,
         "change_slides_speed": 5,
         "enable_country_selector": false,
         "enable_language_selector": false
@@ -31,11 +39,12 @@
       "settings": {
         "logo_position": "middle-center",
         "menu": "main-menu",
-        "menu_type_desktop": "dropdown",
+        "menu_type_desktop": "mega",
         "sticky_header_type": "on-scroll-up",
         "show_line_separator": true,
+        "sale_link_color": "#f6836f",
         "color_scheme": "background-2",
-        "menu_color_scheme": "background-1",
+        "menu_color_scheme": "background-2",
         "enable_country_selector": true,
         "enable_language_selector": true,
         "mobile_logo_position": "center",

@@ -3,7 +3,7 @@
     "logo": "shopify:\/\/shop_images\/animalinstinctive_text_logo.png",
     "logo_width": 150,
     "favicon": "shopify:\/\/shop_images\/animalinstinctive_text_logo.png",
-    "type_header_font": "asap_n4",
+    "type_header_font": "glegoo_n4",
     "heading_scale": 120,
     "type_body_font": "avenir_next_rounded_n4",
     "body_scale": 100,
@@ -108,7 +108,7 @@
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "",
+    "social_pinterest_link": "https:\/\/www.pinterest.com\/animalinstinctive",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
@@ -160,7 +160,7 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#ffffff",
+          "background": "#f4f4f4",
           "background_gradient": "",
           "text": "#121212",
           "button": "#55e0f7",
@@ -230,6 +230,17 @@
           "background_gradient": "",
           "text": "#ffffff",
           "button": "#da29d4",
+          "button_label": "#ffffff",
+          "secondary_button_label": "#000000",
+          "shadow": "#121212"
+        }
+      },
+      "scheme-738ffd4b-734f-4e33-b235-d5bb6ef1a077": {
+        "settings": {
+          "background": "#ffffff",
+          "background_gradient": "",
+          "text": "#000000",
+          "button": "#ee644c",
           "button_label": "#ffffff",
           "secondary_button_label": "#000000",
           "shadow": "#121212"
