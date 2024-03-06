@@ -1,19 +1,7 @@
 # we use Shopify as our ecommerce platform
-{%- comment -%}
-# Caution! Please read https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt before proceeding to make changes to this file.
-{% endcomment %}
-{% for group in robots.default_groups %}
-  {{- group.user_agent -}}
-
-  {% for rule in group.rules %}
-    {{- rule -}}
-  {% endfor %}
-
-  {%- if group.sitemap != blank -%}
-    {{ group.sitemap }}
-    Sitemap: [https://animalinstinctive.com/sitemap.xml]
-  {%- endif -%}
-{% endfor %}
+# This robots.txt file is optimized to allow search engines to crawl public pages
+# while restricting access to sensitive areas.
+# More information: https://help.shopify.com/en/manual/promoting-marketing/seo/editing-robots-txt
 
 User-agent: *
 Disallow: /admin
@@ -31,28 +19,19 @@ Disallow: /services/login_with_shop
 Disallow: /apple-app-site-association
 Disallow: /.well-known/shopify/monorail
 Disallow: /cdn/wpm/*.js
-Disallow: /services/login_with_shop
 Disallow: /*?*oseid=*
-Disallow: /*preview_theme_id*
-Disallow: /*preview_script_id*
 Disallow: /policies/
 Disallow: /*/*?*ls=*&ls=*
 Disallow: /*/*?*ls%3D*%3Fls%3D*
 Disallow: /*/*?*ls%3d*%3fls%3d*
-Disallow: /admin
-Disallow: /car
-Disallow: /orders
-Disallow: /checkouts/
-Disallow: /checkout
-Disallow: /68101341396/checkouts
-Disallow: /68101341396/orders
-Disallow: /carts
-Disallow: /account
-Allow: /policies/privacy-policy
+# Allow search engines to index public pages
+Allow: /
+# Specific allow directives are not necessary for pages not disallowed
+
+# Sitemap
 Sitemap: https://animalinstinctive.com/sitemap.xml
 
-
-# Google adsbot ignores robots.txt unless specifically named!
+# Google adsbot
 User-agent: adsbot-google
 Disallow: /checkouts/
 Disallow: /checkout
@@ -64,13 +43,12 @@ Disallow: /*?*oseid=*
 Disallow: /*preview_theme_id*
 Disallow: /*preview_script_id*
 Disallow: /services/login_with_shop
+# Allow adsbot to access policy pages for ad review purposes
 Allow: /policies/privacy-policy
+# Sitemap
 Sitemap: https://animalinstinctive.com/sitemap.xml
 
-
-User-agent: Nutch
-Disallow: /
-
+# AhrefsBot for SEO analysis
 User-agent: AhrefsBot
 Crawl-delay: 10
 Disallow: /admin
@@ -94,10 +72,12 @@ Disallow: /apple-app-site-association
 Disallow: /.well-known/shopify/monorail
 Disallow: /cdn/wpm/*.js
 Disallow: /services/login_with_shop
+# Sitemap
 Sitemap: https://animalinstinctive.com/sitemap.xml
 
 User-agent: AhrefsSiteAudit
 Crawl-delay: 10
+# Repeated directives as for AhrefsBot
 Disallow: /admin
 Disallow: /cart
 Disallow: /orders
@@ -119,12 +99,15 @@ Disallow: /apple-app-site-association
 Disallow: /.well-known/shopify/monorail
 Disallow: /cdn/wpm/*.js
 Disallow: /services/login_with_shop
+# Sitemap
 Sitemap: https://animalinstinctive.com/sitemap.xml
 
+# Other specific bots
 User-agent: MJ12bot
 Crawl-Delay: 10
 
 User-agent: Pinterest
 Crawl-delay: 1
 
+# Sitemap listed at the end for visibility
 Sitemap: https://animalinstinctive.com/sitemap.xml
