@@ -49,21 +49,52 @@
         "show_text_below": false
       }
     },
-    "17090545980d46ab3e": {
-      "type": "apps",
+    "image_with_text_nnQG64": {
+      "type": "image-with-text",
       "blocks": {
-        "judge_me_reviews_featured_carousel_DJJEG8": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "heading_AhNpnc": {
+          "type": "heading",
           "settings": {
-            "maxwidth": 1080
+            "heading": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_wGKb7W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Obsessed with the natural world around us, <\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_HYhWk7": {
+          "type": "button",
+          "settings": {
+            "button_label": "Button label",
+            "button_link": "",
+            "button_style_secondary": false
           }
         }
       },
       "block_order": [
-        "judge_me_reviews_featured_carousel_DJJEG8"
+        "heading_AhNpnc",
+        "text_wGKb7W",
+        "button_HYhWk7"
       ],
+      "disabled": true,
       "settings": {
-        "include_margins": true
+        "image": "shopify:\/\/shop_images\/pindo_palm_with_palm_pink_sky_background_tshirt_graphic_tee.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "newsletter_8inLRL": {
@@ -129,12 +160,30 @@
         "padding_top": 44,
         "padding_bottom": 36
       }
+    },
+    "17090545980d46ab3e": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_DJJEG8": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_DJJEG8"
+      ],
+      "settings": {
+        "include_margins": true
+      }
     }
   },
   "order": [
     "image_banner",
-    "17090545980d46ab3e",
+    "image_with_text_nnQG64",
     "newsletter_8inLRL",
-    "featured_collection"
+    "featured_collection",
+    "17090545980d46ab3e"
   ]
 }
