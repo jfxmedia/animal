@@ -117,6 +117,10 @@
     </small>
   </div>
   {%- if show_badges -%}
+    <span class="badge price__badge-new color-{{ settings.new_badge_color_scheme }}">
+      {{ 'products.product.new' | t }}
+    </span>
+
     <span class="badge price__badge-sale color-{{ settings.sale_badge_color_scheme }}">
       {{ 'products.product.on_sale' | t }}
     </span>
