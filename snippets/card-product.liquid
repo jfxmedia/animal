@@ -123,10 +123,9 @@
             {% comment %} NEW badge {% endcomment %}
             {%- if card_product.tags contains 'new' -%}
               <span
-                id="NewBadge-{{ section_id }}-{{ card_product.id }}"
+                id="Badge-{{ section_id }}-{{ card_product.id }}"
                 class="badge badge--bottom-left color-{{ settings.new_badge_color_scheme }}"
-              >
-                {{- 'products.product.new' | t -}}
+              >NEW!
               </span>
             {%- endif -%}
             {%- if card_product.available == false -%}
@@ -317,10 +316,9 @@
           {% comment %} NEW badge {% endcomment %}
           {%- if card_product.tags contains 'new' -%}
             <span
-              id="NewBadge-{{ section_id }}-{{ card_product.id }}"
+              id="Badge-{{ section_id }}-{{ card_product.id }}"
               class="badge badge--bottom-left color-{{ settings.new_badge_color_scheme }}"
             >
-              {{- 'products.product.new' | t -}}
             </span>
           {%- endif -%}
           {%- if card_product.available == false -%}
