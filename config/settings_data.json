@@ -98,6 +98,7 @@
     "badge_corner_radius": 4,
     "sale_badge_color_scheme": "scheme-fc56c11f-ef3e-48c7-802b-87a1162c8cf3",
     "sold_out_badge_color_scheme": "scheme-fc56c11f-ef3e-48c7-802b-87a1162c8cf3",
+    "new_badge_color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
     "brand_headline": "Animal Instinctive Apparel",
     "brand_description": "<p>Unique Designer Tees and Tops Inspired by the Wild<\/p>",
     "brand_image": "shopify:\/\/shop_images\/animalinstinctive_text_logo_gradientpink.png",
@@ -215,10 +216,10 @@
       },
       "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae": {
         "settings": {
-          "background": "#882999",
+          "background": "#ce69e0",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#55e0f7",
+          "button": "#ce69e0",
           "button_label": "#ffffff",
           "secondary_button_label": "#fff9f9",
           "shadow": "#121212"
