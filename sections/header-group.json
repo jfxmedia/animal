@@ -18,11 +18,19 @@
             "text": "Sign up below for 15% OFF",
             "link": ""
           }
+        },
+        "announcement_VVtC7A": {
+          "type": "announcement",
+          "settings": {
+            "text": "100% Easy Returns",
+            "link": ""
+          }
         }
       },
       "block_order": [
         "announcement-bar-0",
-        "announcement_eB49Xh"
+        "announcement_eB49Xh",
+        "announcement_VVtC7A"
       ],
       "settings": {
         "color_scheme": "accent-2",
