@@ -6,21 +6,21 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<div style=\"color:black;line-height:1.2em;\">get our newest design in crew &amp; v-neck<\/div>",
+            "heading": "<div style=\"color:black;line-height:1em;\">go retro with the Pindo Palm Resort &amp; Spa!<\/div>",
             "heading_size": "h0"
           }
         },
         "text_eiQDfq": {
           "type": "text",
           "settings": {
-            "text": "<p style=\"color:black;line-height:1.3em\">USA Printed | Free Shipping | Nature Addict Approved<\/p>",
+            "text": "<p style=\"color:black;line-height:1.3em\">Designed &amp; Printed in the U.S. | 100% Free Shipping | Guaranteed<\/p>",
             "text_style": "subtitle--large"
           }
         },
         "buttons_U8xNWL": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "BUY NOW",
+            "button_label_1": "SHOP",
             "button_link_1": "shopify:\/\/products\/pindo-palm-resort-spa-crew-unisex-retro-palm-tree-graphic-tee",
             "button_style_secondary_1": false,
             "button_label_2": "",
@@ -35,7 +35,7 @@
         "buttons_U8xNWL"
       ],
       "settings": {
-        "image_2": "shopify:\/\/shop_images\/redoutline_pindo_hero_b53a7ad1-b23d-4876-84df-3b2f74857b92.jpg",
+        "image": "shopify:\/\/shop_images\/pindo_palm_resort_spa_man_on_beach_white_tshirt.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
@@ -43,7 +43,7 @@
         "desktop_content_alignment": "left",
         "color_scheme": "scheme-738ffd4b-734f-4e33-b235-d5bb6ef1a077",
         "image_behavior": "none",
-        "mobile_content_alignment": "center",
+        "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": false
       }
@@ -137,7 +137,7 @@
         "title": "Bestsellers",
         "heading_size": "h1",
         "heading_centering": "center",
-        "description": "<p>The most popular products, t-shirts to hoodies and everything in between. Everything printed in the USA on quality name brand clothing. <\/p>",
+        "description": "<p>The most popular products, t-shirts to hoodies and everything in between. Everything printed in the USA on quality clothing. <\/p>",
         "show_description": false,
         "description_style": "subtitle",
         "collection": "hot-products",
