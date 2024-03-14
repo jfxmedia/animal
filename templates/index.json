@@ -143,7 +143,7 @@
         "collection": "hot-products",
         "products_to_show": 9,
         "columns_desktop": 3,
-        "full_width": true,
+        "full_width": false,
         "show_view_all": true,
         "view_all_style": "outline",
         "enable_desktop_slider": false,
