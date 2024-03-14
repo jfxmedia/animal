@@ -216,10 +216,10 @@
       },
       "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae": {
         "settings": {
-          "background": "#ce69e0",
+          "background": "#cafa49",
           "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ce69e0",
+          "text": "#000000",
+          "button": "#cafa49",
           "button_label": "#ffffff",
           "secondary_button_label": "#fff9f9",
           "shadow": "#121212"
