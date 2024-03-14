@@ -1265,6 +1265,12 @@
         "id": "sold_out_badge_color_scheme",
         "label": "t:settings_schema.badges.settings.sold_out_badge_color_scheme.label",
         "default": "inverse"
+      },
+      {
+        "type": "color_scheme",
+        "id": "new_badge_color_scheme",
+        "label": "t:settings_schema.badges.settings.new_badge_color_scheme.label",
+        "default": "inverse"
       }
     ]
   },
