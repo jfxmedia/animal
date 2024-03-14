@@ -65,6 +65,9 @@
             name="previous"
             aria-label="{{ 'sections.announcements.previous_announcement' | t }}"
             aria-controls="Slider-{{ section.id }}"
+            {% if section.settings.show_arrows == false %}
+              style="display: none;"
+            {% endif %}
           >
             {% render 'icon-caret' %}
           </button>
