@@ -141,7 +141,7 @@
         "heading_centering": "center",
         "description": "<p>We know you'll love these as much as we do.<\/p>",
         "show_description": false,
-        "description_style": "subtitle",
+        "description_style": "body",
         "collection": "hot-products",
         "products_to_show": 15,
         "columns_desktop": 3,
