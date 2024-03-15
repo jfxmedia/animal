@@ -136,10 +136,10 @@
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Bestsellers",
+        "title": "bestsellers",
         "heading_size": "h2",
         "heading_centering": "center",
-        "description": "<p>The most popular products, t-shirts to hoodies and everything in between. Everything printed in the USA on quality clothing. <\/p>",
+        "description": "<p>We know you'll love these as much as we do.<\/p>",
         "show_description": false,
         "description_style": "subtitle",
         "collection": "hot-products",
