@@ -125,9 +125,9 @@
       ],
       "settings": {
         "color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
-        "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 28
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "featured_collection": {
