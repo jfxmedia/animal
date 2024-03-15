@@ -22,7 +22,7 @@
           "settings": {
             "button_label_1": "SHOP ALL",
             "button_link_1": "shopify:\/\/collections\/hot-products",
-            "button_style_secondary_1": false,
+            "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -36,7 +36,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Palms_sky.jpg",
-        "image_overlay_opacity": 20,
+        "image_overlay_opacity": 40,
         "image_height": "small",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
