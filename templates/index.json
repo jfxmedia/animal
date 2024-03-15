@@ -141,7 +141,7 @@
         "show_description": false,
         "description_style": "subtitle",
         "collection": "hot-products",
-        "products_to_show": 9,
+        "products_to_show": 15,
         "columns_desktop": 3,
         "full_width": false,
         "show_view_all": true,
