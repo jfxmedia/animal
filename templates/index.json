@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<div style=\"color:black;line-height:1em;\">15% OFF for new customers<\/div>",
+            "heading": "<div style=\"color:white;line-height:1em;\">15% OFF for new customers<\/div>",
             "heading_size": "h0"
           }
         },
@@ -22,7 +22,7 @@
           "settings": {
             "button_label_1": "SHOP ALL",
             "button_link_1": "shopify:\/\/collections\/hot-products",
-            "button_style_secondary_1": false,
+            "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
