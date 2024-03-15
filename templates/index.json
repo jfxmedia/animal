@@ -102,14 +102,14 @@
         "heading_Q79nAQ": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% OFF",
+            "heading": "Get 15% OFF",
             "heading_size": "h0"
           }
         },
         "paragraph_Lh669c": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Enter your email, get 20% any order.<\/p>"
+            "text": "<p>Enter your email, get 15% any order.<\/p>"
           }
         },
         "email_form_tBRHUq": {
@@ -123,12 +123,11 @@
         "paragraph_Lh669c",
         "email_form_tBRHUq"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 36
+        "padding_top": 28,
+        "padding_bottom": 28
       }
     },
     "featured_collection": {
