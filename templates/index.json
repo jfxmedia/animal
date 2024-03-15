@@ -123,6 +123,9 @@
         "paragraph_Lh669c",
         "email_form_tBRHUq"
       ],
+      "custom_css": [
+        ".newsletter{margin: 20px;}"
+      ],
       "settings": {
         "color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
         "full_width": false,
