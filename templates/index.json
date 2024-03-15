@@ -13,7 +13,7 @@
         "text_eiQDfq": {
           "type": "text",
           "settings": {
-            "text": "<p style=\"color:black;line-height:1.3em\">Designed &amp; Printed in the U.S. | 100% Free Shipping<\/p>",
+            "text": "<p style=\"color:white;line-height:1.3em\">Designed &amp; Printed in the U.S. | 100% Free Shipping<\/p>",
             "text_style": "subtitle--large"
           }
         },
@@ -36,7 +36,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Palms_sky.jpg",
-        "image_overlay_opacity": 0,
+        "image_overlay_opacity": 20,
         "image_height": "small",
         "desktop_content_position": "bottom-center",
         "show_text_box": true,
