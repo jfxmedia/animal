@@ -6,7 +6,7 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<div style=\"color:black;line-height:1em;\">15% OFF for new customers!<\/div>",
+            "heading": "<div style=\"color:black;line-height:1em;\">15% OFF for new customers<\/div>",
             "heading_size": "h0"
           }
         },
