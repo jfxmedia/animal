@@ -102,14 +102,14 @@
         "heading_Q79nAQ": {
           "type": "heading",
           "settings": {
-            "heading": "Get 15% OFF",
+            "heading": "get 15% off now",
             "heading_size": "h2"
           }
         },
         "paragraph_Lh669c": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>no spam, just deals and new releases<\/p>"
+            "text": "<p>No spam, just deals and new releases.<\/p>"
           }
         },
         "email_form_tBRHUq": {
@@ -134,7 +134,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "Bestsellers",
-        "heading_size": "h1",
+        "heading_size": "h2",
         "heading_centering": "center",
         "description": "<p>The most popular products, t-shirts to hoodies and everything in between. Everything printed in the USA on quality clothing. <\/p>",
         "show_description": false,
