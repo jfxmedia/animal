@@ -6,8 +6,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<div style=\"color:white;line-height:1.2em;\">wear something <span style=\"font-style:italic\">different<?span><\/span>\n<\/div>",
-            "heading_size": "h0"
+            "heading": "<div style=\"color:white;line-height:1.2em;\">wear something <span style=\"font-style:italic\">different<!--?span--><\/span>\n<\/div>",
+            "heading_size": "h1"
           }
         },
         "text_eiQDfq": {
@@ -103,13 +103,13 @@
           "type": "heading",
           "settings": {
             "heading": "Get 15% OFF",
-            "heading_size": "h0"
+            "heading_size": "h2"
           }
         },
         "paragraph_Lh669c": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Enter your email, get 15% any order.<\/p>"
+            "text": "<p>no spam, just deals and new releases<\/p>"
           }
         },
         "email_form_tBRHUq": {
