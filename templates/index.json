@@ -124,7 +124,8 @@
         "email_form_tBRHUq"
       ],
       "custom_css": [
-        ".newsletter {padding-right: 50px; padding-left: 50px; margin: 40px auto auto auto;}"
+        ".newsletter {padding-right: 50px; padding-left: 50px; margin: 40px auto auto auto;}",
+        ",@media screen and (max-width: 749px) {padding-right: 15px; padding-left: 15px;}"
       ],
       "settings": {
         "color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
