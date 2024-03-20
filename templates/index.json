@@ -85,8 +85,8 @@
         "column_9YiCxB"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {.background-primary {padding-right: 40px; padding-left: 40px; } , .content-container {min-height: 220px; }}",
-        ".background-primary {background-color: #f4f4f4;}",
+        "@media screen and (min-width: 750px) {.content-container {min-height: 220px; }, .multicolumn {padding: 0 50px;}}",
+        " }.background-primary {background-color: #f4f4f4;}",
         ".title {margin: auto;}",
         ".content-container {background-color: bisque;}"
       ],
