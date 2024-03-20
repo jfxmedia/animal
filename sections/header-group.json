@@ -8,14 +8,14 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Shipping is Free in the U.S.",
+            "text": "shipping is FREE in the U.S.",
             "link": ""
           }
         },
         "announcement_eB49Xh": {
           "type": "announcement",
           "settings": {
-            "text": "Sign up below for 15% OFF",
+            "text": "sign up below for 15% OFF",
             "link": ""
           }
         },
