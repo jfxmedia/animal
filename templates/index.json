@@ -86,7 +86,7 @@
       ],
       "custom_css": [
         ".background-primary {background-color: #f4f4f4;}",
-        ".content-container {min-height: 220px; padding: 40px;}"
+        ".content-container {min-height: 220px;}"
       ],
       "settings": {
         "title": "",
