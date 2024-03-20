@@ -14,7 +14,7 @@
           "type": "text",
           "settings": {
             "text": "<p style=\"color:white;line-height:1.3em\">✘ designed &amp; printed in the U.S.<br>✘ 100% free shipping<br>✘ easy returns<\/p>",
-            "text_style": "subtitle"
+            "text_style": "subtitle--large"
           }
         },
         "buttons_U8xNWL": {
