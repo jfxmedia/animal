@@ -96,16 +96,16 @@
         "padding_bottom": 36
       }
     },
-    "featured_collection": {
+    "featured_collection_9QbePW": {
       "type": "featured-collection",
       "settings": {
-        "title": "bestsellers",
+        "title": "new releases",
         "heading_size": "h2",
         "heading_centering": "center",
-        "description": "<p>We know you'll love these as much as we do.<\/p>",
+        "description": "<p>The latest releases, in-stock, ready to go.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "bestsellers",
+        "collection": "frontpage",
         "products_to_show": 15,
         "columns_desktop": 3,
         "full_width": false,
@@ -162,16 +162,16 @@
         "padding_bottom": 60
       }
     },
-    "featured_collection_9QbePW": {
+    "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "new releases",
+        "title": "bestsellers",
         "heading_size": "h2",
         "heading_centering": "center",
-        "description": "<p>The latest releases, in-stock, ready to go.<\/p>",
+        "description": "<p>We know you'll love these as much as we do.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "frontpage",
+        "collection": "bestsellers",
         "products_to_show": 15,
         "columns_desktop": 3,
         "full_width": false,
@@ -212,9 +212,9 @@
   "order": [
     "image_banner",
     "image_with_text_nnQG64",
-    "featured_collection",
-    "newsletter_8inLRL",
     "featured_collection_9QbePW",
+    "newsletter_8inLRL",
+    "featured_collection",
     "17090545980d46ab3e"
   ]
 }
