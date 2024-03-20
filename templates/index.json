@@ -84,6 +84,9 @@
         "column_aTRhqG",
         "column_9YiCxB"
       ],
+      "custom_css": [
+        ".content-container {background-color: #d2e89b;}"
+      ],
       "settings": {
         "title": "",
         "heading_size": "h1",
