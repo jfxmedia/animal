@@ -54,7 +54,7 @@
         "column_hHnge6": {
           "type": "column",
           "settings": {
-            "title": "100% Guaranteed",
+            "title": "100% guaranteed",
             "text": "<p>You have to LOVE your purchase. If not, send it back for any reason on us within 14 days. <\/p>",
             "link_label": "",
             "link": ""
@@ -63,7 +63,7 @@
         "column_aTRhqG": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping",
+            "title": "free shipping",
             "text": "<p>Your order ships free in the U.S. We ship USPS unless mentioned otherwise.<\/p>",
             "link_label": "",
             "link": ""
@@ -72,7 +72,7 @@
         "column_9YiCxB": {
           "type": "column",
           "settings": {
-            "title": "Premium Materials",
+            "title": "premium materials",
             "text": "<p>We use higher quality blanks than you'll find at other stores. Brighter colors that last, durability is key.<\/p>",
             "link_label": "",
             "link": ""
