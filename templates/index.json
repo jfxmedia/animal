@@ -51,6 +51,15 @@
     "multicolumn_ApTDDf": {
       "type": "multicolumn",
       "blocks": {
+        "column_hHnge6": {
+          "type": "column",
+          "settings": {
+            "title": "100% guaranteed",
+            "text": "<p>You have to LOVE your purchase. If not, send it back for any reason on us. <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
         "column_aTRhqG": {
           "type": "column",
           "settings": {
@@ -60,30 +69,22 @@
             "link": ""
           }
         },
-        "column_hHnge6": {
-          "type": "column",
-          "settings": {
-            "title": "100% guaranteed",
-            "text": "<p>You have to LOVE your purchase. If not, send it back with free returns on us. <\/p>",
-            "link_label": "",
-            "link": ""
-          }
-        },
         "column_9YiCxB": {
           "type": "column",
           "settings": {
-            "title": "premium material",
-            "text": "<p>We use higher quality apparel than you'll find at other stores. <\/p>",
+            "title": "premium apparel",
+            "text": "<p>We use higher quality blanks than you'll find at other stores. Brighter colors that last longer, durability is key.<\/p>",
             "link_label": "",
             "link": ""
           }
         }
       },
       "block_order": [
-        "column_aTRhqG",
         "column_hHnge6",
+        "column_aTRhqG",
         "column_9YiCxB"
       ],
+      "disabled": true,
       "settings": {
         "title": "why us?",
         "heading_size": "h1",
