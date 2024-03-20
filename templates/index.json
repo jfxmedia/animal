@@ -88,7 +88,8 @@
         "@media screen and (min-width: 750px) {.content-container {min-height: 220px; }}",
         ".background-primary {background-color: #f4f4f4;}",
         ".title {margin: auto;}",
-        ".content-container {background-color: bisque;}"
+        ".content-container {background-color: bisque;}",
+        ".grid {padding: 0 50px;}"
       ],
       "settings": {
         "title": "why us?",
