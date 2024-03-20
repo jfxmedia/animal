@@ -85,7 +85,7 @@
         "column_9YiCxB"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {.content-container {min-height: 220px; } , .multicolumn {padding: 0 20px; }}",
+        "@media screen and (min-width: 750px) {.content-container {min-height: 220px; }}",
         ".background-primary {background-color: #f4f4f4;}",
         ".title {margin: auto;}",
         ".content-container {background-color: bisque;}"
