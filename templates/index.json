@@ -100,7 +100,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "new releases",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "heading_centering": "center",
         "description": "<p>The latest releases, in-stock, ready to go.<\/p>",
         "show_description": false,
@@ -131,7 +131,7 @@
         "heading_Q79nAQ": {
           "type": "heading",
           "settings": {
-            "heading": "get 15% off now",
+            "heading": "want 15% off?",
             "heading_size": "h1"
           }
         },
