@@ -54,8 +54,8 @@
         "column_aTRhqG": {
           "type": "column",
           "settings": {
-            "title": "Free Shipping in the U.S.",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "free shipping",
+            "text": "<p>Your order ships free in the U.S.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -84,20 +84,19 @@
         "column_hHnge6",
         "column_9YiCxB"
       ],
-      "disabled": true,
       "settings": {
         "title": "why us?",
         "heading_size": "h1",
-        "image_width": "full",
-        "image_ratio": "adapt",
+        "image_width": "third",
+        "image_ratio": "square",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
-        "button_label": "Button label",
+        "button_label": "",
         "button_link": "",
         "color_scheme": "",
         "columns_mobile": "1",
-        "swipe_on_mobile": false,
+        "swipe_on_mobile": true,
         "padding_top": 36,
         "padding_bottom": 36
       }
