@@ -132,7 +132,7 @@
           "type": "heading",
           "settings": {
             "heading": "get 15% off now",
-            "heading_size": "h2"
+            "heading_size": "h1"
           }
         },
         "paragraph_Lh669c": {
@@ -166,7 +166,7 @@
       "type": "featured-collection",
       "settings": {
         "title": "bestsellers",
-        "heading_size": "h2",
+        "heading_size": "h1",
         "heading_centering": "center",
         "description": "<p>We know you'll love these as much as we do.<\/p>",
         "show_description": false,
