@@ -64,7 +64,7 @@
           "type": "column",
           "settings": {
             "title": "Free Shipping",
-            "text": "<p>Your order ships free in the U.S.<\/p>",
+            "text": "<p>Your order ships free in the U.S. We ship USPS unless mentioned otherwise.<\/p>",
             "link_label": "",
             "link": ""
           }
