@@ -35,9 +35,9 @@
         "buttons_U8xNWL"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ocelotl_bg.jpg",
+        "image": "shopify:\/\/shop_images\/ocelotl_bg_fdecc00b-a148-4127-a5d8-dccbdb1bc35b.jpg",
         "image_overlay_opacity": 10,
-        "image_height": "adapt",
+        "image_height": "small",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
