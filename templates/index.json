@@ -85,7 +85,7 @@
         "column_9YiCxB"
       ],
       "custom_css": [
-        ".content-container {background-color: #d2e89b;}"
+        ".background-primary {background-color: #f4f4f4;}"
       ],
       "settings": {
         "title": "",
