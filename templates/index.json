@@ -96,6 +96,35 @@
         "padding_bottom": 36
       }
     },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "bestsellers",
+        "heading_size": "h2",
+        "heading_centering": "center",
+        "description": "<p>We know you'll love these as much as we do.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "bestsellers",
+        "products_to_show": 15,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
     "newsletter_8inLRL": {
       "type": "newsletter",
       "blocks": {
@@ -124,42 +153,13 @@
         "email_form_tBRHUq"
       ],
       "custom_css": [
-        ".newsletter {padding-right: 50px; padding-left: 50px; margin: 40px auto auto auto; @media screen and (max-width: 749px) {padding-left: 15px; padding-right: 15px; }}"
+        "\/\/.newsletter {padding-right: 50px; padding-left: 50px; margin: 40px auto auto auto; @media screen and (max-width: 749px) {padding-left: 15px; padding-right: 15px; }}"
       ],
       "settings": {
         "color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
         "full_width": false,
         "padding_top": 60,
         "padding_bottom": 60
-      }
-    },
-    "featured_collection": {
-      "type": "featured-collection",
-      "settings": {
-        "title": "bestsellers",
-        "heading_size": "h2",
-        "heading_centering": "center",
-        "description": "<p>We know you'll love these as much as we do.<\/p>",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "bestsellers",
-        "products_to_show": 15,
-        "columns_desktop": 3,
-        "full_width": false,
-        "show_view_all": true,
-        "view_all_style": "outline",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "adapt",
-        "image_shape": "default",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 44,
-        "padding_bottom": 36
       }
     },
     "featured_collection_9QbePW": {
@@ -212,8 +212,8 @@
   "order": [
     "image_banner",
     "image_with_text_nnQG64",
-    "newsletter_8inLRL",
     "featured_collection",
+    "newsletter_8inLRL",
     "featured_collection_9QbePW",
     "17090545980d46ab3e"
   ]
