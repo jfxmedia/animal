@@ -85,7 +85,7 @@
         "column_9YiCxB"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {.background-primary {padding-right: 40px; padding-left: 40px; } ,.content-container {min-height: 220px;}}",
+        "@media screen and (min-width: 750px) {.background-primary {padding-right: 40px; padding-left: 40px; } , .content-container {min-height: 220px; }}",
         ".background-primary {background-color: #f4f4f4;}"
       ],
       "settings": {
@@ -100,7 +100,7 @@
         "button_link": "",
         "color_scheme": "background-1",
         "columns_mobile": "1",
-        "swipe_on_mobile": true,
+        "swipe_on_mobile": false,
         "padding_top": 52,
         "padding_bottom": 52
       }
