@@ -36,8 +36,8 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ocelotl_bg.jpg",
-        "image_overlay_opacity": 40,
-        "image_height": "medium",
+        "image_overlay_opacity": 10,
+        "image_height": "adapt",
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
