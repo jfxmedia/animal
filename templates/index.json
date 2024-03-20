@@ -13,8 +13,8 @@
         "text_eiQDfq": {
           "type": "text",
           "settings": {
-            "text": "<p style=\"color:white;line-height:1.3em\">Designed &amp; Printed in the U.S. | 100% Free Shipping<\/p>",
-            "text_style": "subtitle--large"
+            "text": "<p style=\"color:white;line-height:1.3em\">designed &amp; printed in the U.S.<br> 100% free shipping<br>easy returns<\/p>",
+            "text_style": "subtitle"
           }
         },
         "buttons_U8xNWL": {
