@@ -102,7 +102,7 @@
         "title": "new releases",
         "heading_size": "h1",
         "heading_centering": "center",
-        "description": "<p>Fresh releases, in-stock, ready to ship.<\/p>",
+        "description": "<p>Fresh releases, in-stock & ready to ship.<\/p>",
         "show_description": false,
         "description_style": "body",
         "collection": "frontpage",
