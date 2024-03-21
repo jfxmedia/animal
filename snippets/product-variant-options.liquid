@@ -1,11 +1,10 @@
 {% comment %}
-  Renders product variant options
-
+  Renders product variant options with a tooltip popup for color swatches.
+  
   Accepts:
   - product: {Object} product object.
   - option: {Object} current product_option object.
   - block: {Object} block object.
-
 
   Usage:
   {% render 'product-variant-options',
@@ -22,6 +21,27 @@
 
   assign product_form_id = 'product-form-' | append: section.id
 -%}
+
+<style>
+  .color-title {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    background-color: #ffffff;
+    padding: 4px 7px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+    z-index: 2;
+    color: black;
+    opacity: 0;
+    transition: all .3s ease-out;
+  }
+  .color-swatch:hover .color-title {
+    opacity: 1;
+  }
+</style>
 
 {%- for value in option.values -%}
   {%- liquid
@@ -59,10 +79,21 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-      {{ value -}}
-      <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
-    </label>
+
+    {% if product.variants[forloop.index0].image != blank and option.name == 'Color' %}
+      <label class="color-swatch"
+        for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+        style="background-image: url({{ product.variants[forloop.index0].image | img_url: '' }});height:50px;width:50px;background-size: cover;"
+      ><span class="color-title">{{ value }}</span>
+      </label>
+    {% else %}
+      <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+        {{ value -}}
+        <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
+      </label>
+    {% endif %}
+  
+
   {%- elsif block.settings.picker_type == 'dropdown' -%}
     <option
       value="{{ value | escape }}"

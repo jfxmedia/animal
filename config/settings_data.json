@@ -205,11 +205,11 @@
       },
       "accent-2": {
         "settings": {
-          "background": "#63e9f3",
+          "background": "#94ebed",
           "background_gradient": "",
           "text": "#000000",
           "button": "#ffffff",
-          "button_label": "#63e9f3",
+          "button_label": "#94ebed",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
@@ -238,9 +238,9 @@
       },
       "scheme-738ffd4b-734f-4e33-b235-d5bb6ef1a077": {
         "settings": {
-          "background": "#ea8f8a",
+          "background": "#f6c0ba",
           "background_gradient": "",
-          "text": "#ffffff",
+          "text": "#000000",
           "button": "#ffffff",
           "button_label": "#000000",
           "secondary_button_label": "#ffffff",
