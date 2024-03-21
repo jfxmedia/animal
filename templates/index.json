@@ -92,7 +92,7 @@
         ".title {margin: auto;}"
       ],
       "settings": {
-        "title": "why us?",
+        "title": "",
         "heading_size": "h1",
         "image_width": "third",
         "image_ratio": "square",
