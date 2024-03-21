@@ -88,7 +88,7 @@
         "column_9YiCxB"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {}",
+        "@media screen and (min-width: 750px) {.content-container {min-height: 220px; }}",
         ".title {margin: auto;}"
       ],
       "settings": {
@@ -98,7 +98,7 @@
         "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "content_alignment": "top",
+        "content_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
