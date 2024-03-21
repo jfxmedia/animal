@@ -478,6 +478,7 @@ table:not([class]) th {
 
 .content-center {
   align-items: center;
+  display: flex;
 }
 
 .right {
