@@ -473,11 +473,11 @@ table:not([class]) th {
 }
 
 .center {
-  align-items: center;
+  text-align: center;
 }
 
 .content-center {
-  text-align: center;
+  align-items: center;
 }
 
 .right {
