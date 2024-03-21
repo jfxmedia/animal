@@ -79,7 +79,7 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container card-color{% if section.settings.content_alignment == 'center' %} content-center{% endif %}">
+            <div class="multicolumn-card content-container {% if section.settings.content_alignment == 'center' %} content-center{% endif %}" style="background-color:{{ block.settings.card-color }}">
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}

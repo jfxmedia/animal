@@ -56,7 +56,6 @@
           "settings": {
             "title": "free shipping",
             "text": "<p>Your order ships free in the U.S. We ship USPS unless mentioned otherwise.<\/p>",
-            "card-color": "#ffffff",
             "link_label": "",
             "link": ""
           }
@@ -66,7 +65,6 @@
           "settings": {
             "title": "100% guaranteed",
             "text": "<p>You have to LOVE your purchase. If not, send it back for any reason within 14 days. <\/p>",
-            "card-color": "#ffffff",
             "link_label": "",
             "link": ""
           }
@@ -76,7 +74,6 @@
           "settings": {
             "title": "premium materials",
             "text": "<p>We use higher quality blanks than you'll find at other stores. Brighter colors that last, durability is key.<\/p>",
-            "card-color": "#1773b0",
             "link_label": "",
             "link": ""
           }
@@ -89,7 +86,9 @@
       ],
       "custom_css": [
         "@media screen and (min-width: 750px) {.content-container {min-height: 220px; }}",
-        ".title {margin: auto;}"
+        ".background-primary {background-color: #f4f4f4;}",
+        ".title {margin: auto;}",
+        ".content-container {background-color: bisque;}"
       ],
       "settings": {
         "title": "why us?",
@@ -98,7 +97,6 @@
         "image_ratio": "square",
         "columns_desktop": 3,
         "column_alignment": "center",
-        "content_alignment": "center",
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
