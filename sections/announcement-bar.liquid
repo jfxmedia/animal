@@ -65,6 +65,9 @@
             name="previous"
             aria-label="{{ 'sections.announcements.previous_announcement' | t }}"
             aria-controls="Slider-{{ section.id }}"
+            {% if section.settings.show_arrows == false %}
+              style="display: none;"
+            {% endif %}
           >
             {% render 'icon-caret' %}
           </button>
@@ -119,6 +122,9 @@
             name="next"
             aria-label="{{ 'sections.announcements.next_announcement' | t }}"
             aria-controls="Slider-{{ section.id }}"
+            {% if section.settings.show_arrows == false %}
+            style="display: none;"
+            {% endif %}
           >
             {% render 'icon-caret' %}
           </button>
@@ -232,6 +238,12 @@
       "id": "color_scheme",
       "label": "t:sections.all.colors.label",
       "default": "accent-1"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_arrows",
+      "default": true,
+      "label": "Show arrows"
     },
     {
       "type": "checkbox",

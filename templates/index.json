@@ -6,23 +6,23 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<div style=\"color:black;line-height:1em;\">15% OFF for new customers!<\/div>",
-            "heading_size": "h0"
+            "heading": "<div style=\"color:white;line-height:1.2em;\">RETURN TO THE WILD\n<\/div>",
+            "heading_size": "h1"
           }
         },
         "text_eiQDfq": {
           "type": "text",
           "settings": {
-            "text": "<p style=\"color:black;line-height:1.3em\">Designed &amp; Printed in the U.S. | 100% Free Shipping<\/p>",
+            "text": "<p style=\"color:white;line-height:1.3em\">✔ designed &amp; printed in the U.S.<br>✔ hand-drawn unique designs<br>✔ small business in NC<\/p>",
             "text_style": "subtitle--large"
           }
         },
         "buttons_U8xNWL": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "SHOP",
-            "button_link_1": "shopify:\/\/collections\/hot-products",
-            "button_style_secondary_1": false,
+            "button_label_1": "SHOP ALL",
+            "button_link_1": "shopify:\/\/collections\/bestsellers",
+            "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -35,7 +35,7 @@
         "buttons_U8xNWL"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/pindo_palm_resort_spa_man_on_beach_white_tshirt.jpg",
+        "image": "shopify:\/\/shop_images\/ocelotl_black_bg_ee1d8e05-0bff-41d1-a728-4562162c5258.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
@@ -46,6 +46,69 @@
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
         "show_text_below": false
+      }
+    },
+    "multicolumn_ApTDDf": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aTRhqG": {
+          "type": "column",
+          "settings": {
+            "title": "free shipping",
+            "text": "<p>Your order ships free in the U.S. We ship USPS unless mentioned otherwise.<\/p>",
+            "card-color": "#ffd6c6",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hHnge6": {
+          "type": "column",
+          "settings": {
+            "title": "100% guaranteed",
+            "text": "<p>You have to LOVE your purchase. If not, send it back for any reason within 14 days. <\/p>",
+            "card-color": "#ffd6c6",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9YiCxB": {
+          "type": "column",
+          "settings": {
+            "title": "premium materials",
+            "text": "<p>We use higher quality blanks than you'll find at other stores. Brighter colors that last, durability is key.<\/p>",
+            "card-color": "#ffd6c6",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_aTRhqG",
+        "column_hHnge6",
+        "column_9YiCxB"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.content-container {min-height: 220px; }}",
+        ".title {margin: auto;}"
+      ],
+      "settings": {
+        "title": "why us?",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "content_alignment": "top",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "padding_right": 52,
+        "padding_left": 52
       }
     },
     "image_with_text_nnQG64": {
@@ -96,20 +159,49 @@
         "padding_bottom": 36
       }
     },
+    "featured_collection_9QbePW": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "new releases",
+        "heading_size": "h1",
+        "heading_centering": "center",
+        "description": "<p>Fresh releases, in-stock & ready to ship.<\/p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "frontpage",
+        "products_to_show": 12,
+        "columns_desktop": 3,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "background-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
     "newsletter_8inLRL": {
       "type": "newsletter",
       "blocks": {
         "heading_Q79nAQ": {
           "type": "heading",
           "settings": {
-            "heading": "Get 20% OFF",
-            "heading_size": "h0"
+            "heading": "want 15% off?",
+            "heading_size": "h1"
           }
         },
         "paragraph_Lh669c": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Enter your email, get 20% any order.<\/p>"
+            "text": "<p>No spam, just deals and new releases.<\/p>"
           }
         },
         "email_form_tBRHUq": {
@@ -123,24 +215,26 @@
         "paragraph_Lh669c",
         "email_form_tBRHUq"
       ],
-      "disabled": true,
+      "custom_css": [
+        ".newsletter {padding-right: 50px; padding-left: 50px; margin: 40px auto auto auto; @media screen and (max-width: 749px) {padding-left: 15px; padding-right: 15px; }}"
+      ],
       "settings": {
         "color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
-        "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 36
+        "full_width": false,
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "featured_collection": {
       "type": "featured-collection",
       "settings": {
-        "title": "Bestsellers",
+        "title": "bestsellers",
         "heading_size": "h1",
         "heading_centering": "center",
-        "description": "<p>The most popular products, t-shirts to hoodies and everything in between. Everything printed in the USA on quality clothing. <\/p>",
+        "description": "<p>We know you'll love these as much as we do.<\/p>",
         "show_description": false,
-        "description_style": "subtitle",
-        "collection": "hot-products",
+        "description_style": "body",
+        "collection": "bestsellers",
         "products_to_show": 9,
         "columns_desktop": 3,
         "full_width": false,
@@ -180,7 +274,9 @@
   },
   "order": [
     "image_banner",
+    "multicolumn_ApTDDf",
     "image_with_text_nnQG64",
+    "featured_collection_9QbePW",
     "newsletter_8inLRL",
     "featured_collection",
     "17090545980d46ab3e"

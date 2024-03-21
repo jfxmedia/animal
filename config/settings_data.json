@@ -1,6 +1,6 @@
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/animalinstinctive_text_logo.png",
+    "logo": "shopify:\/\/shop_images\/text_logo.jpg",
     "logo_width": 150,
     "favicon": "shopify:\/\/shop_images\/animalinstinctive_text_logo.png",
     "type_header_font": "fjalla_one_n4",
@@ -69,7 +69,7 @@
     "blog_card_shadow_blur": 5,
     "text_boxes_border_thickness": 0,
     "text_boxes_border_opacity": 10,
-    "text_boxes_radius": 0,
+    "text_boxes_radius": 10,
     "text_boxes_shadow_opacity": 0,
     "text_boxes_shadow_horizontal_offset": 0,
     "text_boxes_shadow_vertical_offset": 4,
@@ -119,7 +119,7 @@
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
-    "cart_drawer_collection": "hot-products",
+    "cart_drawer_collection": "bestsellers",
     "cart_color_scheme": "background-1",
     "sections": {
       "main-password-header": {
@@ -205,11 +205,11 @@
       },
       "accent-2": {
         "settings": {
-          "background": "#55d6de",
+          "background": "#63e9f3",
           "background_gradient": "",
           "text": "#000000",
           "button": "#ffffff",
-          "button_label": "#55d6de",
+          "button_label": "#63e9f3",
           "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
@@ -238,12 +238,12 @@
       },
       "scheme-738ffd4b-734f-4e33-b235-d5bb6ef1a077": {
         "settings": {
-          "background": "#fa7a72",
+          "background": "#ea8f8a",
           "background_gradient": "",
           "text": "#ffffff",
-          "button": "#fa7a72",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#000000",
+          "button": "#ffffff",
+          "button_label": "#000000",
+          "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
       }

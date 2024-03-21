@@ -8,21 +8,21 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "Shipping is Free in the U.S.",
+            "text": "shipping is FREE in the U.S.",
             "link": ""
           }
         },
         "announcement_eB49Xh": {
           "type": "announcement",
           "settings": {
-            "text": "Sign up below for 15% OFF",
+            "text": "sign up below for 15% OFF",
             "link": ""
           }
         },
         "announcement_VVtC7A": {
           "type": "announcement",
           "settings": {
-            "text": "Wrong fit? Easy Returns",
+            "text": "free returns within 14 days",
             "link": ""
           }
         }
@@ -34,6 +34,7 @@
       ],
       "settings": {
         "color_scheme": "accent-2",
+        "show_arrows": false,
         "show_line_separator": true,
         "show_social": false,
         "auto_rotate": true,
@@ -57,8 +58,8 @@
         "enable_language_selector": true,
         "mobile_logo_position": "center",
         "margin_bottom": 0,
-        "padding_top": 0,
-        "padding_bottom": 0
+        "padding_top": 16,
+        "padding_bottom": 16
       }
     }
   },
