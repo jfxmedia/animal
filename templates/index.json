@@ -237,7 +237,7 @@
         "collection": "bestsellers",
         "products_to_show": 9,
         "columns_desktop": 3,
-        "full_width": false,
+        "full_width": true,
         "show_view_all": true,
         "view_all_style": "outline",
         "enable_desktop_slider": true,
