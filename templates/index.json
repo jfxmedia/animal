@@ -236,7 +236,7 @@
         "description_style": "body",
         "collection": "bestsellers",
         "products_to_show": 9,
-        "columns_desktop": 2,
+        "columns_desktop": 1,
         "full_width": false,
         "show_view_all": true,
         "view_all_style": "outline",
