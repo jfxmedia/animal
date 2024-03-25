@@ -1,3 +1,4 @@
+/* Adjusted /# for padding of first slider card */
 slider-component {
   --desktop-margin-left-first-item: max(
     5rem,
@@ -8,11 +9,7 @@ slider-component {
 }
 
 slider-component.slider-component-full-width {
-  --desktop-margin-left-first-item: 1.5rem;
-}
-
-slider-component.slider-component-page-width {
-  --desktop-margin-left-first-item: 1.5rem;
+  --desktop-margin-left-first-item: 10.5rem;
 }
 
 @media screen and (max-width: 749px) {
