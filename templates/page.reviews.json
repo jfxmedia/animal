@@ -8,57 +8,25 @@
         "padding_bottom": 28
       }
     },
-    "socks_6gxeWk": {
-      "type": "socks",
+    "1711394896225d0c87": {
+      "type": "apps",
       "blocks": {
-        "collection_dEqxbP": {
-          "type": "collection",
+        "judge_me_reviews_medals_bEdQbA": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/medals\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
-            "collection": "the-queen-collection",
-            "collection_button_text": "Explore Collection"
-          }
-        },
-        "product_A9cPT7": {
-          "type": "product",
-          "settings": {
-            "product": "the-chef",
-            "product_button_text": "View Product"
-          }
-        },
-        "collection_VXaM6b": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-james-bond-collection",
-            "collection_button_text": "Explore Collection"
-          }
-        },
-        "product_HLEjgz": {
-          "type": "product",
-          "settings": {
-            "product": "the-shaken",
-            "product_button_text": "View Product"
           }
         }
       },
       "block_order": [
-        "collection_dEqxbP",
-        "product_A9cPT7",
-        "collection_VXaM6b",
-        "product_HLEjgz"
+        "judge_me_reviews_medals_bEdQbA"
       ],
       "settings": {
-        "socks_title": "<h2><strong>This is a section title...<\/strong><\/h2>",
-        "socks_overview": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..<\/p>",
-        "overview_text_size": 16,
-        "button_url": "",
-        "button_text": "Explore all ranges",
-        "button_color": "#000000",
-        "button_hover_color": "#695ee4"
+        "include_margins": true
       }
     }
   },
   "order": [
     "main",
-    "socks_6gxeWk"
+    "1711394896225d0c87"
   ]
 }
