@@ -8,7 +8,7 @@
         "color_scheme": "accent-1",
         "newsletter_enable": true,
         "newsletter_heading": "Subscribe for 15% OFF!",
-        "enable_follow_on_shop": false,
+        "enable_follow_on_shop": true,
         "show_social": true,
         "enable_country_selector": true,
         "enable_language_selector": true,
