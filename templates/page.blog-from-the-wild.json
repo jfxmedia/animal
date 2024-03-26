@@ -8,14 +8,14 @@
         "padding_bottom": 28
       }
     },
-    "featured_blog_AWDwDe": {
+    "featured_blog_cb3yLY": {
       "type": "featured-blog",
       "settings": {
         "heading": "Blog posts",
         "heading_size": "h1",
         "blog": "venus-flytraps",
-        "post_limit": 2,
-        "columns_desktop": 2,
+        "post_limit": 3,
+        "columns_desktop": 3,
         "color_scheme": "",
         "show_image": true,
         "show_date": true,
@@ -28,6 +28,6 @@
   },
   "order": [
     "main",
-    "featured_blog_AWDwDe"
+    "featured_blog_cb3yLY"
   ]
 }
