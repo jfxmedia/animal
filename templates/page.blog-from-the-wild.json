@@ -8,57 +8,26 @@
         "padding_bottom": 28
       }
     },
-    "socks_6gxeWk": {
-      "type": "socks",
-      "blocks": {
-        "collection_dEqxbP": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-queen-collection",
-            "collection_button_text": "Explore Collection"
-          }
-        },
-        "product_A9cPT7": {
-          "type": "product",
-          "settings": {
-            "product": "the-chef",
-            "product_button_text": "View Product"
-          }
-        },
-        "collection_VXaM6b": {
-          "type": "collection",
-          "settings": {
-            "collection": "the-james-bond-collection",
-            "collection_button_text": "Explore Collection"
-          }
-        },
-        "product_HLEjgz": {
-          "type": "product",
-          "settings": {
-            "product": "the-shaken",
-            "product_button_text": "View Product"
-          }
-        }
-      },
-      "block_order": [
-        "collection_dEqxbP",
-        "product_A9cPT7",
-        "collection_VXaM6b",
-        "product_HLEjgz"
-      ],
+    "featured_blog_AWDwDe": {
+      "type": "featured-blog",
       "settings": {
-        "socks_title": "<h2><strong>This is a section title...<\/strong><\/h2>",
-        "socks_overview": "<p>Section overview. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..<\/p>",
-        "overview_text_size": 16,
-        "button_url": "",
-        "button_text": "Explore all ranges",
-        "button_color": "#000000",
-        "button_hover_color": "#695ee4"
+        "heading": "Blog posts",
+        "heading_size": "h1",
+        "blog": "venus-flytraps",
+        "post_limit": 2,
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "socks_6gxeWk"
+    "featured_blog_AWDwDe"
   ]
 }
