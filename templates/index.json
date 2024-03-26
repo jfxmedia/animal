@@ -168,7 +168,7 @@
         "description": "<p>Fresh releases, in-stock & ready to ship.<\/p>",
         "show_description": false,
         "description_style": "body",
-        "collection": "frontpage",
+        "collection": "new-releases",
         "products_to_show": 12,
         "columns_desktop": 3,
         "full_width": false,
