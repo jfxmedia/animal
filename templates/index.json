@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "heading": "<div style=\"color:white;line-height:1.2em;\">Animal Instinctive Apparel\n</div>",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_eiQDfq": {
@@ -31,7 +31,7 @@
           "settings": {
             "button_label_1": "SHOP ALL",
             "button_link_1": "shopify://collections/bestsellers",
-            "button_style_secondary_1": true,
+            "button_style_secondary_1": false,
             "button_label_2": "",
             "button_link_2": "",
             "button_style_secondary_2": false
@@ -50,7 +50,7 @@
         "desktop_content_position": "middle-left",
         "show_text_box": false,
         "desktop_content_alignment": "left",
-        "color_scheme": "scheme-738ffd4b-734f-4e33-b235-d5bb6ef1a077",
+        "color_scheme": "scheme-fc56c11f-ef3e-48c7-802b-87a1162c8cf3",
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "stack_images_on_mobile": false,
