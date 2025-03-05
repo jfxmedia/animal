@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "image_banner": {
@@ -6,14 +15,14 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<div style=\"color:white;line-height:1.2em;\">\"Quetzacoatl\" Available Now\n<\/div>",
+            "heading": "<div style=\"color:white;line-height:1.2em;\">Unique and Wild <br>High Quality US Apparel\n</div>",
             "heading_size": "h1"
           }
         },
         "text_eiQDfq": {
           "type": "text",
           "settings": {
-            "text": "<p style=\"color:white;line-height:1.3em\">✔ designed &amp; printed in the U.S.<br>✔ 100% free shipping<br>✔ 14 day free returns<\/p>",
+            "text": "<p style=\"color:white;line-height:1.3em\">Wear Something Different! High Quality Everyday Tees and Apparel</p>",
             "text_style": "subtitle--large"
           }
         },
@@ -21,7 +30,7 @@
           "type": "buttons",
           "settings": {
             "button_label_1": "SHOP ALL",
-            "button_link_1": "shopify:\/\/collections\/bestsellers",
+            "button_link_1": "shopify://collections/bestsellers",
             "button_style_secondary_1": true,
             "button_label_2": "",
             "button_link_2": "",
@@ -35,7 +44,7 @@
         "buttons_U8xNWL"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/quetzacoatl_bg_colored.jpg",
+        "image": "shopify://shop_images/quetzacoatl_bg_colored.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-left",
@@ -61,7 +70,7 @@
         "text_wGKb7W": {
           "type": "text",
           "settings": {
-            "text": "<p>Obsessed with the natural world around us, <\/p>",
+            "text": "<p>Obsessed with the natural world around us, </p>",
             "text_style": "body"
           }
         },
@@ -81,7 +90,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/pindo_palm_with_palm_pink_sky_background_tshirt_graphic_tee.jpg",
+        "image": "shopify://shop_images/pindo_palm_with_palm_pink_sky_background_tshirt_graphic_tee.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -102,7 +111,7 @@
         "title": "new releases",
         "heading_size": "h1",
         "heading_centering": "center",
-        "description": "<p>Fresh releases, in-stock & ready to ship.<\/p>",
+        "description": "<p>Fresh releases, in-stock & ready to ship.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "new-releases",
@@ -139,13 +148,12 @@
         "paragraph_Lh669c": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>No spam, just deals and new releases.<\/p>"
+            "text": "<p>No spam, just deals and new releases.</p>"
           }
         },
         "email_form_tBRHUq": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -169,7 +177,7 @@
         "title": "bestsellers",
         "heading_size": "h1",
         "heading_centering": "center",
-        "description": "<p>We know you'll love these as much as we do.<\/p>",
+        "description": "<p>We know you'll love these as much as we do.</p>",
         "show_description": false,
         "description_style": "body",
         "collection": "bestsellers",
@@ -197,7 +205,7 @@
       "type": "apps",
       "blocks": {
         "judge_me_reviews_featured_carousel_DJJEG8": {
-          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
           "settings": {
             "maxwidth": 1080
           }
@@ -217,7 +225,7 @@
           "type": "column",
           "settings": {
             "title": "free shipping",
-            "text": "<p>Your order ships free in the U.S. We ship USPS unless mentioned otherwise.<\/p>",
+            "text": "<p>Your order ships free in the U.S. We ship USPS unless mentioned otherwise.</p>",
             "card-color": "#ffece6",
             "link_label": "",
             "link": ""
@@ -227,7 +235,7 @@
           "type": "column",
           "settings": {
             "title": "100% guaranteed",
-            "text": "<p>You have to LOVE your purchase. If not, send it back for any reason within 14 days. <\/p>",
+            "text": "<p>You have to LOVE your purchase. If not, send it back for any reason within 14 days. </p>",
             "card-color": "#ffece6",
             "link_label": "",
             "link": ""
@@ -237,7 +245,7 @@
           "type": "column",
           "settings": {
             "title": "premium materials",
-            "text": "<p>We use higher quality blanks than you'll find at other stores. Brighter colors that last, durability is key.<\/p>",
+            "text": "<p>We use higher quality blanks than you'll find at other stores. Brighter colors that last, durability is key.</p>",
             "card-color": "#ffece6",
             "link_label": "",
             "link": ""
