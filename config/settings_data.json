@@ -1,8 +1,17 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
-    "logo": "shopify:\/\/shop_images\/text_logo.jpg",
+    "logo": "shopify://shop_images/text_logo.jpg",
     "logo_width": 150,
-    "favicon": "shopify:\/\/shop_images\/animalinstinctive_text_logo.png",
+    "favicon": "shopify://shop_images/animalinstinctive_text_logo.png",
     "type_header_font": "fjalla_one_n4",
     "heading_scale": 125,
     "type_body_font": "avenir_next_rounded_n4",
@@ -100,23 +109,23 @@
     "sold_out_badge_color_scheme": "scheme-738ffd4b-734f-4e33-b235-d5bb6ef1a077",
     "new_badge_color_scheme": "scheme-1905c561-664f-445a-a155-d0ea29e0e3ae",
     "brand_headline": "Animal Instinctive Apparel",
-    "brand_description": "<p>Unique Designer Tees and Tops Inspired by the Wild<\/p>",
-    "brand_image": "shopify:\/\/shop_images\/animalinstinctive_text_logo_gradientpink.png",
+    "brand_description": "<p>Unique Designer Tees and Tops Inspired by the Wild</p>",
+    "brand_image": "shopify://shop_images/animalinstinctive_text_logo_gradientpink.png",
     "brand_image_width": 100,
-    "social_facebook_link": "https:\/\/www.facebook.com\/animalinstinctive",
-    "social_instagram_link": "https:\/\/instagram.com\/animalinstinctive",
+    "social_facebook_link": "https://www.facebook.com/animalinstinctive",
+    "social_instagram_link": "https://instagram.com/animalinstinctive",
     "social_youtube_link": "",
     "social_tiktok_link": "",
     "social_twitter_link": "",
     "social_snapchat_link": "",
-    "social_pinterest_link": "https:\/\/www.pinterest.com\/animalinstinctive",
+    "social_pinterest_link": "https://www.pinterest.com/animalinstinctive",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": true,
-    "cart_type": "notification",
+    "cart_type": "drawer",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "bestsellers",
@@ -135,21 +144,17 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "4015264832934714879": {
-        "type": "shopify:\/\/apps\/ecomsend-popups\/blocks\/app\/a5670cf8-5705-4b01-ad9e-447033feae26",
+        "type": "shopify://apps/ecomsend-popups/blocks/app/a5670cf8-5705-4b01-ad9e-447033feae26",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     },
     "color_schemes": {
@@ -399,7 +404,7 @@
       "sale_badge_color_scheme": "accent-2",
       "sold_out_badge_color_scheme": "inverse",
       "brand_headline": "",
-      "brand_description": "<p><\/p>",
+      "brand_description": "<p></p>",
       "brand_image_width": 100,
       "social_twitter_link": "",
       "social_facebook_link": "",
