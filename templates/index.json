@@ -15,8 +15,8 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "<div style=\"color:white;line-height:1.2em;\">Animal Instinctive Apparel\n</div>",
-            "heading_size": "h0"
+            "heading": "<div style=\"color:white;line-height:1.2em;font-weight:500;\">Animal Instinctive Apparel\n</div>",
+            "heading_size": "hxl"
           }
         },
         "text_eiQDfq": {
